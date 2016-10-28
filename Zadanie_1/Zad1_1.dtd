@@ -1,0 +1,67 @@
+﻿<!ELEMENT autorzy_książek  ( autor+ )>
+
+<!ELEMENT lista_kategorii  ( definicja_kategorii+ )>
+
+<!ELEMENT kategoria  ( pozycja+ )>
+<!ATTLIST kategoria
+idKategorii IDREF #REQUIRED
+nazwa CDATA #REQUIRED
+>
+
+<!ELEMENT wydanie  ( miejsce_wydania , data_wydania )>
+<!ATTLIST wydanie
+numerWydania CDATA #REQUIRED
+>
+
+<!ELEMENT definicja_kategorii  EMPTY>
+<!ATTLIST definicja_kategorii
+idKategorii ID #REQUIRED
+nazwa CDATA #REQUIRED
+>
+
+<!ELEMENT autor_projektu  ( #PCDATA )>
+<!ATTLIST autor_projektu
+indeks CDATA #REQUIRED
+>
+
+<!ELEMENT tytuł  ( #PCDATA )>
+
+<!ELEMENT autor  EMPTY>
+<!ATTLIST autor
+IdAutorów ID  #REQUIRED
+imięPierwsze CDATA #REQUIRED
+imięDrugie CDATA #IMPLIED
+nazwisko CDATA #REQUIRED
+>
+
+<!ELEMENT pozycja  ( tytuł , ISBN , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST pozycja
+pozycja_id ID #REQUIRED
+rodzaj CDATA #REQUIRED
+język CDATA #REQUIRED
+IdAutorów IDREFS #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT data_wydania  ( #PCDATA )>
+
+<!ELEMENT rok_akademicki  ( #PCDATA )>
+
+<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , kategoria+ , metadane )>
+
+<!ELEMENT ISBN  ( #PCDATA )>
+
+<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
+
+<!ELEMENT opis_skrócony  ( #PCDATA )>
+
+<!ELEMENT miejsce_wydania  ( #PCDATA )>
+
+<!ELEMENT cena  ( #PCDATA )>
+<!ATTLIST cena
+waluta CDATA #REQUIRED
+>
+
+<!ELEMENT wydawnictwo  ( #PCDATA )>
+
+<!ELEMENT opis  ( #PCDATA | opis_skrócony )*>
