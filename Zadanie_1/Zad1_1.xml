@@ -124,7 +124,8 @@
 				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich.</opis_skrócony>
 				</opis>
             </czasopismo>
-			<książka pozycja_id="P15" nazwa_kategorii="" język="pl" IdAutorów="CL" autorzy="Camilla Lackberg" >
+			
+			<książka pozycja_id="P15" nazwa_kategorii="Psychologia" język="pl" IdAutorów="CL" autorzy="Camilla Lackberg" >
 			<tytuł>Ofiara losu</tytuł>
 				<ISBN> 9788380154742</ISBN>
 				<ilość_stron>587</ilość_stron>
@@ -145,7 +146,7 @@
 				musi się zmierzyć z bolesną przeszłością.
 				</opis>
             </książka>
-			<e-book pozycja_id="P16" nazwa_kategorii="" język="pl" IdAutorów="AC" autorzy="Agata Christie">
+			<e-book pozycja_id="P16" nazwa_kategorii="Psychologia" język="pl" IdAutorów="AC" autorzy="Agata Christie">
                 <tytuł>Tajemnica Sittaford</tytuł>
 				<ISBN>  9788324587933</ISBN>
 				<rozmiar>85</rozmiar>
@@ -161,10 +162,10 @@
 				widać było przy zamku ślady włamania. Obok kapitana leżał gruby na dwa cale wałek ciasno zwiniętego zielonego sukna.
 				</opis>
             </e-book>			
-    </kategoria>	
+    	
 	
-    <kategoria idKategorii="PSYCH" nazwa="Psychologia">
-            <książka pozycja_id="P21"  język="pl" IdAutorów="PGZ RJG" autorzy="Philip G. Zimbardo, Richard J. Gerrig">
+   
+            <książka pozycja_id="P21" nazwa_kategorii="Psychologia"  język="pl" IdAutorów="PGZ RJG" autorzy="Philip G. Zimbardo, Richard J. Gerrig">
                 <tytuł>Psychologia i życie</tytuł>
 				<ISBN>9788301172572</ISBN>
 				<ilość_stron>658</ilość_stron>
@@ -181,10 +182,10 @@
                     znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
 				</opis>
             </książka>
-    </kategoria>
+    
 	
-	<kategoria idKategorii="FAN" nazwa="Fantastyka">
-            <książka pozycja_id="P31"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+	
+            <książka pozycja_id="P31" nazwa_kategorii="Fantastyka" język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
 				<ISBN>9788372781758</ISBN>
 				<ilość_stron>225</ilość_stron>
@@ -201,7 +202,7 @@
 				raz na ekran dziecięce marzenia.
 				</opis>
             </książka>
-			<e-book pozycja_id="P32"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+			<e-book pozycja_id="P32" nazwa_kategorii="Fantastyka"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Ostatnia bitwa</tytuł>
 				<ISBN>9788372788832</ISBN>
 				<rozmiar>48</rozmiar>
@@ -217,7 +218,7 @@
 				Czy uda im się zwyciężyć i ocalić cudowną krainę przed zniszczeniem?
 				</opis>
             </e-book>
-			<czasopismo pozycja_id="P33"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+			<czasopismo pozycja_id="P33" nazwa_kategorii="Fantastyka"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Książę Kaspian</tytuł>
 				<ISBN>9788372788788</ISBN>
 				<częstotliwość>tygodnik</częstotliwość>
@@ -234,7 +235,7 @@
 				ilustrowany fotosami z ekranizacji Księcia Kaspiana.
 				</opis>
             </czasopismo>
-			<książka pozycja_id="P34"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+			<książka pozycja_id="P34" nazwa_kategorii="Fantastyka"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Siostrzeniec Czarodzieja</tytuł>
 				<ISBN>9788372788825</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -251,7 +252,7 @@
 				jej wszystkimi zwierzętami i niezwykłościami...
 				</opis>
             </książka>
-			<książka pozycja_id="P35"  język="pl" IdAutorów="SK" autorzy="Stephen King">
+			<książka pozycja_id="P35" nazwa_kategorii="Fantastyka"  język="pl" IdAutorów="SK" autorzy="Stephen King">
                 <tytuł>Lśnienie</tytuł>
 				<ISBN>9788376488097</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -269,9 +270,9 @@
 				dnia mężczyzna przestaje nad sobą panować...
 				</opis>
             </książka>
-    </kategoria>
-	<kategoria idKategorii="POR" nazwa="Poradniki">
-	<książka pozycja_id="P45"  język="pl" IdAutorów="LC" autorzy="Lorel Cordial">
+    
+	
+	<książka pozycja_id="P45" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="LC" autorzy="Lorel Cordial">
 	<tytuł>Dieta dla aktywnych</tytuł>
 				<ISBN>9788364131165</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -291,7 +292,7 @@
 			To propozycja dla zwykłych ludzi, amatorów sportu.
 				</opis>
 	</książka>
-		<książka pozycja_id="P46"  język="pl" IdAutorów="NC" autorzy="Nancy Clark">
+		<książka pozycja_id="P46" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="NC" autorzy="Nancy Clark">
 				<tytuł>Jedz i trenuj</tytuł>
 				<ISBN>9788364131172</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -312,7 +313,7 @@
 				szukasz sposobu na poprawę zdrowia i formy sportowej – właśnie znalazłeś sprzymierzeńca, któremu możesz w pełni zaufać.
 				</opis>
 	</książka>
-	<książka pozycja_id="P47"  język="pl" IdAutorów="TL" autorzy="Terry Laughlin">
+	<książka pozycja_id="P47" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="TL" autorzy="Terry Laughlin">
 				<tytuł>Pływanie dla każdego</tytuł>
 				<ISBN>9788392638704</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -336,7 +337,7 @@
 				pełni wykorzystywać każdą minutę, a ci, którym zależy na prędkości, znajdą dla siebie cenne
 				informacje na każdej stronie książki.</opis>
 	</książka>
-	<książka pozycja_id="P48"  język="pl" IdAutorów="HK" autorzy="Hal Koerner">
+	<książka pozycja_id="P48" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="HK" autorzy="Hal Koerner">
 				<tytuł>Przewodnik po bieganiu ultra</tytuł>
 				<ISBN>9788364131271</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -358,7 +359,7 @@
 				ucząc się na cudzych doświadczeniach. Stań pewny siebie na starcie i dobiegnij do mety z poradnikiem Hala Koernera.
 				</opis>
 	</książka>
-	<książka pozycja_id="P49"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	<książka pozycja_id="P49" nazwa_kategorii="Poradniki" język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Triatlon Biblia treningu</tytuł>
 				<ISBN>9788393264346</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -379,7 +380,7 @@
 				poglądy trenerów, zawodników i specjalistów od sportów wielodyscyplinowych.
 				</opis>
 	</książka>
-	<książka pozycja_id="P50"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	<książka pozycja_id="P50" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
 				<ISBN>	9788364131066</ISBN>
 				<ilość_stron>29</ilość_stron>
@@ -396,7 +397,7 @@
 				</opis_skrócony>
 				</opis>
 	</książka>
-	<książka pozycja_id="P51"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	<książka pozycja_id="P51" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Bieganie naturalne</tytuł>
 				<ISBN>	978383369566</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -417,7 +418,7 @@
 				ci przeprowadzić autoanalizę swojej biegowej postawy i skorygowanie błędów.
 				</opis>
 	</książka>
-	<książka pozycja_id="P52"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	<książka pozycja_id="P52" nazwa_kategorii="Poradniki" język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Serwisowanie samochodu</tytuł>
 				<ISBN>	9788334131066</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -434,7 +435,7 @@
 				</opis_skrócony>
 				</opis>
 	</książka>
-		<książka pozycja_id="P53"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+		<książka pozycja_id="P53"  nazwa_kategorii="Poradniki" język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Dieta doktora Franka</tytuł>
 				<ISBN>	978386469566</ISBN>
 				<ilość_stron>259</ilość_stron>
@@ -461,7 +462,7 @@
 				lub wyeliminujesz ryzyko kontuzji.
 				</opis>
 	</książka>
-			<książka pozycja_id="P54"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
+			<książka pozycja_id="P54" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
 				<ISBN>	977786469566</ISBN>
 				<ilość_stron>259</ilość_stron>
