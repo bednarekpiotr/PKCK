@@ -110,9 +110,8 @@
             </e-book>
 			
           	
-			<czasopismo pozycja_id="P14" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="MS">
-			<autorzy></autorzy>
-                <tytuł>Montecristo</tytuł>
+			<czasopismo pozycja_id="P14" nazwa_kategorii="Poradniki"  język="pl" IdAutorów="MS" autorzy="Martin Suter">
+			    <tytuł>Montecristo</tytuł>
 				<ISBN>9788380620896</ISBN>
 				<częstotliwość>miesięcznik</częstotliwość>
 				<wydanie numerWydania="1">
@@ -125,8 +124,7 @@
 				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich.</opis_skrócony>
 				</opis>
             </czasopismo>
-			<książka pozycja_id="P15" nazwa_kategorii="" język="pl" IdAutorów="CL" >
-			<autorzy>Camilla Lackberg</autorzy>
+			<książka pozycja_id="P15" nazwa_kategorii="" język="pl" IdAutorów="CL" autorzy="Camilla Lackberg" >
 			<tytuł>Ofiara losu</tytuł>
 				<ISBN> 9788380154742</ISBN>
 				<ilość_stron>587</ilość_stron>
@@ -147,8 +145,7 @@
 				musi się zmierzyć z bolesną przeszłością.
 				</opis>
             </książka>
-			<e-book pozycja_id="P16" nazwa_kategorii="" język="pl" IdAutorów="AC">
-			<autorzy>Agata Christie</autorzy>
+			<e-book pozycja_id="P16" nazwa_kategorii="" język="pl" IdAutorów="AC" autorzy="Agata Christie">
                 <tytuł>Tajemnica Sittaford</tytuł>
 				<ISBN>  9788324587933</ISBN>
 				<rozmiar>85</rozmiar>
@@ -183,13 +180,14 @@
                     napisany przystępnym językiem, zawiera ilustracje ułatwiające zrozumienie najtrudniejszych zagadnień,
                     znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
 				</opis>
-            </pozycja>
+            </książka>
     </kategoria>
 	
 	<kategoria idKategorii="FAN" nazwa="Fantastyka">
-            <pozycja pozycja_id="P31" rodzaj="książka" język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+            <książka pozycja_id="P31"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
 				<ISBN>9788372781758</ISBN>
+				<ilość_stron>225</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2016</data_wydania>
@@ -202,10 +200,11 @@
 				której w przypadku Lwa, Czarownicy i starej szafy podjęła się wytwórnia Walta Disneya przenosząca już nie 
 				raz na ekran dziecięce marzenia.
 				</opis>
-            </pozycja>
-			<pozycja pozycja_id="P32" rodzaj="książka" język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+            </książka>
+			<e-book pozycja_id="P32"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Ostatnia bitwa</tytuł>
 				<ISBN>9788372788832</ISBN>
+				<rozmiar>48</rozmiar>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2013</data_wydania>
@@ -217,10 +216,11 @@
 				Tirian, wraz z garstką przyjaciół. 
 				Czy uda im się zwyciężyć i ocalić cudowną krainę przed zniszczeniem?
 				</opis>
-            </pozycja>
-			<pozycja pozycja_id="P33" rodzaj="książka" język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+            </e-book>
+			<czasopismo pozycja_id="P33"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Książę Kaspian</tytuł>
 				<ISBN>9788372788788</ISBN>
+				<częstotliwość>tygodnik</częstotliwość>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2013</data_wydania>
@@ -233,10 +233,11 @@
 				księciu Kaspianowi, który toczy śmiertelny bój o prawo do tronu. Drugi tom narnijskiej sagi w szacie filmowej
 				ilustrowany fotosami z ekranizacji Księcia Kaspiana.
 				</opis>
-            </pozycja>
-			<pozycja pozycja_id="P34" rodzaj="książka" język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
+            </czasopismo>
+			<książka pozycja_id="P34"  język="pl" IdAutorów="CSL" autorzy="C. S. Levis">
                 <tytuł>Siostrzeniec Czarodzieja</tytuł>
 				<ISBN>9788372788825</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2013</data_wydania>
@@ -249,10 +250,11 @@
 				Spotykają tam złą czarownicę Jadis, ale przede wszystkim stają się świadkami narodzin Narnii wraz z 
 				jej wszystkimi zwierzętami i niezwykłościami...
 				</opis>
-            </pozycja>
-			<pozycja pozycja_id="P35" rodzaj="książka" język="pl" IdAutorów="SK" autorzy="Stephen King">
+            </książka>
+			<książka pozycja_id="P35"  język="pl" IdAutorów="SK" autorzy="Stephen King">
                 <tytuł>Lśnienie</tytuł>
 				<ISBN>9788376488097</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2015</data_wydania>
@@ -266,12 +268,13 @@
 				a duchy powoli doprowadzają jego ojca do obłędu. Sytuacja staje się coraz bardziej napięta, aż pewnego
 				dnia mężczyzna przestaje nad sobą panować...
 				</opis>
-            </pozycja>
+            </książka>
     </kategoria>
 	<kategoria idKategorii="POR" nazwa="Poradniki">
-	<pozycja pozycja_id="P45" rodzaj="książka" język="pl" IdAutorów="LC" autorzy="Lorel Cordial">
+	<książka pozycja_id="P45"  język="pl" IdAutorów="LC" autorzy="Lorel Cordial">
 	<tytuł>Dieta dla aktywnych</tytuł>
 				<ISBN>9788364131165</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2016</data_wydania>
@@ -287,10 +290,11 @@
 			Paleodietę stosuje wielu największych zawodowych sportowców. Książka nie jest jednak skierowana tylko do mistrzów światowej klasy.
 			To propozycja dla zwykłych ludzi, amatorów sportu.
 				</opis>
-	</pozycja>
-		<pozycja pozycja_id="P46" rodzaj="książka" język="pl" IdAutorów="NC" autorzy="Nancy Clark">
+	</książka>
+		<książka pozycja_id="P46"  język="pl" IdAutorów="NC" autorzy="Nancy Clark">
 				<tytuł>Jedz i trenuj</tytuł>
 				<ISBN>9788364131172</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Poznań</miejsce_wydania>   
 				    <data_wydania>2015</data_wydania>
@@ -307,10 +311,11 @@
 				Jeśli chcesz się wreszcie skutecznie odchudzić, marzysz, by już nigdy nie zabrakło ci energii do treningu,
 				szukasz sposobu na poprawę zdrowia i formy sportowej – właśnie znalazłeś sprzymierzeńca, któremu możesz w pełni zaufać.
 				</opis>
-	</pozycja>
-	<pozycja pozycja_id="P47" rodzaj="książka" język="pl" IdAutorów="TL" autorzy="Terry Laughlin">
+	</książka>
+	<książka pozycja_id="P47"  język="pl" IdAutorów="TL" autorzy="Terry Laughlin">
 				<tytuł>Pływanie dla każdego</tytuł>
 				<ISBN>9788392638704</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Zielonka</miejsce_wydania>   
 				    <data_wydania>2013</data_wydania>
@@ -330,10 +335,11 @@
 				urozmaiceniu rutynowego treningu. Pływający dla zdrowia i dobrej kondycji nauczą się w
 				pełni wykorzystywać każdą minutę, a ci, którym zależy na prędkości, znajdą dla siebie cenne
 				informacje na każdej stronie książki.</opis>
-	</pozycja>
-	<pozycja pozycja_id="P48" rodzaj="książka" język="pl" IdAutorów="HK" autorzy="Hal Koerner">
+	</książka>
+	<książka pozycja_id="P48"  język="pl" IdAutorów="HK" autorzy="Hal Koerner">
 				<tytuł>Przewodnik po bieganiu ultra</tytuł>
 				<ISBN>9788364131271</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2015</data_wydania>
@@ -351,10 +357,11 @@
 				Na dystansach ultra nie ma miejsca na błędy. Przygotuj się na największe wyzwanie biegowe w życiu,
 				ucząc się na cudzych doświadczeniach. Stań pewny siebie na starcie i dobiegnij do mety z poradnikiem Hala Koernera.
 				</opis>
-	</pozycja>
-	<pozycja pozycja_id="P49" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+	<książka pozycja_id="P49"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Triatlon Biblia treningu</tytuł>
 				<ISBN>9788393264346</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="2">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2016</data_wydania>
@@ -371,10 +378,11 @@
 				trenowanie wymaga olbrzymiej dyscypliny i siły woli. W książce zebrano aktualne 
 				poglądy trenerów, zawodników i specjalistów od sportów wielodyscyplinowych.
 				</opis>
-	</pozycja>
-	<pozycja pozycja_id="P50" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+	<książka pozycja_id="P50"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
 				<ISBN>	9788364131066</ISBN>
+				<ilość_stron>29</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2014</data_wydania>
@@ -387,10 +395,11 @@
 				szczegółowe instrukcje obsługi i naprawy wszystkich części roweru górskiego.
 				</opis_skrócony>
 				</opis>
-	</pozycja>
-	<pozycja pozycja_id="P51" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+	<książka pozycja_id="P51"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Bieganie naturalne</tytuł>
 				<ISBN>	978383369566</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2014</data_wydania>
@@ -407,10 +416,11 @@
 				i innych, dostrzegali te elementy techniki, nad którymi warto popracować. Dostajesz wskazówki, które pomogą 
 				ci przeprowadzić autoanalizę swojej biegowej postawy i skorygowanie błędów.
 				</opis>
-	</pozycja>
-	<pozycja pozycja_id="P52" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+	<książka pozycja_id="P52"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Serwisowanie samochodu</tytuł>
 				<ISBN>	9788334131066</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2014</data_wydania>
@@ -423,10 +433,11 @@
 				szczegółowe instrukcje obsługi i naprawy wszystkich części samochodu
 				</opis_skrócony>
 				</opis>
-	</pozycja>
-		<pozycja pozycja_id="P53" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+		<książka pozycja_id="P53"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Dieta doktora Franka</tytuł>
 				<ISBN>	978386469566</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2013</data_wydania>
@@ -449,10 +460,11 @@
 				kompletny plan treningowy, ćwiczenia siłowe, sprawnościowe i rozciągające. Dzięki książce zredukujesz
 				lub wyeliminujesz ryzyko kontuzji.
 				</opis>
-	</pozycja>
-			<pozycja pozycja_id="P54" rodzaj="książka" język="pl" IdAutorów="JF" autorzy="Joe Friel">
+	</książka>
+			<książka pozycja_id="P54"  język="pl" IdAutorów="JF" autorzy="Joe Friel">
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
 				<ISBN>	977786469566</ISBN>
+				<ilość_stron>259</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
 				    <data_wydania>2014</data_wydania>
@@ -473,7 +485,7 @@
 				trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
 				smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
 				</opis>
-	</pozycja>
+	</książka>
 	</kategoria>
     <metadane>
         <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
