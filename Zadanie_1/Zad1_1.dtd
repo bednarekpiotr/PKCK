@@ -1,59 +1,82 @@
-﻿<!ELEMENT autorzy_książek  ( autor+ )>
+﻿
+<!ELEMENT autorzy_książek  ( autor+ )>
 
 <!ELEMENT lista_kategorii  ( definicja_kategorii+ )>
 
-<!ELEMENT kategoria  ( pozycja+ )>
-<!ATTLIST kategoria
-idKategorii IDREF #REQUIRED
+<!ELEMENT definicja_kategorii  EMPTY>
+<!ATTLIST definicja_kategorii
+idKategorii CDATA #REQUIRED
 nazwa CDATA #REQUIRED
 >
+
+<!ELEMENT autor_projektu  ( #PCDATA )>
+<!ATTLIST autor_projektu
+indeks  (195560 | 195627) "195560"
+>
+
+<!ELEMENT imięDrugie  ( #PCDATA )>
+
+<!ELEMENT e-book  ( tytuł , ISBN , rozmiar , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST e-book
+pozycja_id CDATA #REQUIRED
+nazwa_kategorii CDATA #REQUIRED
+język CDATA #REQUIRED
+IdAutorów CDATA #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT czasopismo  ( tytuł , ISBN , częstotliwość , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST czasopismo
+pozycja_id CDATA #REQUIRED
+nazwa_kategorii CDATA #REQUIRED
+język CDATA #REQUIRED
+IdAutorów CDATA #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT ilość_stron  ( #PCDATA )>
+
+<!ELEMENT rok_akademicki  ( #PCDATA )>
+
+<!ELEMENT ISBN  ( #PCDATA )>
+
+<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
+
+<!ELEMENT nazwisko  ( #PCDATA )>
+
+<!ELEMENT książka  ( tytuł , ISBN , ilość_stron , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST książka
+pozycja_id CDATA #REQUIRED
+nazwa_kategorii CDATA #REQUIRED
+język CDATA #REQUIRED
+IdAutorów CDATA #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT imięPierwsze  ( #PCDATA )>
 
 <!ELEMENT wydanie  ( miejsce_wydania , data_wydania )>
 <!ATTLIST wydanie
 numerWydania CDATA #REQUIRED
 >
 
-<!ELEMENT definicja_kategorii  EMPTY>
-<!ATTLIST definicja_kategorii
-idKategorii ID #REQUIRED
-nazwa CDATA #REQUIRED
->
-
-<!ELEMENT autor_projektu  ( #PCDATA )>
-<!ATTLIST autor_projektu
-indeks CDATA #REQUIRED
->
-
 <!ELEMENT tytuł  ( #PCDATA )>
 
-<!ELEMENT autor  EMPTY>
+<!ELEMENT autor  ( imięPierwsze , imięDrugie? , nazwisko )>
 <!ATTLIST autor
-IdAutorów ID  #REQUIRED
-imięPierwsze CDATA #REQUIRED
-imięDrugie CDATA #IMPLIED
-nazwisko CDATA #REQUIRED
+IdAutorów CDATA #REQUIRED
 >
 
-<!ELEMENT pozycja  ( tytuł , ISBN , wydanie , wydawnictwo , cena , opis )>
-<!ATTLIST pozycja
-pozycja_id ID #REQUIRED
-rodzaj CDATA #REQUIRED
-język CDATA #REQUIRED
-IdAutorów IDREFS #REQUIRED
-autorzy CDATA #REQUIRED
->
+<!ELEMENT rozmiar  ( #PCDATA )>
 
 <!ELEMENT data_wydania  ( #PCDATA )>
 
-<!ELEMENT rok_akademicki  ( #PCDATA )>
+<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
 
-<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , kategoria+ , metadane )>
-
-<!ELEMENT ISBN  ( #PCDATA )>
-
-<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
 
 <!ELEMENT opis_skrócony  ( #PCDATA )>
+
+<!ELEMENT częstotliwość  ( #PCDATA )>
 
 <!ELEMENT miejsce_wydania  ( #PCDATA )>
 
@@ -64,4 +87,4 @@ waluta CDATA #REQUIRED
 
 <!ELEMENT wydawnictwo  ( #PCDATA )>
 
-<!ELEMENT opis  ( #PCDATA | opis_skrócony )*>
+<!ELEMENT opis  ( #PCDATA | opis_skrócony )* >
