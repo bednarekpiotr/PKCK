@@ -1,0 +1,142 @@
+﻿księgarnia{
+	background-color:#fdfcf8;
+	background-image: url("backround.jpg");
+	background-repeat: repeat;
+	font-family:"Verdana";
+	font-size:16px;
+	margin: 10px;
+	padding: 20px;
+	 
+}
+autorzy_książek {
+	visibility:hidden;
+}
+książka,e-book,czasopismo
+{
+	display:inline-block;
+	
+	background-color: #D9EDF7;
+	text-align: left;
+	vertical-align:top;
+	border: 1px solid;
+	border-color: #BCE8F1;
+	border-radius: 25px;
+	margin:20px 3px 0px 3px;
+	padding: 20px;
+	max-width: 45%;
+	min-width: 400px;
+	height: 600px;
+	counter-increment: licznik;
+}
+
+księgarnia>książka:nth-child(3n) {
+	background-color:#c0e1f2;
+}
+
+
+książka>tytuł,e-book>tytuł,czasopismo>tytuł{
+	font-family: "Open Sans";
+	font-size: 28px;
+	line-height: 33px;
+	display: block;
+	color: black;
+	margin-bottom:20px;
+	
+}
+książka>ilość_stron:before {
+	content: "ilość stron: ";
+}
+
+e-book>rozmiar:before {
+	content: "rozmiar: ";
+}
+czasopismo>częstotliwość:before {
+	content: "częstotliwość: ";
+}
+
+
+
+książka>tytuł:hover,e-book>tytuł:hover,czasopismo>tytuł:hover{
+	color: black;
+	text-decoration:underline;
+}
+książka:before,e-book:before,czasopismo:before{
+	display: block;
+	color: green;
+	content:attr(autorzy);
+	
+}
+książka>ISBN:before,e-book>ISBN:before,czasopismo>ISBN:before{
+	content: "ISBN: " 
+}
+książka>ISBN,e-book>ISBN,czasopismo>ISBN, książka>wydanie,e-book>wydanie,czasopismo>wydanie, książka>wydawnictwo,e-book>wydanie,czasopismo>wydanie,książka>cena,e-book>cena,czasopismo>cena, książka>opis,e-book>opis,czasopismo>opis{
+	display: block;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+książka>opis>opis_skrócony,e-book>opis>opis_skrócony,czasopismo>opis>opis_skrócony{
+	font-weight:bold;
+	display: block;
+	margin-top:20px;
+	padding-bottom:10px;
+}
+książka>wydanie:before,e-book>wydanie:before,czasopismo>wydanie:before{
+	content: "Wydanie: " attr(numerWydania);
+}
+książka>wydanie>miejsce_wydania:before, książka>wydanie>data_wydania:before, e-book>wydanie>miejsce_wydania:before, e-book>wydanie>data_wydania:before, czasopismo>wydanie>miejsce_wydania:before, czasopismo>wydanie>data_wydania:before {
+	content: ", ";
+}
+książka>wydawnictwo:before,e-book>wydawnictwo:before,czasopismo>wydawnictwo:before{
+	content: "Wydawnictwo: ";
+}
+książka>cena:before,e-book>cena:before,czasopismo>cena:before{
+	content: "Cena: ";
+	font-style:normal;
+}
+książka>cena[waluta="PLN"]:after ,e-book>cena[waluta="PLN"]:after,czasopismo>cena[waluta="PLN"]:after{
+    content: " zł.";
+}
+książka>cena[waluta="EUR"]:after,e-book>cena[waluta="EUR"]:after ,czasopismo>cena[waluta="EUR"]:after  {
+    content: " €";
+	
+}
+książka>cena[waluta="USD"]:after ,e-book>cena[waluta="USD"]:after,czasopismo>cena[waluta="USD"]:after{
+    content: " $";
+}
+książka>cena,e-book>cena,czasopismo>cena{
+	font-style:italic;
+	color:black;
+}
+
+
+książka:after,e-book:after,czasopismo:after {
+	padding-top:10px;
+	display:block;
+	text-align:center;
+	color:grey;
+	content: "- " counter(licznik) " -";
+	
+} 
+
+
+
+
+metadane{
+	display:block;
+	text-align:center;
+	font-style:italic;
+	font-size:14px;
+	color:blue;
+	margin-top:10px;
+}
+rok_akademicki{
+	display:block;
+	margin-top:10px;
+}
+rok_akademicki:before{
+	content: "Rok akademicki "	
+}
+autor_projektu{
+	display: inline;
+	margin: 0px 5px 0px 5px;
+}
