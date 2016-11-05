@@ -43,6 +43,11 @@ książka>tytuł,e-book>tytuł,czasopismo>tytuł{
 	margin-bottom:20px;
 	
 }
+książka>tytuł:after {
+	display: block;
+	color: black;
+	content: książka.attr(nazwa_kategorii) ;
+}
 książka>ilość_stron:before {
 	content: "ilość stron: ";
 }
@@ -54,7 +59,13 @@ czasopismo>częstotliwość:before {
 	content: "częstotliwość: ";
 }
 
+książka>nazwa_kategorii:before ,e-book>nazwa_kategorii:before,czasopismo>nazwa_kategorii:before{
+	content: "Nazwa kategorii: ";
+}
 
+książka>język:before ,e-book>język:before,czasopismo>język:before{
+	content: "Język: ";
+}
 
 książka>tytuł:hover,e-book>tytuł:hover,czasopismo>tytuł:hover{
 	color: black;
@@ -66,13 +77,26 @@ książka:before,e-book:before,czasopismo:before{
 	content:attr(autorzy);
 	
 }
+
+e-book>rozmiar:after {
+	content: " MB";
+}
+
+
 książka>ISBN:before,e-book>ISBN:before,czasopismo>ISBN:before{
 	content: "ISBN: " 
 }
-książka>ISBN,e-book>ISBN,czasopismo>ISBN, książka>wydanie,e-book>wydanie,czasopismo>wydanie, książka>wydawnictwo,e-book>wydanie,czasopismo>wydanie,książka>cena,e-book>cena,czasopismo>cena, książka>opis,e-book>opis,czasopismo>opis{
+książka>ISBN,e-book>ISBN,czasopismo>ISBN,
+ książka>wydanie,e-book>wydanie,czasopismo>wydanie,
+ książka>wydawnictwo,e-book>wydawnictwo,czasopismo>wydawnictwo,
+ książka>cena,e-book>cena,czasopismo>cena,
+ książka>opis,e-book>opis,czasopismo>opis
+ książka>język,e-book>język,czasopismo>język,
+ książka>nazwa_kategorii,e-book>nazwa_kategorii,czasopismo>nazwa_kategorii {
 	display: block;
 	margin-top:15px;
 	margin-bottom:15px;
+	
 }
 książka>opis>opis_skrócony,e-book>opis>opis_skrócony,czasopismo>opis>opis_skrócony{
 	font-weight:bold;
@@ -106,6 +130,7 @@ książka>cena[waluta="USD"]:after ,e-book>cena[waluta="USD"]:after,czasopismo>c
 książka>cena,e-book>cena,czasopismo>cena{
 	font-style:italic;
 	color:black;
+	
 }
 
 
