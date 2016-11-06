@@ -13,13 +13,12 @@ autorzy_książek {
 }
 książka,e-book,czasopismo
 {
-	display:inline-block;
-	
+	display:inline-block;	
 	background-color: #D9EDF7;
 	text-align: left;
 	vertical-align:top;
-	border: 1px solid;
-	border-color: #BCE8F1;
+	border: 15px solid;
+	border-color: #42bed7;
 	border-radius: 25px;
 	margin:20px 3px 0px 3px;
 	padding: 20px;
@@ -27,12 +26,12 @@ książka,e-book,czasopismo
 	min-width: 400px;
 	height: 600px;
 	counter-increment: licznik;
+	
 }
 
-księgarnia>książka:nth-child(3n) {
+księgarnia>książka:nth-child(3n+0),księgarnia>e-book:nth-child(3n+0),księgarnia>czasopismo:nth-child(3n+0) {
 	background-color:#c0e1f2;
 }
-
 
 książka>tytuł,e-book>tytuł,czasopismo>tytuł{
 	font-family: "Open Sans";
@@ -83,9 +82,20 @@ e-book>rozmiar:after {
 }
 
 
-książka>ISBN:before,e-book>ISBN:before,czasopismo>ISBN:before{
-	content: "ISBN: " 
+książka>ISBN:before{
+	content: "KSIĄŻKA  - ISBN: " 
 }
+
+e-book>ISBN:before{
+	content: "E-BOOK  - ISBN: " 
+}
+
+czasopismo>ISBN:before{
+	content: "CZASOPISMO  - ISBN: " 
+}
+
+
+
 książka>ISBN,e-book>ISBN,czasopismo>ISBN,
  książka>wydanie,e-book>wydanie,czasopismo>wydanie,
  książka>wydawnictwo,e-book>wydawnictwo,czasopismo>wydawnictwo,

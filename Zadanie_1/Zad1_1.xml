@@ -94,6 +94,50 @@
 				</opis>
             </książka>
 			
+			<książka pozycja_id="P15"  IdAutorów="CL" autorzy="Camilla Lackberg" >
+			<tytuł>Ofiara losu</tytuł>
+			<nazwa_kategorii>Psychologia</nazwa_kategorii>
+			<język>polski</język>
+				<ISBN> 9788380154742</ISBN>
+				<ilość_stron>587</ilość_stron>
+				<wydanie numerWydania="4">
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016</data_wydania>
+				</wydanie>
+                <wydawnictwo>Czarna Owca</wydawnictwo>
+                <cena waluta="PLN">18,68</cena>
+                <opis><opis_skrócony>Camilla Läckberg, jedna z najciekawszych szwedzkich pisarek, 
+				uznawana za mistrzynię skandynawskiego kryminału. </opis_skrócony>
+				Policja w Tanumshede bada wypadek samochodowy. 
+				To, co wygląda na tragiczne zdarzenie, po kolejnym, 
+				podobnym wypadku zaczyna budzić podejrzenia. Policja ma pełne ręce roboty, tym bardziej że 
+				w mieście kręcony jest telewizyjny reality show. Obecność kamer podsyca tylko konflikt między 
+				„gwiazdami” a miejscową społecznością. Pogoń za zabójcą oraz problemy osobiste wywołują u Patrika Hedströma stres i frustrację.
+				Tym silniejsze, że staje wobec największego dotąd wyzwania detektywistycznego w swojej karierze a przy okazji 
+				musi się zmierzyć z bolesną przeszłością.
+				</opis>
+            </książka>
+			
+			<książka pozycja_id="P21"   IdAutorów="PGZ RJG" autorzy="Philip G. Zimbardo, Richard J. Gerrig">
+                <tytuł>Psychologia i życie</tytuł>
+				<nazwa_kategorii>Psychologia</nazwa_kategorii>
+				<język>polski</język>
+				<ISBN>9788301172572</ISBN>
+				<ilość_stron>658</ilość_stron>
+				<wydanie numerWydania="1">
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2008-01-10</data_wydania>
+				</wydanie>
+                <wydawnictwo>PWN</wydawnictwo>
+                <cena waluta="PLN">107,28</cena>
+                <opis><opis_skrócony>Najlepszy podręcznik wprowadzający w tematykę psychologii.</opis_skrócony>
+				Książka ta: prezentuje wiedzę z całego zakresu psychologii,
+                    dostarcza naukowych narzędzi do krytycznej oceny wiarygodności wyników badań oraz potocznej wiedzy psychologicznej,
+                    napisany przystępnym językiem, zawiera ilustracje ułatwiające zrozumienie najtrudniejszych zagadnień,
+                    znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
+				</opis>
+            </książka>
+			
 			<e-book pozycja_id="P12"   IdAutorów="AC" autorzy="Agata Christie">
 			    <tytuł>Dopóki starczy światła</tytuł>
 				<nazwa_kategorii>Psychologia</nazwa_kategorii>
@@ -135,29 +179,7 @@
 				</opis>
             </czasopismo>
 			
-			<książka pozycja_id="P15"  IdAutorów="CL" autorzy="Camilla Lackberg" >
-			<tytuł>Ofiara losu</tytuł>
-			<nazwa_kategorii>Psychologia</nazwa_kategorii>
-			<język>polski</język>
-				<ISBN> 9788380154742</ISBN>
-				<ilość_stron>587</ilość_stron>
-				<wydanie numerWydania="4">
-				    <miejsce_wydania>Warszawa</miejsce_wydania>   
-				    <data_wydania>2016</data_wydania>
-				</wydanie>
-                <wydawnictwo>Czarna Owca</wydawnictwo>
-                <cena waluta="PLN">18,68</cena>
-                <opis><opis_skrócony>Camilla Läckberg, jedna z najciekawszych szwedzkich pisarek, 
-				uznawana za mistrzynię skandynawskiego kryminału. </opis_skrócony>
-				Policja w Tanumshede bada wypadek samochodowy. 
-				To, co wygląda na tragiczne zdarzenie, po kolejnym, 
-				podobnym wypadku zaczyna budzić podejrzenia. Policja ma pełne ręce roboty, tym bardziej że 
-				w mieście kręcony jest telewizyjny reality show. Obecność kamer podsyca tylko konflikt między 
-				„gwiazdami” a miejscową społecznością. Pogoń za zabójcą oraz problemy osobiste wywołują u Patrika Hedströma stres i frustrację.
-				Tym silniejsze, że staje wobec największego dotąd wyzwania detektywistycznego w swojej karierze a przy okazji 
-				musi się zmierzyć z bolesną przeszłością.
-				</opis>
-            </książka>
+			
 			<e-book pozycja_id="P16"  IdAutorów="AC" autorzy="Agata Christie">
                 <tytuł>Tajemnica Sittaford</tytuł>
 				<nazwa_kategorii>Psychologia</nazwa_kategorii>
@@ -179,25 +201,7 @@
     	
 	
    
-            <książka pozycja_id="P21"   IdAutorów="PGZ RJG" autorzy="Philip G. Zimbardo, Richard J. Gerrig">
-                <tytuł>Psychologia i życie</tytuł>
-				<nazwa_kategorii>Psychologia</nazwa_kategorii>
-				<język>polski</język>
-				<ISBN>9788301172572</ISBN>
-				<ilość_stron>658</ilość_stron>
-				<wydanie numerWydania="1">
-				    <miejsce_wydania>Warszawa</miejsce_wydania>   
-				    <data_wydania>2008-01-10</data_wydania>
-				</wydanie>
-                <wydawnictwo>PWN</wydawnictwo>
-                <cena waluta="PLN">107,28</cena>
-                <opis><opis_skrócony>Najlepszy podręcznik wprowadzający w tematykę psychologii.</opis_skrócony>
-				Książka ta: prezentuje wiedzę z całego zakresu psychologii,
-                    dostarcza naukowych narzędzi do krytycznej oceny wiarygodności wyników badań oraz potocznej wiedzy psychologicznej,
-                    napisany przystępnym językiem, zawiera ilustracje ułatwiające zrozumienie najtrudniejszych zagadnień,
-                    znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
-				</opis>
-            </książka>
+            
     
 	
 	

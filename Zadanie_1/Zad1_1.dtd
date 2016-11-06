@@ -1,7 +1,10 @@
-﻿<!ELEMENT autorzy_książek  ( autor+ )>
+﻿<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
+
+<!ELEMENT autorzy_książek  ( autor+ )>
 <!ELEMENT autor  ( imięPierwsze , imięDrugie? , nazwisko )>
 <!ELEMENT imięPierwsze  ( #PCDATA )>
 <!ELEMENT imięDrugie  ( #PCDATA )>
+<!ELEMENT nazwisko  ( #PCDATA )>
 <!ATTLIST autor
 IdAutorów ID #REQUIRED
 >
@@ -36,7 +39,7 @@ autorzy CDATA #REQUIRED
 
 <!ELEMENT tytuł  ( #PCDATA )>
 <!ELEMENT nazwa_kategorii  ( #PCDATA )>
-<!ELEMENT język  ( #PCDATA )>
+<!ELEMENT język (#PCDATA) >
 <!ELEMENT ISBN  ( #PCDATA )>
 <!ELEMENT ilość_stron  ( #PCDATA )>
 <!ELEMENT rozmiar  ( #PCDATA )>
@@ -45,30 +48,26 @@ autorzy CDATA #REQUIRED
 <!ATTLIST wydanie
 numerWydania CDATA #REQUIRED
 >
+<!ELEMENT miejsce_wydania  ( #PCDATA )>
+<!ELEMENT data_wydania  ( #PCDATA )>
 <!ELEMENT wydawnictwo  ( #PCDATA )>
+<!ELEMENT cena  ( #PCDATA )>
+<!ATTLIST cena
+waluta (PLN|EUR|GBP|USD) "PLN" 
+>
 
+<!ELEMENT opis  ( #PCDATA | opis_skrócony )* >
+<!ELEMENT opis_skrócony  ( #PCDATA )>
 
-
+<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
 <!ELEMENT autor_projektu  ( #PCDATA )>
 <!ATTLIST autor_projektu
 indeks  (195560 | 195627) "195560"
 >
-
-
-
-
-
-
-
-
-
 <!ELEMENT rok_akademicki  ( #PCDATA )>
 
 
 
-<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
-
-<!ELEMENT nazwisko  ( #PCDATA )>
 
 
 
@@ -82,22 +81,3 @@ indeks  (195560 | 195627) "195560"
 
 
 
-<!ELEMENT data_wydania  ( #PCDATA )>
-
-<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
-
-
-<!ELEMENT opis_skrócony  ( #PCDATA )>
-
-
-
-<!ELEMENT miejsce_wydania  ( #PCDATA )>
-
-<!ELEMENT cena  ( #PCDATA )>
-<!ATTLIST cena
-waluta CDATA #REQUIRED
->
-
-
-
-<!ELEMENT opis  ( #PCDATA | opis_skrócony )* >
