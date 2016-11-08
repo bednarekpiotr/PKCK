@@ -42,11 +42,7 @@ książka>tytuł,e-book>tytuł,czasopismo>tytuł{
 	margin-bottom:20px;
 	
 }
-książka>tytuł:after {
-	display: block;
-	color: black;
-	content: książka.attr(nazwa_kategorii) ;
-}
+
 książka>ilość_stron:before {
 	content: "ilość stron: ";
 }
