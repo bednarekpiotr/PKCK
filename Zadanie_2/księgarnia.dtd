@@ -1,0 +1,83 @@
+﻿<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
+
+<!ELEMENT autorzy_książek  ( autor+ )>
+<!ELEMENT autor  ( imięPierwsze , imięDrugie? , nazwisko )>
+<!ELEMENT imięPierwsze  ( #PCDATA )>
+<!ELEMENT imięDrugie  ( #PCDATA )>
+<!ELEMENT nazwisko  ( #PCDATA )>
+<!ATTLIST autor
+IdAutorów ID #REQUIRED
+>
+
+<!ELEMENT lista_kategorii  ( definicja_kategorii+ )>
+<!ELEMENT definicja_kategorii  EMPTY>
+<!ATTLIST definicja_kategorii
+idKategorii CDATA #REQUIRED
+nazwa CDATA #REQUIRED
+>
+
+<!ELEMENT książka  ( tytuł , nazwa_kategorii , język , ISBN , ilość_stron , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST książka
+pozycja_id CDATA #REQUIRED
+IdAutorów IDREFS #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT e-book  ( tytuł , nazwa_kategorii , język , ISBN , rozmiar , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST e-book
+pozycja_id CDATA #REQUIRED
+IdAutorów IDREFS #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT czasopismo  ( tytuł , nazwa_kategorii , język , ISBN , częstotliwość , wydanie , wydawnictwo , cena , opis )>
+<!ATTLIST czasopismo
+pozycja_id CDATA #REQUIRED
+IdAutorów IDREFS #REQUIRED
+autorzy CDATA #REQUIRED
+>
+
+<!ELEMENT tytuł  ( #PCDATA )>
+<!ELEMENT nazwa_kategorii  ( #PCDATA )>
+<!ELEMENT język (#PCDATA) >
+<!ELEMENT ISBN  ( #PCDATA )>
+<!ELEMENT ilość_stron  ( #PCDATA )>
+<!ELEMENT rozmiar  ( #PCDATA )>
+<!ELEMENT częstotliwość  ( #PCDATA )>
+<!ELEMENT wydanie  ( miejsce_wydania , data_wydania )>
+<!ATTLIST wydanie
+numerWydania CDATA #REQUIRED
+>
+<!ELEMENT miejsce_wydania  ( #PCDATA )>
+<!ELEMENT data_wydania  ( #PCDATA )>
+<!ELEMENT wydawnictwo  ( #PCDATA )>
+<!ELEMENT cena  ( #PCDATA )>
+<!ATTLIST cena
+waluta (PLN|EUR|GBP|USD) "PLN" 
+>
+
+<!ELEMENT opis  ( #PCDATA | opis_skrócony )* >
+<!ELEMENT opis_skrócony  ( #PCDATA )>
+
+<!ELEMENT metadane  ( autor_projektu+ , rok_akademicki )>
+<!ELEMENT autor_projektu  ( #PCDATA )>
+<!ATTLIST autor_projektu
+indeks  (195560 | 195627) "195560"
+>
+<!ELEMENT rok_akademicki  ( #PCDATA )>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
