@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="./Zadanie2.css" type="text/css"?>
+<?xml-stylesheet href="./Zad1_1.css" type="text/css"?>
 
-<księgarnia xsi:SchemaLocation="księgarnia.xsd"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <autorzy>
+<!DOCTYPE księgarnia SYSTEM "Zad1_1.dtd">
+
+
+<księgarnia>
+    <autorzy_książek>
 	<autor IdAutorów="PGZ" >
 	<imięPierwsze>Philip</imięPierwsze>
 	<imięDrugie>G.</imięDrugie>
@@ -62,7 +65,7 @@
 	<imięPierwsze>Stephen</imięPierwsze>
 	<nazwisko>King</nazwisko>	
 	</autor>
-    </autorzy>
+    </autorzy_książek>
 	
 	<lista_kategorii>
 	<definicja_kategorii idKategorii="PSYCH" nazwa="Psychologia" />
@@ -537,10 +540,8 @@
 				</opis>
 	</książka>
 	 <metadane>
-	 <autorzy_projektu>
-        <autor indeks="195627"> Bogdan Kosmala </autor>
-		<autor indeks="195560"> Piotr Bednarek </autor>
+        <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
+		<autor_projektu indeks="195560"> Piotr Bednarek </autor_projektu>
         <rok_akademicki>2016/2017</rok_akademicki>
-		</autorzy_projektu>
     </metadane>
 </księgarnia>

@@ -1,4 +1,4 @@
-﻿<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
+<!ELEMENT księgarnia  ( autorzy_książek , lista_kategorii , (książka | e-book | czasopismo)* , metadane)>
 
 <!ELEMENT autorzy_książek  ( autor+ )>
 <!ELEMENT autor  ( imięPierwsze , imięDrugie? , nazwisko )>

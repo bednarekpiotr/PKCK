@@ -1,168 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-			xmlns:a="http://autorzy.example.com">
-
-<xs:element name="księgarnia">
-	<xs:complexType>
-		<xs:sequence>
-			<xs:element ref="autorzy"/>
-			<xs:element ref="lista_kategorii"/>
-			<xs:choice>
-			<xs:element ref="książka" maxOccurs="unbounded"/>
-			<xs:element ref="e-book" maxOccurs="unbounded"/>
-			<xs:element ref="czasopismo" maxOccurs="unbounded"/>
-			</xs:choice>
-			<xs:element ref="metadane" />			
-		</xs:sequence>
-	</xs:complexType>
-</xs:element>
-
-<xs:element name="lista_kategorii">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="definicja_kategorii" maxOccurs="unbounded"/>
-			</xs:sequence>
-		</xs:complexType>
-</xs:element>
-	
-<xs:element name="definicja_kategorii">
-		<xs:complexType>
-			<xs:attribute name="idKategorii" type="xs:token" use="required"/>
-			<xs:attribute name="nazwa" type="xs:token" use="required"/>
-		</xs:complexType>
-</xs:element>
-
-<xs:element name="książka">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="tytuł"/>
-				<xs:element ref="nazwa_kategorii"/>
-				<xs:element ref="język">
-					<xs:simpleType>
-						<xs:restriction base="xs:token">
-							<xs:enumeration value="polski"/>
-							<xs:enumeration value="angielski"/>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:element>
-				<xs:element ref="ISBN"/>
-				<xs:element ref="ilość_stron"/>
-				<xs:element ref="wydanie"/>
-				<xs:element ref="wydawnictwo"/>
-				<xs:element ref="cena"/>
-				<xs:element ref="opis"/>
-			</xs:sequence>
-			<xs:attribute name="pozycja_id" type="xs:string" use="required"/>
-			<xs:attribute name="IdAutorów" type="xs:string" use="required"/>
-			<xs:attribute name="autorzy" type="xs:string" use="required"/>
-		</xs:complexType>
-	</xs:element>
-			
-			
-	<xs:element name="nazwa_kategorii" type="xs:string"/>
-	
-	
-	<xs:element name="imięDrugie" type="xs:string"/>
-	<xs:element name="e-book">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="tytuł"/>
-				<xs:element ref="nazwa_kategorii"/>
-				<xs:element ref="język"/>
-				<xs:element ref="ISBN"/>
-				<xs:element ref="rozmiar"/>
-				<xs:element ref="wydanie"/>
-				<xs:element ref="wydawnictwo"/>
-				<xs:element ref="cena"/>
-				<xs:element ref="opis"/>
-			</xs:sequence>
-			<xs:attribute name="pozycja_id" type="xs:string" use="required"/>
-			<xs:attribute name="IdAutorów" type="xs:string" use="required"/>
-			<xs:attribute name="autorzy" type="xs:string" use="required"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="czasopismo">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="tytuł"/>
-				<xs:element ref="nazwa_kategorii"/>
-				<xs:element ref="język"/>
-				<xs:element ref="ISBN"/>
-				<xs:element ref="częstotliwość"/>
-				<xs:element ref="wydanie"/>
-				<xs:element ref="wydawnictwo"/>
-				<xs:element ref="cena"/>
-				<xs:element ref="opis"/>
-			</xs:sequence>
-			<xs:attribute name="pozycja_id" type="xs:string" use="required"/>
-			<xs:attribute name="IdAutorów" type="xs:string" use="required"/>
-			<xs:attribute name="autorzy" type="xs:string" use="required"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ilość_stron" type="xs:string"/>
-	<xs:element name="rok_akademicki" type="xs:string"/>
-	<xs:element name="ISBN" type="xs:string"/>
-	<xs:element name="metadane">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="autorzy"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="nazwisko" type="xs:string"/>
-	
-	<xs:element name="autorzy_projektu">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="autor" maxOccurs="unbounded"/>
-				<xs:element ref="rok_akademicki" minOccurs="0"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="imięPierwsze" type="xs:string"/>
-	<xs:element name="wydanie">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="miejsce_wydania"/>
-				<xs:element ref="data_wydania"/>
-			</xs:sequence>
-			<xs:attribute name="numerWydania" type="xs:string" use="required"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="tytuł" type="xs:string"/>
-	<xs:element name="język" type="xs:string"/>
-	<xs:element name="autor">
-		<xs:complexType mixed="true">
-			<xs:sequence>
-				<xs:element ref="imięPierwsze" minOccurs="0"/>
-				<xs:element ref="imięDrugie" minOccurs="0"/>
-				<xs:element ref="nazwisko" minOccurs="0"/>
-			</xs:sequence>
-			<xs:attribute name="IdAutorów" type="xs:string"/>
-			<xs:attribute name="indeks" type="xs:string"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="rozmiar" type="xs:string"/>
-	<xs:element name="data_wydania" type="xs:string"/>
-	
-	<xs:element name="opis_skrócony" type="xs:string"/>
-	<xs:element name="częstotliwość" type="xs:string"/>
-	<xs:element name="miejsce_wydania" type="xs:string"/>
-	<xs:element name="cena">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:extension base="xs:string">
-					<xs:attribute name="waluta" type="xs:string" use="required"/>
-				</xs:extension>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="wydawnictwo" type="xs:string"/>
-	<xs:element name="opis">
-		<xs:complexType mixed="true">
-			<xs:sequence>
-				<xs:element ref="opis_skrócony"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="księgarnia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="autorzy_książek"/>
+        <xs:element ref="lista_kategorii"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="książka"/>
+          <xs:element ref="e-book"/>
+          <xs:element ref="czasopismo"/>
+        </xs:choice>
+        <xs:element ref="metadane"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autorzy_książek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="autor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="imięPierwsze"/>
+        <xs:element minOccurs="0" ref="imięDrugie"/>
+        <xs:element ref="nazwisko"/>
+      </xs:sequence>
+      <xs:attribute name="IdAutorów" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="imięPierwsze" type="xs:string"/>
+  <xs:element name="imięDrugie" type="xs:string"/>
+  <xs:element name="nazwisko" type="xs:string"/>
+  <xs:element name="lista_kategorii">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="definicja_kategorii"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="definicja_kategorii">
+    <xs:complexType>
+      <xs:attribute name="idKategorii" use="required"/>
+      <xs:attribute name="nazwa" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="książka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tytuł"/>
+        <xs:element ref="nazwa_kategorii"/>
+        <xs:element ref="język"/>
+        <xs:element ref="ISBN"/>
+        <xs:element ref="ilość_stron"/>
+        <xs:element ref="wydanie"/>
+        <xs:element ref="wydawnictwo"/>
+        <xs:element ref="cena"/>
+        <xs:element ref="opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required"/>
+      <xs:attribute name="IdAutorów" use="required" type="xs:IDREFS"/>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="e-book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tytuł"/>
+        <xs:element ref="nazwa_kategorii"/>
+        <xs:element ref="język"/>
+        <xs:element ref="ISBN"/>
+        <xs:element ref="rozmiar"/>
+        <xs:element ref="wydanie"/>
+        <xs:element ref="wydawnictwo"/>
+        <xs:element ref="cena"/>
+        <xs:element ref="opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required"/>
+      <xs:attribute name="IdAutorów" use="required" type="xs:IDREFS"/>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="czasopismo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tytuł"/>
+        <xs:element ref="nazwa_kategorii"/>
+        <xs:element ref="język"/>
+        <xs:element ref="ISBN"/>
+        <xs:element ref="częstotliwość"/>
+        <xs:element ref="wydanie"/>
+        <xs:element ref="wydawnictwo"/>
+        <xs:element ref="cena"/>
+        <xs:element ref="opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required"/>
+      <xs:attribute name="IdAutorów" use="required" type="xs:IDREFS"/>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tytuł" type="xs:string"/>
+  <xs:element name="nazwa_kategorii" type="xs:string"/>
+  <xs:element name="język" type="xs:string"/>
+  <xs:element name="ISBN" type="xs:string"/>
+  <xs:element name="ilość_stron" type="xs:string"/>
+  <xs:element name="rozmiar" type="xs:string"/>
+  <xs:element name="częstotliwość" type="xs:string"/>
+  <xs:element name="wydanie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="miejsce_wydania"/>
+        <xs:element ref="data_wydania"/>
+      </xs:sequence>
+      <xs:attribute name="numerWydania" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="miejsce_wydania" type="xs:string"/>
+  <xs:element name="data_wydania" type="xs:string"/>
+  <xs:element name="wydawnictwo" type="xs:string"/>
+  <xs:element name="cena">
+    <xs:complexType mixed="true">
+      <xs:attribute name="waluta" default="PLN">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="PLN"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="GBP"/>
+            <xs:enumeration value="USD"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opis">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="opis_skrócony"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opis_skrócony" type="xs:string"/>
+  <xs:element name="metadane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="autor_projektu"/>
+        <xs:element ref="rok_akademicki"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autor_projektu">
+    <xs:complexType mixed="true">
+      <xs:attribute name="indeks" default="195560">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="195560"/>
+            <xs:enumeration value="195627"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rok_akademicki" type="xs:string"/>
 </xs:schema>

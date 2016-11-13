@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="./Zad1_1.css" type="text/css"?>
 
-<!DOCTYPE księgarnia SYSTEM "Zad1_1.dtd">
-
-
-<księgarnia>
-    <autorzy_książek>
-	<autor IdAutorów="PGZ" >
+<księgarnia  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="księgarnia.xsd" >
+    <autorzy>
+	<autor IdAutorów="PGZ">
 	<imięPierwsze>Philip</imięPierwsze>
 	<imięDrugie>G.</imięDrugie>
 	<nazwisko>Zimbardo</nazwisko>
@@ -65,7 +61,7 @@
 	<imięPierwsze>Stephen</imięPierwsze>
 	<nazwisko>King</nazwisko>	
 	</autor>
-    </autorzy_książek>
+    </autorzy>
 	
 	<lista_kategorii>
 	<definicja_kategorii idKategorii="PSYCH" nazwa="Psychologia" />
@@ -80,7 +76,7 @@
                 <tytuł>Dziewczyna z pociągu</tytuł>
 				<nazwa_kategorii>Psychologia</nazwa_kategorii>
 				<język>polski</język>
-				<ISBN>9788380316904</ISBN>
+				<ISBN>9788380316998</ISBN>
 				<ilość_stron>365</ilość_stron>
 				<wydanie numerWydania="1">
 				    <miejsce_wydania>Warszawa</miejsce_wydania>   
@@ -540,8 +536,10 @@
 				</opis>
 	</książka>
 	 <metadane>
-        <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
-		<autor_projektu indeks="195560"> Piotr Bednarek </autor_projektu>
+	 <autorzy_projektu>
+        <autor indeks="195627"> Bogdan Kosmala </autor>
+		<autor indeks="195560"> Piotr Bednarek </autor>
         <rok_akademicki>2016/2017</rok_akademicki>
+		</autorzy_projektu>
     </metadane>
 </księgarnia>
