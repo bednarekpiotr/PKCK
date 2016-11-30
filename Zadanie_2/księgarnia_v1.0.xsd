@@ -174,7 +174,7 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="rozmiar" type="xs:string"/>
-	<xs:element name="data_wydania" type="xs:string"/>
+	<xs:element name="data_wydania" type="xs:date"/>
 	
 	<xs:element name="opis_skrócony" type="xs:string"/>
 	<xs:element name="częstotliwość" type="xs:string"/>

@@ -14,6 +14,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+   
+  
   <xs:element name="autorzy_książek">
     <xs:complexType>
       <xs:sequence>
@@ -21,7 +23,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="autor">
+  
+   <xs:element name="autor">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="imięPierwsze"/>
@@ -31,23 +34,31 @@
       <xs:attribute name="IdAutorów" use="required" type="xs:ID"/>
     </xs:complexType>
   </xs:element>
+  
   <xs:element name="imięPierwsze" type="xs:string"/>
   <xs:element name="imięDrugie" type="xs:string"/>
   <xs:element name="nazwisko" type="xs:string"/>
-  <xs:element name="lista_kategorii">
+  
+  
+  
+   <xs:element name="lista_kategorii">
     <xs:complexType>
       <xs:sequence>
         <xs:element maxOccurs="unbounded" ref="definicja_kategorii"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="definicja_kategorii">
+ 
+   <xs:element name="definicja_kategorii">
     <xs:complexType>
       <xs:attribute name="idKategorii" use="required"/>
       <xs:attribute name="nazwa" use="required"/>
     </xs:complexType>
   </xs:element>
-  <xs:element name="książka">
+  
+  
+  
+   <xs:element name="książka">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="tytuł"/>
@@ -65,7 +76,8 @@
       <xs:attribute name="autorzy" use="required"/>
     </xs:complexType>
   </xs:element>
-  <xs:element name="e-book">
+  
+ <xs:element name="e-book">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="tytuł"/>
@@ -83,7 +95,9 @@
       <xs:attribute name="autorzy" use="required"/>
     </xs:complexType>
   </xs:element>
-  <xs:element name="czasopismo">
+  
+  
+<xs:element name="czasopismo">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="tytuł"/>
@@ -101,14 +115,27 @@
       <xs:attribute name="autorzy" use="required"/>
     </xs:complexType>
   </xs:element>
-  <xs:element name="tytuł" type="xs:string"/>
-  <xs:element name="nazwa_kategorii" type="xs:string"/>
-  <xs:element name="język" type="xs:string"/>
-  <xs:element name="ISBN" type="xs:string"/>
-  <xs:element name="ilość_stron" type="xs:string"/>
-  <xs:element name="rozmiar" type="xs:string"/>
-  <xs:element name="częstotliwość" type="xs:string"/>
-  <xs:element name="wydanie">
+  
+<xs:element name="tytuł" type="xs:string"/>
+<xs:element name="nazwa_kategorii" type="xs:string"/> 
+
+<xs:element name="język" >
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="polski"/>
+			<xs:enumeration value="angielski"/>
+			
+		</xs:restriction>
+	</xs:simpleType>
+  </xs:element>
+  
+<xs:element name="ISBN" type="xs:string"/> 
+
+<xs:element name="ilość_stron" type="xs:integer"/>
+<xs:element name="rozmiar" type="xs:integer"/>
+<xs:element name="częstotliwość" type="xs:string"/> 
+
+<xs:element name="wydanie">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="miejsce_wydania"/>
@@ -116,33 +143,23 @@
       </xs:sequence>
       <xs:attribute name="numerWydania" use="required"/>
     </xs:complexType>
-  </xs:element>
-  <xs:element name="miejsce_wydania" type="xs:string"/>
-  <xs:element name="data_wydania" type="xs:string"/>
-  <xs:element name="wydawnictwo" type="xs:string"/>
-  <xs:element name="cena">
-    <xs:complexType mixed="true">
-      <xs:attribute name="waluta" default="PLN">
-        <xs:simpleType>
-          <xs:restriction base="xs:token">
-            <xs:enumeration value="PLN"/>
-            <xs:enumeration value="EUR"/>
-            <xs:enumeration value="GBP"/>
-            <xs:enumeration value="USD"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="opis">
+  </xs:element> 
+  
+<xs:element name="miejsce_wydania" type="xs:string"/>
+<xs:element name="data_wydania" type="xs:string"/>
+<xs:element name="wydawnictwo" type="xs:string"/>
+<xs:element name="cena" /> 
+<xs:element name="opis">
     <xs:complexType mixed="true">
       <xs:sequence>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="opis_skrócony"/>
       </xs:sequence>
     </xs:complexType>
-  </xs:element>
-  <xs:element name="opis_skrócony" type="xs:string"/>
-  <xs:element name="metadane">
+</xs:element>
+  
+<xs:element name="opis_skrócony" type="xs:string"/> 
+  
+<xs:element name="metadane">
     <xs:complexType>
       <xs:sequence>
         <xs:element maxOccurs="unbounded" ref="autor_projektu"/>
