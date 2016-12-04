@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:typ="http://www.example.org/typyNasze"
+targetNamespace="http://www.example.org/typyNasze" 
+ elementFormDefault="qualified">
+
+    <xs:complexType name="KsięgarniaTyp">
+      <xs:sequence>
+        <xs:element ref="typ:autorzy_książek"/>
+        <xs:element ref="typ:lista_kategorii"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="typ:książka"/>
+          <xs:element ref="typ:e-book"/>
+          <xs:element ref="typ:czasopismo"/>
+        </xs:choice>
+        <xs:element ref="typ:metadane"/>
+      </xs:sequence>
+    </xs:complexType>
+	
+	<xs:simpleType name="IDAutorTyp">
+			<xs:restriction base="xs:token">
+				<xs:pattern value="[A-Z][A-Z][A-Z]?"/>
+			</xs:restriction>
+	</xs:simpleType>
+
+  <xs:element name="księgarnia" type="typ:KsięgarniaTyp">
+	<xs:key name="IdAutorKey">
+		<xs:selector xpath="typ:autorzy_książek/typ:autor"/>
+		<xs:field xpath="@IdAutora" />
+	</xs:key>
+
+	<xs:keyref name = "IdAutorKeyRef" refer = "typ:IdAutorKey" >
+		<xs:selector xpath="typ:książka | typ:e-book | typ:czasopismo"/>
+		<xs:field xpath="@IdAutora" />
+	</xs:keyref>
+	
+	<xs:keyref name = "IdAutorDrugiKeyRef" refer = "typ:IdAutorKey" >
+		<xs:selector xpath="typ:książka | typ:e-book | typ:czasopismo"/>
+        <xs:field xpath="@IdAutoraDrugiego" />
+	</xs:keyref>
+  </xs:element>
+   
+  
+  <xs:element name="autorzy_książek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="typ:autor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+   <xs:element name="autor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ:imięPierwsze"/>
+        <xs:element minOccurs="0" ref="typ:imięDrugie"/>
+        <xs:element ref="typ:nazwisko"/>
+      </xs:sequence>
+      <xs:attribute name="IdAutora" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="imięPierwsze">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value = "[A-Z][a-z]*" />
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>  
+  </xs:element>
+  
+  <xs:element name="imięDrugie" >
+  <xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value = "[A-Z][a-z]*" />
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	</xs:element>
+	
+  <xs:element name="nazwisko">
+   <xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value = "[A-Z][a-z]*(-[A-Z][a-z]*)?" />
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	</xs:element>
+  
+  
+  
+   <xs:element name="lista_kategorii">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="typ:definicja_kategorii"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ 
+   <xs:element name="definicja_kategorii">
+    <xs:complexType>
+      <xs:attribute name="idKategorii" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="[A-Z]*"/>
+				<xs:maxLength value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	  </xs:attribute>
+      <xs:attribute name="nazwa" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="[A-Z][a-z]*"/>
+				<xs:maxLength value="25"/>
+			</xs:restriction>
+		</xs:simpleType>
+	 </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  
+  
+   <xs:element name="książka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ:tytuł"/>
+        <xs:element ref="typ:nazwa_kategorii"/>
+        <xs:element ref="typ:język"/>
+        <xs:element ref="typ:ISBN"/>
+        <xs:element ref="typ:ilość_stron"/>
+        <xs:element ref="typ:wydanie"/>
+        <xs:element ref="typ:wydawnictwo"/>
+        <xs:element ref="typ:cena"/>
+        <xs:element ref="typ:opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="P[1-9][0-9]*"/>
+				<xs:maxLength value="4"/>
+			</xs:restriction>
+		</xs:simpleType>
+	  </xs:attribute>	   
+      <xs:attribute name="IdAutora" type="typ:IDAutorTyp" use="required" >
+	</xs:attribute>
+	<xs:attribute name="IdAutoraDrugiego" type="typ:IDAutorTyp" use="optional" >
+	</xs:attribute>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+ <xs:element name="e-book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ:tytuł"/>
+        <xs:element ref="typ:nazwa_kategorii"/>
+        <xs:element ref="typ:język"/>
+        <xs:element ref="typ:ISBN"/>
+        <xs:element ref="typ:rozmiar"/>
+        <xs:element ref="typ:wydanie"/>
+        <xs:element ref="typ:wydawnictwo"/>
+        <xs:element ref="typ:cena"/>
+        <xs:element ref="typ:opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="P[1-9][0-9]*"/>
+				<xs:maxLength value="4"/>
+			</xs:restriction>
+		</xs:simpleType>
+	  </xs:attribute>	   
+      <xs:attribute name="IdAutora" type="typ:IDAutorTyp" use="required" >
+	</xs:attribute>
+	<xs:attribute name="IdAutoraDrugiego" type="typ:IDAutorTyp" use="optional" >
+	</xs:attribute>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  
+<xs:element name="czasopismo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ:tytuł"/>
+        <xs:element ref="typ:nazwa_kategorii"/>
+        <xs:element ref="typ:język"/>
+        <xs:element ref="typ:ISBN"/>
+        <xs:element ref="typ:częstotliwość"/>
+        <xs:element ref="typ:wydanie"/>
+        <xs:element ref="typ:wydawnictwo"/>
+        <xs:element ref="typ:cena"/>
+        <xs:element ref="typ:opis"/>
+      </xs:sequence>
+      <xs:attribute name="pozycja_id" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:token">
+				<xs:pattern value="P[1-9][0-9]*"/>
+				<xs:maxLength value="4"/>
+			</xs:restriction>
+		</xs:simpleType>
+	  </xs:attribute>	   
+      <xs:attribute name="IdAutora" type="typ:IDAutorTyp" use="required" >
+	</xs:attribute>
+	<xs:attribute name="IdAutoraDrugiego" type="typ:IDAutorTyp" use="optional" >
+	</xs:attribute>
+      <xs:attribute name="autorzy" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  
+<xs:element name="tytuł">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="nazwa_kategorii" >
+<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[A-Z][a-z]*"/>
+			<xs:maxLength value="40"/>
+		</xs:restriction>
+	</xs:simpleType> 
+</xs:element>
+
+<xs:element name="język" >
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="polski"/>
+			<xs:enumeration value="angielski"/>			
+		</xs:restriction>
+	</xs:simpleType>
+  </xs:element>
+  
+<xs:element name="ISBN">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[0-9]{13}" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>	
+
+<xs:element name="ilość_stron">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="99999" />
+			<xs:minInclusive value= "1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="rozmiar">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="9999" />
+			<xs:minInclusive value= "1" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="częstotliwość">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="dziennik" />
+			<xs:enumeration value="tygodnik" />
+			<xs:enumeration value="miesięcznik" />
+			<xs:enumeration value="kwartalnik" />
+			<xs:enumeration value="rocznik" />			
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element> 
+
+<xs:element name="wydanie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="typ:miejsce_wydania"/>
+        <xs:element ref="typ:data_wydania"/>
+      </xs:sequence>
+	<xs:attribute name="numerWydania" type="xs:integer"/>
+	</xs:complexType>
+</xs:element> 
+  
+<xs:element name="miejsce_wydania">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*"/>
+			<xs:maxLength value="40" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="data_wydania">
+	<xs:simpleType>
+		<xs:restriction base="xs:date">
+			<xs:maxInclusive value="2016-11-30" />
+			<xs:minInclusive value= "1455-01-01" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="wydawnictwo" >
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:pattern value="[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*( [A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]*)*"/>
+			<xs:maxLength value="40" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="cena">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:decimal">
+					<xs:attribute name="waluta"  use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:token">
+							<xs:enumeration value="PLN" />
+							<xs:enumeration value="EUR" />
+							<xs:enumeration value="GBP" />
+							<xs:enumeration value="USD" />
+							</xs:restriction>
+							</xs:simpleType>
+				</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+
+<xs:element name="opis">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="typ:opis_skrócony"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+  
+<xs:element name="opis_skrócony" type="xs:string"/> 
+  
+<xs:element name="metadane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="2" ref="typ:autor_projektu"/>
+        <xs:element ref="typ:rok_akademicki"/>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+  <xs:element name="autor_projektu">
+    <xs:complexType mixed="true">
+      <xs:attribute name="indeks" default="195560">
+        <xs:simpleType>
+          <xs:restriction base="xs:token">
+            <xs:enumeration value="195560"/>
+            <xs:enumeration value="195627"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="rok_akademicki" default="2016/2017"/>
+</xs:schema>
