@@ -30,6 +30,30 @@
 					</tr>
 				</xsl:for-each>
 			</table>
+		<table  border="1">
+				<tr>
+					<th style="text-align:center">Liczba Pozycji</th>
+					<th style="text-align:left">Liczba Książek</th>
+					<th style="text-align:left">Liczba Ebooków</th>	
+					<th style="text-align:left">Liczba Czasopism</th>
+					
+				</tr>	
+						
+			
+
+
+					<tr>
+						<td style="text-align:center"><xsl:value-of select="księgarnia/Statystyki/Ogólne/LiczbaPozycji"/></td>
+						<td style="text-align:center"><xsl:value-of select="LiczbaKsiążek"/></td>
+						<td style="text-align:center"><xsl:value-of select="LiczbaEbooków"/></td>
+						<td style="text-align:center"><xsl:value-of select="LiczbaCzasopism"/></td>
+		
+					</tr>
+
+				</table>
+			
+
+			
 	</body>
 </html>
 	
