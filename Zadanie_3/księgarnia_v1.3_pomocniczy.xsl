@@ -4,7 +4,7 @@
                 xmlns:xalan="http://xml.apache.org/xslt">
 <xsl:output method="xml" version="1.0" encoding="UTF-8"  omit-xml-declaration="no"  indent="yes" xalan:indent-amount="4"/>
 
-<xsl:key name="IdAutoraKey" match="Stanowisko" use="@id"/>
+<xsl:key name="IdAutoraKey" match="autor" use="@IdAutora"/>
 
 
 
@@ -13,6 +13,31 @@
         <xsl:apply-templates select="@* | node() "/>
     </xsl:copy>
 </xsl:template>
+
+<xsl:template match="opis" />
+<xsl:template match="lista_kategorii" />
+<xsl:template match="książka/@pozycja_id" />
+<xsl:template match="książka/@autorzy" />
+<xsl:template match="autorzy_książek" />
+
+
+<xsl:template match="księgarnia/książka" >
+<xsl:element name="książka">
+	<xsl:apply-templates/>	
+	    <xsl:element name="Autorzy">
+			<xsl:element name="Autor">
+				<xsl:value-of select="key('IdAutoraKey', @IdAutora)"/>
+			</xsl:element>
+			<xsl:element name="Autor">
+				<xsl:value-of select="key('IdAutoraKey', @IdAutoraDrugiego)"/>
+			</xsl:element>
+        </xsl:element>
+</xsl:element>
+
+
+
+</xsl:template>
+
 
 <xsl:template match="księgarnia">
         <xsl:copy>
