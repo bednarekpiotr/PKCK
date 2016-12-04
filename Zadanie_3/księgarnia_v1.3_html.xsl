@@ -36,12 +36,25 @@
 				</xsl:for-each>
 			</table>
 		</div>
-			<Statystyki>
-			<xsl:apply-templates />
-			</Statystyki>
+		
+		<div>
+		<xsl:apply-templates />
+		</div>
 
 	</body>
 </html>
+</xsl:template>
+
+
+ <xsl:template match="książka">
+</xsl:template>
+
+
+ <xsl:template match="czasopismo">
+</xsl:template>
+
+
+ <xsl:template match="e-book">
 </xsl:template>
 
 
