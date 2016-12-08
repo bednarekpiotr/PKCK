@@ -51,8 +51,7 @@
 						<LiczbaCzasopism><xsl:value-of select="count(/księgarnia/czasopismo)"/></LiczbaCzasopism>
                     </Ogólne>
 					<Finansowe>
-						<ŚredniaCenaPozycji><xsl:value-of select="sum(/księgarnia/(książka/cena|e-book/cena|czasopismo/cena)) div count(/księgarnia/(książka|e-book|czasopismo))"></xsl:value-of></ŚredniaCenaPozycji>
-						<!-- <ŚredniaCenaPozycji><xsl:value-of select="round(avg(/księgarnia/książka/cena) div 0.01) * 0.01"></xsl:value-of></ŚredniaCenaPozycji> -->
+						<ŚredniaCenaPozycji><xsl:value-of select="round(sum(/księgarnia/(książka/cena|e-book/cena|czasopismo/cena)) div count(/księgarnia/(książka|e-book|czasopismo))*100)div 100"></xsl:value-of></ŚredniaCenaPozycji>
 					</Finansowe>
 				</Statystyki>
 		</xsl:copy>
