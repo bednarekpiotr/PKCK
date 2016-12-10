@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_html.xsl"?><księgarnia>
+<!-- xmlns="http://www.example.org/typyNasze" -->
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  -->
+<!-- xsi:schemaLocation="http://www.example.org/typyNasze księgarnia_v1.3.xsd" > --> 
+    
+	
+	<lista_kategorii>
+		<kategoria>
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
+		<kategoria>
+			<nazwa>Thriller</nazwa>
+		</kategoria>
+		<kategoria>
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
+		<kategoria>
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
+	</lista_kategorii>
+	
+   
+			<książka>
+			    <!-- Rodzaje: książka, czasopismo, itp-->				
+                <tytuł>Dziewczyna z pociągu</tytuł>
+				<język>polski</język>
+				<ISBN>9788380316904</ISBN>
+				<ilość_stron>365</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Świat Książki</wydawnictwo>
+                <cena waluta="USD">27.64</cena>
+                
+            <cenaPLN>110.56</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Paula
+	Hawkins
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Psychologia
+		</Kategoria>
+	</książka>
+			
+			<książka>
+			<tytuł>Ofiara losu</tytuł>
+			<język>polski</język>
+				<ISBN> 9788380154742</ISBN>
+				<ilość_stron>587</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Czarna Owca</wydawnictwo>
+                <cena waluta="PLN">18.68</cena>
+                
+            <cenaPLN>18.68</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Cmilla
+	Christie	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Psychologia
+		</Kategoria>
+	</książka>
+			
+			<książka>
+                <tytuł>Psychologia i życie</tytuł>
+				<język>polski</język>
+				<ISBN>9788301172572</ISBN>
+				<ilość_stron>658</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2008-01-10</data_wydania>
+				</wydanie>
+                <wydawnictwo>Polskie Wwydawnictwo Naukowe</wydawnictwo>
+                <cena waluta="PLN">107.28</cena>
+                
+            <cenaPLN>107.28</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Philip
+	G
+	Zimbardo
+	</Autor>
+			<Autor>
+	Richard
+	J
+	Gerrig
+	</Autor>
+		</Autorzy>
+		<Kategoria>
+			Psychologia
+		</Kategoria>
+	</książka>
+			
+			<e-book>
+			    <tytuł>Dopóki starczy światła</tytuł>
+				<język>polski</język>
+				<ISBN>9788324592821</ISBN>
+				<rozmiar>35</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Wrocław</miejsce_wydania>   
+				    <data_wydania>2012-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Dolnośląskie</wydawnictwo>
+                <cena waluta="EUR">15.57</cena>
+                
+            <cenaPLN>70.065</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Agata
+	Christie
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Psychologia
+		</Kategoria>
+	</e-book>
+			
+          	
+			<czasopismo>
+			    <tytuł>Montecristo</tytuł>
+				<język>polski</język>
+				<ISBN>9788380620896</ISBN>
+				<częstotliwość>miesięcznik</częstotliwość>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Redis</wydawnictwo>
+                <cena waluta="PLN">27.92</cena>
+                
+            <cenaPLN>27.92</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Martin
+	Suter-Suter
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</czasopismo>
+			
+			
+			<e-book>
+                <tytuł>Tajemnica Sittaford</tytuł>
+				<język>polski</język>
+				<ISBN>  9788324587933</ISBN>
+				<rozmiar>85</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Wrocław</miejsce_wydania>   
+				    <data_wydania>2010-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Dolnośląskie</wydawnictwo>
+                <cena waluta="EUR">12.74</cena>
+                
+            <cenaPLN>57.33</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Agata
+	Christie
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Psychologia
+		</Kategoria>
+	</e-book>			
+    	
+	
+   
+            
+    
+	
+	
+            <książka>
+                <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
+				<język>polski</język>
+				<ISBN>9788372781758</ISBN>
+				<ilość_stron>225</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.26</cena>
+                
+            <cenaPLN>14.26</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Fantastyka
+		</Kategoria>
+	</książka>
+			<e-book>
+                <tytuł>Ostatnia bitwa</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788832</ISBN>
+				<rozmiar>48</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.31</cena>
+                
+            <cenaPLN>14.31</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Fantastyka
+		</Kategoria>
+	</e-book>
+			<czasopismo>
+                <tytuł>Książę Kaspian</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788788</ISBN>
+				<częstotliwość>tygodnik</częstotliwość>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">15.65</cena>
+                
+            <cenaPLN>15.65</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Fantastyka
+		</Kategoria>
+	</czasopismo>
+			<książka>
+                <tytuł>Siostrzeniec Czarodzieja</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788825</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.31</cena>
+                
+            <cenaPLN>14.31</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Fantastyka
+		</Kategoria>
+	</książka>
+			<książka>
+                <tytuł>Lśnienie</tytuł>
+				<język>polski</język>
+				<ISBN>9788376488097</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Prószyński Media</wydawnictwo>
+                <cena waluta="USD">9.31</cena>
+                
+            <cenaPLN>37.24</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Stephen
+	King	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Fantastyka
+		</Kategoria>
+	</książka>
+    
+	
+	<książka>
+	<tytuł>Dieta dla aktywnych</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131165</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">25.50</cena>
+                
+	<cenaPLN>25.50</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Lorel
+	Cordial	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+		<książka>
+				<tytuł>Jedz i trenuj</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131172</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">37.43</cena>
+                
+	<cenaPLN>37.43</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Nancy
+	Clark	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Pływanie dla każdego</tytuł>
+				<język>polski</język>
+				<ISBN>9788392638704</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Zielonka</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">21.56</cena>
+                
+	<cenaPLN>21.56</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Terry
+	Laughlin	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Przewodnik po bieganiu ultra</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131271</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">18.68</cena>
+                
+	<cenaPLN>18.68</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Hal
+	Koerner    
+    </Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Triatlon Biblia treningu</tytuł>
+				<język>polski</język>
+				<ISBN>9788393264346</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">41.18</cena>
+                
+	<cenaPLN>41.18</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
+				<język>polski</język>
+				<ISBN>	9788364131066</ISBN>
+				<ilość_stron>29</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">48.60</cena>
+                
+	<cenaPLN>48.60</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Bieganie naturalne</tytuł>
+				<język>polski</język>
+				<ISBN>	9783833695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">20.30</cena>
+                
+	<cenaPLN>20.30</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Serwisowanie samochodu</tytuł>
+				<język>polski</język>
+				<ISBN>9788334131066</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">46.60</cena>
+                
+	<cenaPLN>46.60</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+		<książka>
+				<tytuł>Dieta doktora Franka</tytuł>
+				<język>polski</język>
+				<ISBN>9783864695661</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">28.80</cena>
+                
+	<cenaPLN>28.80</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+			<książka>
+				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
+				<język>polski</język>
+				<ISBN>9777864695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">17.63</cena>
+                
+	<cenaPLN>17.63</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			Poradniki
+		</Kategoria>
+	</książka>
+	 <metadane>
+        <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
+		<autor_projektu indeks="195560"> Piotr Bednarek </autor_projektu>
+        <rok_akademicki>2016/2017</rok_akademicki>
+    </metadane>
+<Kategorie xmlns:xalan="http://xml.apache.org/xslt">
+		<Kategoria>Psychologia<książka>
+			    <!-- Rodzaje: książka, czasopismo, itp-->				
+                <tytuł>Dziewczyna z pociągu</tytuł>
+				<język>polski</język>
+				<ISBN>9788380316904</ISBN>
+				<ilość_stron>365</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Świat Książki</wydawnictwo>
+                <cena waluta="USD">27.64</cena>
+                
+            </książka><książka>
+			<tytuł>Ofiara losu</tytuł>
+			<język>polski</język>
+				<ISBN> 9788380154742</ISBN>
+				<ilość_stron>587</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Czarna Owca</wydawnictwo>
+                <cena waluta="PLN">18.68</cena>
+                
+            </książka><książka IdAutoraDrugiego="RJG">
+                <tytuł>Psychologia i życie</tytuł>
+				<język>polski</język>
+				<ISBN>9788301172572</ISBN>
+				<ilość_stron>658</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2008-01-10</data_wydania>
+				</wydanie>
+                <wydawnictwo>Polskie Wwydawnictwo Naukowe</wydawnictwo>
+                <cena waluta="PLN">107.28</cena>
+                
+            </książka><e-book>
+			    <tytuł>Dopóki starczy światła</tytuł>
+				<język>polski</język>
+				<ISBN>9788324592821</ISBN>
+				<rozmiar>35</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Wrocław</miejsce_wydania>   
+				    <data_wydania>2012-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Dolnośląskie</wydawnictwo>
+                <cena waluta="EUR">15.57</cena>
+                
+            </e-book><e-book>
+                <tytuł>Tajemnica Sittaford</tytuł>
+				<język>polski</język>
+				<ISBN>  9788324587933</ISBN>
+				<rozmiar>85</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Wrocław</miejsce_wydania>   
+				    <data_wydania>2010-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Dolnośląskie</wydawnictwo>
+                <cena waluta="EUR">12.74</cena>
+                
+            </e-book></Kategoria>
+		<Kategoria>Thriller</Kategoria>
+		<Kategoria>Fantastyka<książka>
+                <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
+				<język>polski</język>
+				<ISBN>9788372781758</ISBN>
+				<ilość_stron>225</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.26</cena>
+                
+            </książka><e-book>
+                <tytuł>Ostatnia bitwa</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788832</ISBN>
+				<rozmiar>48</rozmiar>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.31</cena>
+                
+            </e-book><czasopismo>
+                <tytuł>Książę Kaspian</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788788</ISBN>
+				<częstotliwość>tygodnik</częstotliwość>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">15.65</cena>
+                
+            </czasopismo><książka>
+                <tytuł>Siostrzeniec Czarodzieja</tytuł>
+				<język>polski</język>
+				<ISBN>9788372788825</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Media Rodzina</wydawnictwo>
+                <cena waluta="PLN">14.31</cena>
+                
+            </książka><książka>
+                <tytuł>Lśnienie</tytuł>
+				<język>polski</język>
+				<ISBN>9788376488097</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Prószyński Media</wydawnictwo>
+                <cena waluta="USD">9.31</cena>
+                
+            </książka></Kategoria>
+		<Kategoria>Poradniki<czasopismo>
+			    <tytuł>Montecristo</tytuł>
+				<język>polski</język>
+				<ISBN>9788380620896</ISBN>
+				<częstotliwość>miesięcznik</częstotliwość>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Redis</wydawnictwo>
+                <cena waluta="PLN">27.92</cena>
+                
+            </czasopismo><książka>
+	<tytuł>Dieta dla aktywnych</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131165</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">25.50</cena>
+                
+	</książka><książka>
+				<tytuł>Jedz i trenuj</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131172</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Poznań</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">37.43</cena>
+                
+	</książka><książka>
+				<tytuł>Pływanie dla każdego</tytuł>
+				<język>polski</język>
+				<ISBN>9788392638704</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Zielonka</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">21.56</cena>
+                
+	</książka><książka>
+				<tytuł>Przewodnik po bieganiu ultra</tytuł>
+				<język>polski</język>
+				<ISBN>9788364131271</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">18.68</cena>
+                
+	</książka><książka>
+				<tytuł>Triatlon Biblia treningu</tytuł>
+				<język>polski</język>
+				<ISBN>9788393264346</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2016-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">41.18</cena>
+                
+	</książka><książka>
+				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
+				<język>polski</język>
+				<ISBN>	9788364131066</ISBN>
+				<ilość_stron>29</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">48.60</cena>
+                
+	</książka><książka>
+				<tytuł>Bieganie naturalne</tytuł>
+				<język>polski</język>
+				<ISBN>	9783833695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">20.30</cena>
+                
+	</książka><książka>
+				<tytuł>Serwisowanie samochodu</tytuł>
+				<język>polski</język>
+				<ISBN>9788334131066</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2014-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">46.60</cena>
+                
+	</książka><książka>
+				<tytuł>Dieta doktora Franka</tytuł>
+				<język>polski</język>
+				<ISBN>9783864695661</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2013-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">28.80</cena>
+                
+	</książka><książka>
+				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
+				<język>polski</język>
+				<ISBN>9777864695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">17.63</cena>
+                
+	</książka></Kategoria>
+	</Kategorie>
+	<Statystyki xmlns:xalan="http://xml.apache.org/xslt">
+		<Ogólne>
+			<LiczbaPozycji>21</LiczbaPozycji>
+			<LiczbaKsiążek>16</LiczbaKsiążek>
+			<LiczbaEbooków>3</LiczbaEbooków>
+			<LiczbaCzasopism>2</LiczbaCzasopism>
+			<LiczbaKategorii>4</LiczbaKategorii>
+		</Ogólne>
+		<Finansowe>
+			<ŚredniaCenaPozycji>0</ŚredniaCenaPozycji>
+		</Finansowe>
+	</Statystyki>
+</księgarnia>

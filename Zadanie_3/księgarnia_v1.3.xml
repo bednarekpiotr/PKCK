@@ -68,12 +68,18 @@
     </autorzy_książek>
 	
 	<lista_kategorii>
-	<definicja_kategorii IdKategorii="PSYCH" nazwa="Psychologia" >
-	<kategoria>Psychologia</kategoria>
-	</definicja_kategorii>
-	<definicja_kategorii IdKategorii="TH" nazwa="Thriller" />
-	<definicja_kategorii IdKategorii="FAN" nazwa="Fantastyka" />
-	<definicja_kategorii IdKategorii="POR" nazwa="Poradniki" />
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
+		<kategoria IdKategorii="TH">
+			<nazwa>Thriller</nazwa>
+		</kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</lista_kategorii>
 	
    

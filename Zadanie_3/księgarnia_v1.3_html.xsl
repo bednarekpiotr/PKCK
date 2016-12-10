@@ -21,6 +21,7 @@
 					<th style="text-align:left">Język</th>
 					<th style="text-align:left">Cena</th>
 					<th style="text-align:left">Waluta</th>
+					<th style="text-align:left">Autor</th>
 				</tr>
 				<xsl:for-each select="księgarnia/(książka|czasopismo|e-book)">
 				<xsl:sort select="local-name()"/>
@@ -28,10 +29,11 @@
 					<tr>
 						<td style="text-align:center"><xsl:value-of select="local-name()"/></td>
 						<td style="text-align:center"><xsl:value-of select="tytuł"/></td>
-						<td style="text-align:center"><xsl:value-of select="nazwa_kategorii"/></td>
+						<td style="text-align:center"><xsl:value-of select="Kategoria"/></td>
 						<td style="text-align:center"><xsl:value-of select="język"/></td>
 						<td style="text-align:center"><xsl:value-of select="cena"/></td>
 						<td style="text-align:center"><xsl:value-of select="cena/@waluta"/></td>
+						<td style="text-align:center"><xsl:value-of select="Autorzy"/></td>
 					</tr>
 				</xsl:for-each>
 			</table>
@@ -45,35 +47,11 @@
 </html>
 </xsl:template>
 
+<xsl:template match = "książka"/>
+<xsl:template match = "e-book"/>
+<xsl:template match = "czasopismo"/>
 
- <xsl:template match="książka">
-</xsl:template>
-
-
- <xsl:template match="czasopismo">
-</xsl:template>
-
-
- <xsl:template match="e-book">
-</xsl:template>
-
-
-  <xsl:template match="metadane">
-    <xsl:element name="div">
-	<xsl:element name="br" />
-        <xsl:text>Autorzy projektu</xsl:text>
-	  <xsl:for-each select="autor_projektu">
-	    <xsl:element name="h4">
-		<xsl:value-of select="." />
-		<xsl:value-of select="@indeks" />
-		</xsl:element>
-	  </xsl:for-each>
-	  <xsl:element name="h4">
-	  <xsl:text>Rok akademicki </xsl:text>
-	  <xsl:value-of select="rok_akademicki" />
-	  </xsl:element>
-    </xsl:element>
-  </xsl:template>
+  
 
 
   <xsl:template match="Statystyki">
@@ -180,6 +158,23 @@
         </xsl:element>
         
       </xsl:element>
+    </xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="metadane">
+    <xsl:element name="div">
+	<xsl:element name="br" />
+        <xsl:text>Autorzy projektu</xsl:text>
+	  <xsl:for-each select="autor_projektu">
+	    <xsl:element name="h4">
+		<xsl:value-of select="." />
+		<xsl:value-of select="@indeks" />
+		</xsl:element>
+	  </xsl:for-each>
+	  <xsl:element name="h4">
+	  <xsl:text>Rok akademicki </xsl:text>
+	  <xsl:value-of select="rok_akademicki" />
+	  </xsl:element>
     </xsl:element>
   </xsl:template>
 		
