@@ -44,7 +44,7 @@
                   <xsl:if test="$zmienna1=$zmienna2"> 
                      <xsl:copy>
 					 <xsl:apply-templates />
-<xsl:element name="{local-name()}"> 
+<!-- <xsl:element name="{local-name()}">  -->
 
 	  <xsl:element name = "cenaPLN">
 		<xsl:for-each select = "./cena">
@@ -73,11 +73,11 @@
             <xsl:value-of select="key('IdAutoraKey', @IdAutoraDrugiego)" /> 
          </xsl:element> 
       </xsl:element> 
-      <xsl:element name="Kategoria"> 
-         <xsl:value-of select="key('IdKategoriiKey', @IdKategorii)" /> 
-      </xsl:element> 
+      <!-- <xsl:element name="Kategoria">  -->
+         <!-- <xsl:value-of select="key('IdKategoriiKey', @IdKategorii)" />  -->
+      <!-- </xsl:element>  -->
 	  
-   </xsl:element> 
+   <!-- </xsl:element>  -->
                      </xsl:copy> 
                   </xsl:if> 
                </xsl:for-each> 

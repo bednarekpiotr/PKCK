@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_html.xsl"?><księgarnia>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_pomocniczy.xsl"?><księgarnia>
 <!-- xmlns="http://www.example.org/typyNasze" -->
 <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  -->
 <!-- xsi:schemaLocation="http://www.example.org/typyNasze księgarnia_v1.3.xsd" > --> 
@@ -569,7 +569,15 @@
                 <wydawnictwo>Świat Książki</wydawnictwo>
                 <cena waluta="USD">27.64</cena>
                 
-            </książka><książka>
+            <cenaPLN>110.56</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Paula
+	Hawkins
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 			<tytuł>Ofiara losu</tytuł>
 			<język>polski</język>
 				<ISBN> 9788380154742</ISBN>
@@ -581,7 +589,15 @@
                 <wydawnictwo>Czarna Owca</wydawnictwo>
                 <cena waluta="PLN">18.68</cena>
                 
-            </książka><książka IdAutoraDrugiego="RJG">
+            <cenaPLN>18.68</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Cmilla
+	Christie	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
                 <tytuł>Psychologia i życie</tytuł>
 				<język>polski</język>
 				<ISBN>9788301172572</ISBN>
@@ -593,7 +609,20 @@
                 <wydawnictwo>Polskie Wwydawnictwo Naukowe</wydawnictwo>
                 <cena waluta="PLN">107.28</cena>
                 
-            </książka><e-book>
+            <cenaPLN>107.28</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Philip
+	G
+	Zimbardo
+	</Autor>
+					<Autor>
+	Richard
+	J
+	Gerrig
+	</Autor>
+				</Autorzy>
+			</książka><e-book>
 			    <tytuł>Dopóki starczy światła</tytuł>
 				<język>polski</język>
 				<ISBN>9788324592821</ISBN>
@@ -605,7 +634,15 @@
                 <wydawnictwo>Dolnośląskie</wydawnictwo>
                 <cena waluta="EUR">15.57</cena>
                 
-            </e-book><e-book>
+            <cenaPLN>70.065</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Agata
+	Christie
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</e-book><e-book>
                 <tytuł>Tajemnica Sittaford</tytuł>
 				<język>polski</język>
 				<ISBN>  9788324587933</ISBN>
@@ -617,7 +654,15 @@
                 <wydawnictwo>Dolnośląskie</wydawnictwo>
                 <cena waluta="EUR">12.74</cena>
                 
-            </e-book></Kategoria>
+            <cenaPLN>57.33</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Agata
+	Christie
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</e-book></Kategoria>
 		<Kategoria>Thriller</Kategoria>
 		<Kategoria>Fantastyka<książka>
                 <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
@@ -631,7 +676,16 @@
                 <wydawnictwo>Media Rodzina</wydawnictwo>
                 <cena waluta="PLN">14.26</cena>
                 
-            </książka><e-book>
+            <cenaPLN>14.26</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><e-book>
                 <tytuł>Ostatnia bitwa</tytuł>
 				<język>polski</język>
 				<ISBN>9788372788832</ISBN>
@@ -643,7 +697,16 @@
                 <wydawnictwo>Media Rodzina</wydawnictwo>
                 <cena waluta="PLN">14.31</cena>
                 
-            </e-book><czasopismo>
+            <cenaPLN>14.31</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</e-book><czasopismo>
                 <tytuł>Książę Kaspian</tytuł>
 				<język>polski</język>
 				<ISBN>9788372788788</ISBN>
@@ -655,7 +718,16 @@
                 <wydawnictwo>Media Rodzina</wydawnictwo>
                 <cena waluta="PLN">15.65</cena>
                 
-            </czasopismo><książka>
+            <cenaPLN>15.65</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</czasopismo><książka>
                 <tytuł>Siostrzeniec Czarodzieja</tytuł>
 				<język>polski</język>
 				<ISBN>9788372788825</ISBN>
@@ -667,7 +739,16 @@
                 <wydawnictwo>Media Rodzina</wydawnictwo>
                 <cena waluta="PLN">14.31</cena>
                 
-            </książka><książka>
+            <cenaPLN>14.31</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Cristian
+	S
+	Levis
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
                 <tytuł>Lśnienie</tytuł>
 				<język>polski</język>
 				<ISBN>9788376488097</ISBN>
@@ -679,7 +760,15 @@
                 <wydawnictwo>Prószyński Media</wydawnictwo>
                 <cena waluta="USD">9.31</cena>
                 
-            </książka></Kategoria>
+            <cenaPLN>37.24</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Stephen
+	King	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka></Kategoria>
 		<Kategoria>Poradniki<czasopismo>
 			    <tytuł>Montecristo</tytuł>
 				<język>polski</język>
@@ -692,7 +781,15 @@
                 <wydawnictwo>Redis</wydawnictwo>
                 <cena waluta="PLN">27.92</cena>
                 
-            </czasopismo><książka>
+            <cenaPLN>27.92</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Martin
+	Suter-Suter
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</czasopismo><książka>
 	<tytuł>Dieta dla aktywnych</tytuł>
 				<język>polski</język>
 				<ISBN>9788364131165</ISBN>
@@ -704,7 +801,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">25.50</cena>
                 
-	</książka><książka>
+	<cenaPLN>25.50</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Lorel
+	Cordial	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Jedz i trenuj</tytuł>
 				<język>polski</język>
 				<ISBN>9788364131172</ISBN>
@@ -716,7 +821,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">37.43</cena>
                 
-	</książka><książka>
+	<cenaPLN>37.43</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Nancy
+	Clark	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Pływanie dla każdego</tytuł>
 				<język>polski</język>
 				<ISBN>9788392638704</ISBN>
@@ -728,7 +841,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">21.56</cena>
                 
-	</książka><książka>
+	<cenaPLN>21.56</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Terry
+	Laughlin	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Przewodnik po bieganiu ultra</tytuł>
 				<język>polski</język>
 				<ISBN>9788364131271</ISBN>
@@ -740,7 +861,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">18.68</cena>
                 
-	</książka><książka>
+	<cenaPLN>18.68</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Hal
+	Koerner    
+    </Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Triatlon Biblia treningu</tytuł>
 				<język>polski</język>
 				<ISBN>9788393264346</ISBN>
@@ -752,7 +881,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">41.18</cena>
                 
-	</książka><książka>
+	<cenaPLN>41.18</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
 				<język>polski</język>
 				<ISBN>	9788364131066</ISBN>
@@ -764,7 +901,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">48.60</cena>
                 
-	</książka><książka>
+	<cenaPLN>48.60</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Bieganie naturalne</tytuł>
 				<język>polski</język>
 				<ISBN>	9783833695668</ISBN>
@@ -776,7 +921,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">20.30</cena>
                 
-	</książka><książka>
+	<cenaPLN>20.30</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Serwisowanie samochodu</tytuł>
 				<język>polski</język>
 				<ISBN>9788334131066</ISBN>
@@ -788,7 +941,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">46.60</cena>
                 
-	</książka><książka>
+	<cenaPLN>46.60</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Dieta doktora Franka</tytuł>
 				<język>polski</język>
 				<ISBN>9783864695661</ISBN>
@@ -800,7 +961,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">28.80</cena>
                 
-	</książka><książka>
+	<cenaPLN>28.80</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka><książka>
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
 				<język>polski</język>
 				<ISBN>9777864695668</ISBN>
@@ -812,7 +981,15 @@
                 <wydawnictwo>Buk Rower</wydawnictwo>
                 <cena waluta="PLN">17.63</cena>
                 
-	</książka></Kategoria>
+	<cenaPLN>17.63</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+			</książka></Kategoria>
 	</Kategorie>
 	<Statystyki xmlns:xalan="http://xml.apache.org/xslt">
 		<Ogólne>
