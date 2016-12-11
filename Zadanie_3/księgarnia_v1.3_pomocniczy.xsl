@@ -14,18 +14,91 @@
    </xsl:copy> 
 </xsl:template> 
 
+
+
+
 <xsl:template match="opis" /> 
 <xsl:template match="wydanie/@numerWydania" />
-
 <xsl:template match="@IdKategorii" /> 
 <xsl:template match="@IdAutora" />
-
 <xsl:template match="@pozycja_id" /> 
-
 <xsl:template match="książka/@autorzy" /> 
-
 <xsl:template match="autorzy_książek" /> 
 <xsl:template match = "@autorzy" />
+
+
+
+
+
+<xsl:template match="/księgarnia"> 
+   <xsl:copy> 
+      <xsl:apply-templates select="@* | node()" /> 
+      <Kategorie> 
+         <xsl:for-each select="/księgarnia/lista_kategorii/kategoria"> 
+            <xsl:variable name="zmienna1" select="./@IdKategorii" /> 
+            <xsl:element name="Kategoria"> 
+               <xsl:value-of select="nazwa" /> 
+               <xsl:for-each select="/księgarnia/książka | /księgarnia/e-book | /księgarnia/czasopismo">
+                  
+                  <xsl:variable name="zmienna2" select="./@IdKategorii" /> 
+                  <xsl:if test="$zmienna1=$zmienna2"> 
+                     <xsl:copy>
+					 <xsl:apply-templates />
+<xsl:element name="{local-name()}"> 
+
+	  <xsl:element name = "cenaPLN">
+		<xsl:for-each select = "./cena">
+			<xsl:choose>
+				<xsl:when test = "./@waluta='USD'">
+					<xsl:value-of select = ".*4"/>
+				</xsl:when>
+				<xsl:when test = "./@waluta='GBP'">
+					<xsl:value-of  select = ".*4"/>
+				</xsl:when>
+				<xsl:when test = "./@waluta='EUR'">
+					<xsl:value-of  select = ".*4.5"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select = "." />
+				</xsl:otherwise>
+				
+			</xsl:choose>
+		</xsl:for-each>
+	  </xsl:element>
+      <xsl:element name="Autorzy"> 
+         <xsl:element name="Autor"> 
+            <xsl:value-of select="key('IdAutoraKey', @IdAutora)" /> 
+         </xsl:element> 
+         <xsl:element name="Autor"> 
+            <xsl:value-of select="key('IdAutoraKey', @IdAutoraDrugiego)" /> 
+         </xsl:element> 
+      </xsl:element> 
+      <xsl:element name="Kategoria"> 
+         <xsl:value-of select="key('IdKategoriiKey', @IdKategorii)" /> 
+      </xsl:element> 
+	  
+   </xsl:element> 
+                     </xsl:copy> 
+                  </xsl:if> 
+               </xsl:for-each> 
+            </xsl:element> 
+         </xsl:for-each> 
+      </Kategorie> 
+      <Statystyki> 
+         <Ogólne> 
+            <LiczbaPozycji><xsl:value-of select="count(/księgarnia/(książka|e-book|czasopismo))" /></LiczbaPozycji>            
+            <LiczbaKsiążek><xsl:value-of select="count(/księgarnia/książka)" /></LiczbaKsiążek>            
+            <LiczbaEbooków><xsl:value-of select="count(/księgarnia/e-book)" /></LiczbaEbooków>            
+            <LiczbaCzasopism><xsl:value-of select="count(/księgarnia/czasopismo)" /></LiczbaCzasopism>
+			<LiczbaKategorii><xsl:value-of select = "count(/księgarnia/lista_kategorii/kategoria)"/></LiczbaKategorii>
+         </Ogólne> 
+         <Finansowe> 
+            <ŚredniaCenaPozycji><xsl:value-of select="round(sum(/księgarnia/(książka/cenaPLN | e-book/cenaPLN | czasopismo/cenaPLN)) div count(/księgarnia/(książka|e-book|czasopismo))*100)div 100"></xsl:value-of></ŚredniaCenaPozycji>
+            
+         </Finansowe> 
+      </Statystyki> 
+   </xsl:copy> 
+</xsl:template> 
 
 <xsl:template match="/księgarnia/książka | /księgarnia/e-book | /księgarnia/czasopismo">
    
@@ -65,39 +138,4 @@
    </xsl:element> 
 </xsl:template> 
 
-<xsl:template match="księgarnia"> 
-   <xsl:copy> 
-      <xsl:apply-templates select="@* | node()" /> 
-      <Kategorie> 
-         <xsl:for-each select="/księgarnia/lista_kategorii/kategoria"> 
-            <xsl:variable name="zmienna1" select="./@IdKategorii" /> 
-            <xsl:element name="Kategoria"> 
-               <xsl:value-of select="nazwa" /> 
-               <xsl:for-each select="/księgarnia/książka | /księgarnia/e-book | /księgarnia/czasopismo">
-                  
-                  <xsl:variable name="zmienna2" select="./@IdKategorii" /> 
-                  <xsl:if test="$zmienna1=$zmienna2"> 
-                     <xsl:copy> 
-						<xsl:apply-templates select="@* | node() "/>
-                     </xsl:copy> 
-                  </xsl:if> 
-               </xsl:for-each> 
-            </xsl:element> 
-         </xsl:for-each> 
-      </Kategorie> 
-      <Statystyki> 
-         <Ogólne> 
-            <LiczbaPozycji><xsl:value-of select="count(/księgarnia/(książka|e-book|czasopismo))" /></LiczbaPozycji>            
-            <LiczbaKsiążek><xsl:value-of select="count(/księgarnia/książka)" /></LiczbaKsiążek>            
-            <LiczbaEbooków><xsl:value-of select="count(/księgarnia/e-book)" /></LiczbaEbooków>            
-            <LiczbaCzasopism><xsl:value-of select="count(/księgarnia/czasopismo)" /></LiczbaCzasopism>
-			<LiczbaKategorii><xsl:value-of select = "count(/księgarnia/lista_kategorii/kategoria)"/></LiczbaKategorii>
-         </Ogólne> 
-         <Finansowe> 
-            <ŚredniaCenaPozycji><xsl:value-of select="round(sum(/księgarnia/(książka/cenaPLN | e-book/cenaPLN | czasopismo/cenaPLN)) div count(/księgarnia/(książka|e-book|czasopismo))*100)div 100"></xsl:value-of></ŚredniaCenaPozycji>
-            
-         </Finansowe> 
-      </Statystyki> 
-   </xsl:copy> 
-</xsl:template> 
 </xsl:stylesheet>
