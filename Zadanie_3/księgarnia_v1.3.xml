@@ -526,6 +526,32 @@
 				smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
 				</opis>
 	</książka>
+	<książka pozycja_id="P54"  IdAutora="JF" IdKategorii="TH" autorzy="Joe Friel">
+				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
+				<język>polski</język>
+				<ISBN>9777864695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie numerWydania="1">
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">17.63</cena>
+                <opis>
+				<opis_skrócony>
+				Jeżeli do tej pory zrzucanie zbędnych kilogramów wywoływało u Ciebie wyłącznie
+				negatywne odczucia, powinieneś koniecznie przeczytać tę książkę.   
+				</opis_skrócony>
+				Odchudzanie może być bowiem nie tylko skuteczne, ale przy okazji bardzo przyjemne!
+				Wszystko za sprawą Autorki, która teraz dzieli się z Tobą swoim wieloletnim doświadczeniem w tej dziedzinie.
+				Łączy ona odchudzanie z elementami psychologii i poza aspektem fizycznym, skupia się również na samopoczuciu i
+				emocjach osoby, która się odchudza. W tej książce znajdziesz 10 sprawdzonych sposobów na wzmocnienie motywacji
+				i dowiesz się, jak opracować realny cel, który będzie Cię wspomagał na drodze do szczupłej sylwetki.
+				Poznasz sekrety terapii śmiechem pomagającej zrzucić wagę oraz będziesz mógł wykorzystać odchudzający
+				trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
+				smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
+				</opis>
+	</książka>
 	 <metadane>
         <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
 		<autor_projektu indeks="195560"> Piotr Bednarek </autor_projektu>

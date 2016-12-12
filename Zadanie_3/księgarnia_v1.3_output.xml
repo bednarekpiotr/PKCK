@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_pomocniczy.xsl"?><księgarnia>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_html.xsl"?><księgarnia>
 <!-- xmlns="http://www.example.org/typyNasze" -->
 <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  -->
 <!-- xsi:schemaLocation="http://www.example.org/typyNasze księgarnia_v1.3.xsd" > --> 
@@ -42,7 +42,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Psychologia
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			
@@ -67,7 +69,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Psychologia
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			
@@ -97,7 +101,9 @@
 	</Autor>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Psychologia
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			
@@ -122,7 +128,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Psychologia
+		</Nazwa>
 		</Kategoria>
 	</e-book>
 			
@@ -148,7 +156,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</czasopismo>
 			
@@ -174,7 +184,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Psychologia
+		</Nazwa>
 		</Kategoria>
 	</e-book>			
     	
@@ -206,7 +218,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Fantastyka
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			<e-book>
@@ -231,7 +245,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Fantastyka
+		</Nazwa>
 		</Kategoria>
 	</e-book>
 			<czasopismo>
@@ -256,7 +272,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Fantastyka
+		</Nazwa>
 		</Kategoria>
 	</czasopismo>
 			<książka>
@@ -281,7 +299,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Fantastyka
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			<książka>
@@ -305,7 +325,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Fantastyka
+		</Nazwa>
 		</Kategoria>
 	</książka>
     
@@ -331,7 +353,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 		<książka>
@@ -355,7 +379,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -379,7 +405,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -403,7 +431,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -427,7 +457,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -451,7 +483,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -475,7 +509,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	<książka>
@@ -499,7 +535,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 		<książka>
@@ -523,7 +561,9 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
 		</Kategoria>
 	</książka>
 			<książka>
@@ -547,7 +587,35 @@
 			<Autor/>
 		</Autorzy>
 		<Kategoria>
+			<Nazwa>
 			Poradniki
+		</Nazwa>
+		</Kategoria>
+	</książka>
+	<książka>
+				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
+				<język>polski</język>
+				<ISBN>9777864695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">17.63</cena>
+                
+	<cenaPLN>17.63</cenaPLN>
+		<Autorzy>
+			<Autor>
+	Joe
+	Friel	
+	</Autor>
+			<Autor/>
+		</Autorzy>
+		<Kategoria>
+			<Nazwa>
+			Thriller
+		</Nazwa>
 		</Kategoria>
 	</książka>
 	 <metadane>
@@ -577,6 +645,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Psychologia
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 			<tytuł>Ofiara losu</tytuł>
 			<język>polski</język>
@@ -597,6 +670,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Psychologia
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
                 <tytuł>Psychologia i życie</tytuł>
 				<język>polski</język>
@@ -622,6 +700,11 @@
 	Gerrig
 	</Autor>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Psychologia
+		</Nazwa>
+				</Kategoria>
 			</książka><e-book>
 			    <tytuł>Dopóki starczy światła</tytuł>
 				<język>polski</język>
@@ -642,6 +725,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Psychologia
+		</Nazwa>
+				</Kategoria>
 			</e-book><e-book>
                 <tytuł>Tajemnica Sittaford</tytuł>
 				<język>polski</język>
@@ -662,8 +750,38 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Psychologia
+		</Nazwa>
+				</Kategoria>
 			</e-book></Kategoria>
-		<Kategoria>Thriller</Kategoria>
+		<Kategoria>Thriller<książka>
+				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
+				<język>polski</język>
+				<ISBN>9777864695668</ISBN>
+				<ilość_stron>259</ilość_stron>
+				<wydanie>
+				    <miejsce_wydania>Warszawa</miejsce_wydania>   
+				    <data_wydania>2015-09-28</data_wydania>
+				</wydanie>
+                <wydawnictwo>Buk Rower</wydawnictwo>
+                <cena waluta="PLN">17.63</cena>
+                
+	<cenaPLN>17.63</cenaPLN>
+				<Autorzy>
+					<Autor>
+	Joe
+	Friel	
+	</Autor>
+					<Autor/>
+				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Thriller
+		</Nazwa>
+				</Kategoria>
+			</książka></Kategoria>
 		<Kategoria>Fantastyka<książka>
                 <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
 				<język>polski</język>
@@ -685,6 +803,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Fantastyka
+		</Nazwa>
+				</Kategoria>
 			</książka><e-book>
                 <tytuł>Ostatnia bitwa</tytuł>
 				<język>polski</język>
@@ -706,6 +829,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Fantastyka
+		</Nazwa>
+				</Kategoria>
 			</e-book><czasopismo>
                 <tytuł>Książę Kaspian</tytuł>
 				<język>polski</język>
@@ -727,6 +855,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Fantastyka
+		</Nazwa>
+				</Kategoria>
 			</czasopismo><książka>
                 <tytuł>Siostrzeniec Czarodzieja</tytuł>
 				<język>polski</język>
@@ -748,6 +881,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Fantastyka
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
                 <tytuł>Lśnienie</tytuł>
 				<język>polski</język>
@@ -768,6 +906,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Fantastyka
+		</Nazwa>
+				</Kategoria>
 			</książka></Kategoria>
 		<Kategoria>Poradniki<czasopismo>
 			    <tytuł>Montecristo</tytuł>
@@ -789,6 +932,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</czasopismo><książka>
 	<tytuł>Dieta dla aktywnych</tytuł>
 				<język>polski</język>
@@ -809,6 +957,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Jedz i trenuj</tytuł>
 				<język>polski</język>
@@ -829,6 +982,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Pływanie dla każdego</tytuł>
 				<język>polski</język>
@@ -849,6 +1007,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Przewodnik po bieganiu ultra</tytuł>
 				<język>polski</język>
@@ -869,6 +1032,11 @@
     </Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Triatlon Biblia treningu</tytuł>
 				<język>polski</język>
@@ -889,6 +1057,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
 				<język>polski</język>
@@ -909,6 +1082,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Bieganie naturalne</tytuł>
 				<język>polski</język>
@@ -929,6 +1107,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Serwisowanie samochodu</tytuł>
 				<język>polski</język>
@@ -949,6 +1132,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Dieta doktora Franka</tytuł>
 				<język>polski</język>
@@ -969,6 +1157,11 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka><książka>
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
 				<język>polski</język>
@@ -989,18 +1182,20 @@
 	</Autor>
 					<Autor/>
 				</Autorzy>
+				<Kategoria>
+					<Nazwa>
+			Poradniki
+		</Nazwa>
+				</Kategoria>
 			</książka></Kategoria>
 	</Kategorie>
 	<Statystyki xmlns:xalan="http://xml.apache.org/xslt">
 		<Ogólne>
-			<LiczbaPozycji>21</LiczbaPozycji>
-			<LiczbaKsiążek>16</LiczbaKsiążek>
+			<LiczbaPozycji>22</LiczbaPozycji>
+			<LiczbaKsiążek>17</LiczbaKsiążek>
 			<LiczbaEbooków>3</LiczbaEbooków>
 			<LiczbaCzasopism>2</LiczbaCzasopism>
 			<LiczbaKategorii>4</LiczbaKategorii>
 		</Ogólne>
-		<Finansowe>
-			<ŚredniaCenaPozycji>0</ŚredniaCenaPozycji>
-		</Finansowe>
 	</Statystyki>
 </księgarnia>

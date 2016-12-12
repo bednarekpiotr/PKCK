@@ -11,9 +11,32 @@
  <title>XHTML Output</title>
 </head>
 	<body>
+	<div class="sidebar">
+                <img class="logo" src="logo.png" alt="Logo księgarni" />
+                <h4>MENU</h4>
+                <ul>
+				
+                    <li><a href="#listapozycji">Lista Pozycji</a></li>
+					<ul>
+						 <li><a href="#kategorie">Pozycje z podziałem na kategorie </a></li>
+
+					</ul>
+
+                    <li>
+                        <a href="#statystyki">Statystyki</a>
+                        <ul>
+                            <li><a href="#ogolne">Ogólne</a></li>
+							<li><a href="#finansowe">Finansowe</a></li>
+    
+                        </ul>
+                    </li>
+					<li><a href="#metadane">Metadane</a></li>
+                </ul>
+
+            </div>
 		<div id="links">
-		<h1 style="text-align:center">Lista pozycji</h1>
-			<table  border="1">
+		<h1   id="listapozycji" style="text-align:center">Lista pozycji</h1>
+			<table  align = "center" border="1">
 				<tr>
 					<th style="text-align:center">Rodzaj pozycji</th>
 					<th style="text-align:left">Tytuł</th>
@@ -21,6 +44,7 @@
 					<th style="text-align:left">Język</th>
 					<th style="text-align:left">Cena</th>
 					<th style="text-align:left">Waluta</th>
+					<th style="text-align:left">Cena w PLN</th>
 					<th style="text-align:left">Autor</th>
 				</tr>
 				<xsl:for-each select="księgarnia/(książka|czasopismo|e-book)">
@@ -33,149 +57,143 @@
 						<td style="text-align:center"><xsl:value-of select="język"/></td>
 						<td style="text-align:center"><xsl:value-of select="cena"/></td>
 						<td style="text-align:center"><xsl:value-of select="cena/@waluta"/></td>
+						<td style="text-align:center"><xsl:value-of select="cenaPLN"/></td>
 						<td style="text-align:center"><xsl:value-of select="Autorzy"/></td>
 					</tr>
 				</xsl:for-each>
 			</table>
-		</div>
+							<h1 style="text-align:center" id = "kategorie">Pozycje z podziałem na kategorie</h1>
+				<xsl:for-each select = "/księgarnia/Kategorie/Kategoria">
+
+				<h2  style="text-align:center"><xsl:value-of select = "./(książka|e-book|czasopismo)/Kategoria/Nazwa"/></h2>
+				<xsl:variable name ="zmienna1" select = "./Nazwa"/>
+		<table  align = "center" border="1">
+				<tr>
+					<th style="text-align:center">Rodzaj pozycji</th>
+					<th style="text-align:left">Tytuł</th>
+					<th style="text-align:left">Nazwa kategorii</th>
+					<th style="text-align:left">Język</th>
+					<th style="text-align:left">Cena</th>
+					<th style="text-align:left">Waluta</th>
+					<th style="text-align:left">Cena w PLN</th>
+					<th style="text-align:left">Autor</th>
+				</tr>
+				<xsl:for-each select="./(książka | czasopismo|e-book)">
+
+					<tr>
+						<td style="text-align:center"><xsl:value-of select="local-name()"/></td>
+						<td style="text-align:center"><xsl:value-of select="tytuł"/></td>
+						<td style="text-align:center"><xsl:value-of select="Kategoria"/></td>
+						<td style="text-align:center"><xsl:value-of select="język"/></td>
+						<td style="text-align:center"><xsl:value-of select="cena"/></td>
+						<td style="text-align:center"><xsl:value-of select="cena/@waluta"/></td>
+												<td style="text-align:center"><xsl:value-of select="cenaPLN"/></td>
+						<td style="text-align:center"><xsl:value-of select="Autorzy"/></td>
+					</tr>
+
+				</xsl:for-each>
+			</table>	
+			</xsl:for-each>
+			
+			
+
+<h1 style="text-align:center" id="ogolne">Statystyki Ogólne </h1> 
+
+
+<table align = "center"  border="1">
+<tr>
+      <th style="text-align:center">Nazwa</th> 
+      <th style="text-align:left">Wartość</th> 
+</tr>
+<tr>
+	<td>Liczba Pozycji</td>
+	<td style="text-align:center"><xsl:value-of select = "/księgarnia/Statystyki/Ogólne/LiczbaPozycji"></xsl:value-of></td>
+</tr>
+<tr>
+<td>Liczba E-booków</td>
+<td style="text-align:center"><xsl:value-of select = "/księgarnia/Statystyki/Ogólne/LiczbaEbooków"/></td>
+</tr>
+<tr>
+<td>Liczba Czasopism</td>
+<td style="text-align:center"><xsl:value-of select = "/księgarnia/Statystyki/Ogólne/LiczbaCzasopism"/></td>
+</tr>
+<tr>
+<td>Liczba Książek</td>
+<td style="text-align:center"><xsl:value-of select = "/księgarnia/Statystyki/Ogólne/LiczbaKsiążek"/></td>
+</tr>
+<tr>
+<td>Liczba Kategorii</td>
+<td style="text-align:center"><xsl:value-of select = "/księgarnia/Statystyki/Ogólne/LiczbaKategorii"/></td>
+</tr>  
+
+</table>
+
+<h1 style="text-align:center" id="finansowe">Statystyki Finansowe </h1> 
+
+
+<table  align = "center" border="1">
+<tr>
+      <th style="text-align:center">Nazwa</th> 
+      <th style="text-align:left">Wartość</th> 
+</tr>
+<tr>
+	<td>Średnia Cena Pozycji w PLN</td>
+	<td style="text-align:center"><xsl:value-of select="round((sum(/księgarnia/(książka|czasopismo|e-book)/cenaPLN) div (count(/księgarnia/(książka|czasopismo|e-book))))div 0.01) * 0.01"></xsl:value-of></td>
+</tr>
+
+</table>
+
+<h1 style="text-align:center" id="metadane">Metadane </h1>
+<table align = "center"  border="1">
+<tr>
+      <th style="text-align:center">Autor</th> 
+      <th style="text-align:left">Nr Albumu</th> 
+</tr>
+<xsl:for-each select = "/księgarnia/metadane/autor_projektu">
+<tr>
+	<td><xsl:value-of select = "."></xsl:value-of></td>
+	<td style="text-align:center"><xsl:value-of select = "./@indeks"></xsl:value-of></td>
+</tr>
+</xsl:for-each>
+<tr>
+<td  style="text-align:center" colspan = "2">Rok akademicki</td>
+</tr>
+<tr>
+<td  style="text-align:center" colspan = "2"><xsl:value-of select = "/księgarnia/metadane/rok_akademicki" /></td>
+</tr>
+
+
+
+</table>
+
+			
+			
+</div>
 		
-		<div>
-		<xsl:apply-templates />
-		</div>
+
 
 	</body>
 </html>
 </xsl:template>
 
-<xsl:template match = "książka"/>
-<xsl:template match = "e-book"/>
-<xsl:template match = "czasopismo"/>
+<xsl:template match="książka" /> 
+
+<xsl:template match="e-book" /> 
+
+<xsl:template match="czasopismo" /> 
+
+<xsl:template match="Kategorie" /> 
+
+<xsl:template match="Kategoria" /> 
+
+<xsl:template match="lista_kategorii" /> 
+
+<xsl:template match="Ogólne" /> 
+
+<xsl:template match="Statystyki/Finansowe" /> 
+
+<xsl:template match="metadane" />
 
   
-
-
-  <xsl:template match="Statystyki">
-    <xsl:element name="div">
-        <xsl:text>STATYSTYKI</xsl:text>
-      <xsl:element name="br" />
-      <xsl:apply-templates />
-	    <xsl:element name="a">
-          <xsl:attribute name="href">
-            <xsl:text>#links</xsl:text>
-          </xsl:attribute>
-          <xsl:text>Powrót do góry</xsl:text>
-        </xsl:element>
-    </xsl:element>
-  </xsl:template>
-
-
-  <xsl:template match="Statystyki/Ogólne">
-    <xsl:element name="div">
-      <xsl:element name="table">
-        <xsl:attribute name="border">
-          <xsl:text>0</xsl:text>
-        </xsl:attribute>
-        <xsl:element name="caption">
-          <xsl:text>Ogólne</xsl:text>
-        </xsl:element>
-        <xsl:element name="tr">
-          <xsl:element name="th">
-            <xsl:text>Nazwa</xsl:text>
-          </xsl:element>
-          <xsl:element name="th">
-            <xsl:text>Wartość</xsl:text>
-          </xsl:element>
-        </xsl:element>
-
-        <xsl:element name="tr">
-          <xsl:element name="td">
-            <xsl:text>Liczba pozycji razem:</xsl:text>
-          </xsl:element>
-          <xsl:element name="td">
-            <xsl:value-of select="LiczbaPozycji" />
-          </xsl:element>
-        </xsl:element>
-		
-        <xsl:element name="tr">
-          <xsl:element name="td">
-            <xsl:text>Liczba książek:</xsl:text>
-          </xsl:element>
-          <xsl:element name="td">
-            <xsl:value-of select="LiczbaKsiążek" />
-          </xsl:element>
-        </xsl:element>
-		
-        <xsl:element name="tr">
-          <xsl:element name="td">
-            <xsl:text>Liczba e-booków:</xsl:text>
-          </xsl:element>
-          <xsl:element name="td">
-            <xsl:value-of select="LiczbaEbooków" />
-          </xsl:element>
-        </xsl:element>
-		
-        <xsl:element name="tr">
-          <xsl:element name="td">
-            <xsl:text>Liczba czasopism:</xsl:text>
-          </xsl:element>
-          <xsl:element name="td">
-            <xsl:value-of select="LiczbaCzasopism" />
-          </xsl:element>
-        </xsl:element>
-     
-      </xsl:element>
-    </xsl:element>
-  </xsl:template>
-  
-  
-    <xsl:template match="Statystyki/Finansowe">
-	<xsl:element name="br" />
-    <xsl:element name="div">
-      <xsl:element name="table">
-        <xsl:attribute name="border">
-          <xsl:text>0</xsl:text>
-        </xsl:attribute>
-        <xsl:element name="caption">
-          <xsl:text>Finansowe</xsl:text>
-        </xsl:element>
-		
-        <xsl:element name="tr">
-          <xsl:element name="th">
-            <xsl:text>Nazwa</xsl:text>
-          </xsl:element>
-          <xsl:element name="th">
-            <xsl:text>Wartość</xsl:text>
-          </xsl:element>
-        </xsl:element>
-
-        <xsl:element name="tr">
-          <xsl:element name="td">
-            <xsl:text>Średnia cena pozycji:</xsl:text>
-          </xsl:element>
-          <xsl:element name="td">
-            <xsl:value-of select="round(ŚredniaCenaPozycji*100) div 100" />
-          </xsl:element>
-        </xsl:element>
-        
-      </xsl:element>
-    </xsl:element>
-  </xsl:template>
-  
-  <xsl:template match="metadane">
-    <xsl:element name="div">
-	<xsl:element name="br" />
-        <xsl:text>Autorzy projektu</xsl:text>
-	  <xsl:for-each select="autor_projektu">
-	    <xsl:element name="h4">
-		<xsl:value-of select="." />
-		<xsl:value-of select="@indeks" />
-		</xsl:element>
-	  </xsl:for-each>
-	  <xsl:element name="h4">
-	  <xsl:text>Rok akademicki </xsl:text>
-	  <xsl:value-of select="rok_akademicki" />
-	  </xsl:element>
-    </xsl:element>
-  </xsl:template>
 		
 </xsl:stylesheet>
