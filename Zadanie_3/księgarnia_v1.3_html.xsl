@@ -97,7 +97,7 @@
 			
 			
 
-<h1 style="text-align:center" id="ogolne">Statystyki Ogólne </h1> 
+<h1 style="text-align:center" id="statystyki">Statystyki Ogólne </h1> 
 
 
 <table align = "center"  border="1">
