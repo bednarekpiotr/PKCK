@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_html.xsl"?><księgarnia>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="księgarnia_v1.3_pomocniczy.xsl"?><księgarnia>
 <!-- xmlns="http://www.example.org/typyNasze" -->
 <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  -->
 <!-- xsi:schemaLocation="http://www.example.org/typyNasze księgarnia_v1.3.xsd" > --> 
@@ -35,17 +35,14 @@
                 
             <cenaPLN>110.56</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Paula
-	Hawkins
-	</Autor>
-			<Autor/>
+			<autor IdAutora="PH">
+	<imięPierwsze>Paula</imięPierwsze>
+	<nazwisko>Hawkins</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Psychologia
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
 	</książka>
 			
 			<książka>
@@ -62,17 +59,14 @@
                 
             <cenaPLN>18.68</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Cmilla
-	Christie	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="CL">
+	<imięPierwsze>Cmilla</imięPierwsze>
+	<nazwisko>Christie</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Psychologia
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
 	</książka>
 			
 			<książka>
@@ -89,22 +83,20 @@
                 
             <cenaPLN>107.28</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Philip
-	G
-	Zimbardo
-	</Autor>
-			<Autor>
-	Richard
-	J
-	Gerrig
-	</Autor>
+			<autor IdAutora="PGZ">
+	<imięPierwsze>Philip</imięPierwsze>
+	<imięDrugie>G</imięDrugie>
+	<nazwisko>Zimbardo</nazwisko>
+	</autor>
+			<autor IdAutora="RJG">
+	<imięPierwsze>Richard</imięPierwsze>
+	<imięDrugie>J</imięDrugie>
+	<nazwisko>Gerrig</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Psychologia
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
 	</książka>
 			
 			<e-book>
@@ -121,17 +113,14 @@
                 
             <cenaPLN>70.065</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Agata
-	Christie
-	</Autor>
-			<Autor/>
+			<autor IdAutora="AC">
+	<imięPierwsze>Agata</imięPierwsze>
+	<nazwisko>Christie</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Psychologia
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
 	</e-book>
 			
           	
@@ -149,17 +138,14 @@
                 
             <cenaPLN>27.92</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Martin
-	Suter-Suter
-	</Autor>
-			<Autor/>
+			<autor IdAutora="MS">
+	<imięPierwsze>Martin</imięPierwsze>
+	<nazwisko>Suter-Suter</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</czasopismo>
 			
 			
@@ -177,17 +163,14 @@
                 
             <cenaPLN>57.33</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Agata
-	Christie
-	</Autor>
-			<Autor/>
+			<autor IdAutora="AC">
+	<imięPierwsze>Agata</imięPierwsze>
+	<nazwisko>Christie</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Psychologia
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="PSYCH">
+			<nazwa>Psychologia</nazwa>
+		</kategoria>
 	</e-book>			
     	
 	
@@ -210,18 +193,15 @@
                 
             <cenaPLN>14.26</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Cristian
-	S
-	Levis
-	</Autor>
-			<Autor/>
+			<autor IdAutora="CSL">
+	<imięPierwsze>Cristian</imięPierwsze>
+	<imięDrugie>S</imięDrugie>
+	<nazwisko>Levis</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Fantastyka
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
 	</książka>
 			<e-book>
                 <tytuł>Ostatnia bitwa</tytuł>
@@ -237,18 +217,15 @@
                 
             <cenaPLN>14.31</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Cristian
-	S
-	Levis
-	</Autor>
-			<Autor/>
+			<autor IdAutora="CSL">
+	<imięPierwsze>Cristian</imięPierwsze>
+	<imięDrugie>S</imięDrugie>
+	<nazwisko>Levis</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Fantastyka
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
 	</e-book>
 			<czasopismo>
                 <tytuł>Książę Kaspian</tytuł>
@@ -264,18 +241,15 @@
                 
             <cenaPLN>15.65</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Cristian
-	S
-	Levis
-	</Autor>
-			<Autor/>
+			<autor IdAutora="CSL">
+	<imięPierwsze>Cristian</imięPierwsze>
+	<imięDrugie>S</imięDrugie>
+	<nazwisko>Levis</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Fantastyka
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
 	</czasopismo>
 			<książka>
                 <tytuł>Siostrzeniec Czarodzieja</tytuł>
@@ -291,18 +265,15 @@
                 
             <cenaPLN>14.31</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Cristian
-	S
-	Levis
-	</Autor>
-			<Autor/>
+			<autor IdAutora="CSL">
+	<imięPierwsze>Cristian</imięPierwsze>
+	<imięDrugie>S</imięDrugie>
+	<nazwisko>Levis</nazwisko>
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Fantastyka
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
 	</książka>
 			<książka>
                 <tytuł>Lśnienie</tytuł>
@@ -318,17 +289,14 @@
                 
             <cenaPLN>37.24</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Stephen
-	King	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="SK">
+	<imięPierwsze>Stephen</imięPierwsze>
+	<nazwisko>King</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Fantastyka
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="FAN">
+			<nazwa>Fantastyka</nazwa>
+		</kategoria>
 	</książka>
     
 	
@@ -346,17 +314,14 @@
                 
 	<cenaPLN>25.50</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Lorel
-	Cordial	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="LC">
+	<imięPierwsze>Lorel</imięPierwsze>
+	<nazwisko>Cordial</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 		<książka>
 				<tytuł>Jedz i trenuj</tytuł>
@@ -372,17 +337,14 @@
                 
 	<cenaPLN>37.43</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Nancy
-	Clark	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="NC">
+	<imięPierwsze>Nancy</imięPierwsze>
+	<nazwisko>Clark</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Pływanie dla każdego</tytuł>
@@ -398,17 +360,14 @@
                 
 	<cenaPLN>21.56</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Terry
-	Laughlin	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="TL">
+	<imięPierwsze>Terry</imięPierwsze>
+	<nazwisko>Laughlin</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Przewodnik po bieganiu ultra</tytuł>
@@ -424,17 +383,14 @@
                 
 	<cenaPLN>18.68</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Hal
-	Koerner    
-    </Autor>
-			<Autor/>
+			<autor IdAutora="HK">
+	<imięPierwsze>Hal</imięPierwsze>
+	<nazwisko>Koerner</nazwisko>    
+    </autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Triatlon Biblia treningu</tytuł>
@@ -450,17 +406,14 @@
                 
 	<cenaPLN>41.18</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
@@ -476,17 +429,14 @@
                 
 	<cenaPLN>48.60</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Bieganie naturalne</tytuł>
@@ -502,17 +452,14 @@
                 
 	<cenaPLN>20.30</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Serwisowanie samochodu</tytuł>
@@ -528,17 +475,14 @@
                 
 	<cenaPLN>46.60</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 		<książka>
 				<tytuł>Dieta doktora Franka</tytuł>
@@ -554,17 +498,14 @@
                 
 	<cenaPLN>28.80</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 			<książka>
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
@@ -580,17 +521,14 @@
                 
 	<cenaPLN>17.63</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Poradniki
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="POR">
+			<nazwa>Poradniki</nazwa>
+		</kategoria>
 	</książka>
 	<książka>
 				<tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
@@ -606,17 +544,14 @@
                 
 	<cenaPLN>17.63</cenaPLN>
 		<Autorzy>
-			<Autor>
-	Joe
-	Friel	
-	</Autor>
-			<Autor/>
+			<autor IdAutora="JF">
+	<imięPierwsze>Joe</imięPierwsze>
+	<nazwisko>Friel</nazwisko>	
+	</autor>
 		</Autorzy>
-		<Kategoria>
-			<Nazwa>
-			Thriller
-		</Nazwa>
-		</Kategoria>
+		<kategoria IdKategorii="TH">
+			<nazwa>Thriller</nazwa>
+		</kategoria>
 	</książka>
 	 <metadane>
         <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
