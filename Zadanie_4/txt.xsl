@@ -115,14 +115,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 	
 <xsl:template match="książka" /> 
-<xsl:template match="książka/tytuł" /> 
-<xsl:template match="książka/język" /> 
-<xsl:template match="książka/cena" /> 
-<xsl:template match="książka/ilość_stron" /> 
-<xsl:template match="książka/cenaPLN" /> 
-<xsl:template match="książka/ISBN" /> 
-<xsl:template match="książka/wydawnictwo" /> 
-<xsl:template match="książka/wydanie" /> 
 
 <xsl:template match="e-book" /> 
 
