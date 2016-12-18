@@ -57,19 +57,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 	<xsl:text>&#xA; POZYCJE Z PODZIAŁEM NA KATEGORIE&#xA;&#xA;</xsl:text>
 	<xsl:for-each select = "/księgarnia/Kategorie/Kategoria">
-	<xsl:value-of select = "concat('&#x9;',./(książka|e-book|czasopismo)/Kategoria/Nazwa,'&#xA;')"/>
-	<xsl:variable name ="zmienna1" select = "./Nazwa"/>
+	<xsl:value-of select = "concat('&#xA; ',./(książka|e-book|czasopismo)/kategoria/nazwa,'&#xA;')"/>
+	<xsl:variable name ="zmienna1" select = "./(książka|e-book|czasopismo)/kategoria/nazwa"/>
 	<xsl:text>&#xA; RODZAJ&#x9;&#x9;&#x9;TYTUŁ&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;AUTOR&#x9;&#x9;&#x9;&#x9;&#x9;NAZWA KATEGORII&#x9;&#x9;JĘZYK&#x9;&#x9;CENA&#x9;&#x9;WALUTA&#x9;&#x9;CENA W PLN&#xA;&#xA;</xsl:text>
 	<xsl:for-each select="./(książka | czasopismo | e-book)">
-	<xsl:sort select="local-name()"/>
-	<xsl:sort select="nazwa_kategorii"/>
+	<xsl:sort select="./tytuł"/>
 	
 	<xsl:if test="local-name()='czasopismo'">
 	<xsl:value-of select="concat(' ',local-name(),'&#x9;&#x9;',
 	substring(./tytuł,0,25),substring('                             ',1,25-string-length(./tytuł)),'&#x9;&#x9;&#x9;',
 	substring(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko),0,20),
 	substring('                             ',1,20-string-length(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko))),'&#x9;',
-	./,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
+	$zmienna1,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
 		<xsl:if test="string-length(./tytuł)>25">
 		<xsl:value-of select="concat('&#x9;&#x9;&#x9;&#x9;',substring(./tytuł,25),'&#xA;')"/>
 		</xsl:if>
@@ -80,7 +79,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	substring(./tytuł,0,25),substring('                             ',1,25-string-length(./tytuł)),'&#x9;&#x9;&#x9;',
 	substring(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko),0,20),
 	substring('                             ',1,20-string-length(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko))),'&#x9;',
-	książka,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
+	$zmienna1,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
 		<xsl:if test="string-length(./tytuł)>25">
 		<xsl:value-of select="concat('&#x9;&#x9;&#x9;&#x9;',substring(./tytuł,25),'&#xA;')"/>
 		</xsl:if>
@@ -91,7 +90,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	substring(./tytuł,0,25),substring('                             ',1,25-string-length(./tytuł)),'&#x9;&#x9;&#x9;',
 	substring(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko),0,20),
 	substring('                             ',1,20-string-length(concat(./Autorzy/autor[1]/imięPierwsze,' ',./Autorzy/autor[1]/nazwisko))),'&#x9;',
-	./kategoria/nazwa,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
+	$zmienna1,'&#x9;&#x9;&#x9;',./język,'&#x9;&#x9;',./cena,'&#x9;&#x9;',./cena/@waluta,'&#x9;&#x9;&#x9;',./cenaPLN,'&#x9;&#x9;','&#xA;')" />
 		<xsl:if test="string-length(./tytuł)>25">
 		<xsl:value-of select="concat('&#x9;&#x9;&#x9;&#x9;',substring(./tytuł,25),'&#xA;')"/>
 		</xsl:if>

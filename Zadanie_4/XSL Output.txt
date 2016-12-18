@@ -1,0 +1,118 @@
+
+ SPIS TREŚCI
+
+ 1. Lista wszystkich pozycji
+ 2. Pozycje z podziałem na kategorie
+ 3. Statystyki ogólne
+ 4. Statystyki finansowe
+ 5. Metadane
+
+
+ LISTA WSZYSTKICH POZYCJI
+
+
+ RODZAJ			TYTUŁ								AUTOR					NAZWA KATEGORII		JĘZYK		CENA		WALUTA		CENA W PLN
+
+ czasopismo		Montecristo              			Martin Suter-Suter  	Poradniki			polski		27.92		PLN			27.92		
+ czasopismo		Książę Kaspian           			Cristian Levis      	Fantastyka			polski		15.65		PLN			15.65		
+ e-book			Dopóki starczy światła   			Agata Christie      	Psychologia			polski		15.57		EUR			70.065		
+ e-book			Tajemnica Sittaford      			Agata Christie      	Psychologia			polski		12.74		EUR			57.33		
+ e-book			Ostatnia bitwa           			Cristian Levis      	Fantastyka			polski		14.31		PLN			14.31		
+ książka		Dziewczyna z pociągu     			Paula Hawkins       	Psychologia			polski		27.64		USD			110.56		
+ książka		Ofiara losu              			Cmilla Christie     	Psychologia			polski		18.68		PLN			18.68		
+ książka		Psychologia i życie      			Philip Zimbardo     	Psychologia			polski		107.28		PLN			107.28		
+ książka		Opowieści z Narnii Lew, 			Cristian Levis      	Fantastyka			polski		14.26		PLN			14.26		
+				Czarownica i stara szafa
+ książka		Siostrzeniec Czarodzieja 			Cristian Levis      	Fantastyka			polski		14.31		PLN			14.31		
+ książka		Lśnienie                 			Stephen King        	Fantastyka			polski		9.31		USD			37.24		
+ książka		Dieta dla aktywnych      			Lorel Cordial       	Poradniki			polski		25.50		PLN			25.50		
+ książka		Jedz i trenuj            			Nancy Clark         	Poradniki			polski		37.43		PLN			37.43		
+ książka		Pływanie dla każdego     			Terry Laughlin      	Poradniki			polski		21.56		PLN			21.56		
+ książka		Przewodnik po bieganiu u			Hal Koerner         	Poradniki			polski		18.68		PLN			18.68		
+				ltra
+ książka		Triatlon Biblia treningu 			Joe Friel           	Poradniki			polski		41.18		PLN			41.18		
+ książka		Zinn i sztuka serwisowan			Joe Friel           	Poradniki			polski		48.60		PLN			48.60		
+				ia roweru górskiegoc
+ książka		Bieganie naturalne       			Joe Friel           	Poradniki			polski		20.30		PLN			20.30		
+ książka		Serwisowanie samochodu   			Joe Friel           	Poradniki			polski		46.60		PLN			46.60		
+ książka		Dieta doktora Franka     			Joe Friel           	Poradniki			polski		28.80		PLN			28.80		
+ książka		Schudnij z przyjemnością			Joe Friel           	Poradniki			polski		17.63		PLN			17.63		
+				. Podręcznik radosnego odchudzania
+ książka		Schudnij z przyjemnością			Joe Friel           	Thriller			polski		17.63		PLN			17.63		
+				. Podręcznik radosnego odchudzania
+
+ POZYCJE Z PODZIAŁEM NA KATEGORIE
+
+
+ Psychologia
+
+ RODZAJ			TYTUŁ								AUTOR					NAZWA KATEGORII		JĘZYK		CENA		WALUTA		CENA W PLN
+
+ e-book			Dopóki starczy światła   			Agata Christie      	Psychologia			polski		15.57		EUR			70.065		
+ książka		Dziewczyna z pociągu     			Paula Hawkins       	Psychologia			polski		27.64		USD			110.56		
+ książka		Ofiara losu              			Cmilla Christie     	Psychologia			polski		18.68		PLN			18.68		
+ książka		Psychologia i życie      			Philip Zimbardo     	Psychologia			polski		107.28		PLN			107.28		
+ e-book			Tajemnica Sittaford      			Agata Christie      	Psychologia			polski		12.74		EUR			57.33		
+
+ Thriller
+
+ RODZAJ			TYTUŁ								AUTOR					NAZWA KATEGORII		JĘZYK		CENA		WALUTA		CENA W PLN
+
+ książka		Schudnij z przyjemnością			Joe Friel           	Thriller			polski		17.63		PLN			17.63		
+				. Podręcznik radosnego odchudzania
+
+ Fantastyka
+
+ RODZAJ			TYTUŁ								AUTOR					NAZWA KATEGORII		JĘZYK		CENA		WALUTA		CENA W PLN
+
+ czasopismo		Książę Kaspian           			Cristian Levis      	Fantastyka			polski		15.65		PLN			15.65		
+ książka		Lśnienie                 			Stephen King        	Fantastyka			polski		9.31		USD			37.24		
+ książka		Opowieści z Narnii Lew, 			Cristian Levis      	Fantastyka			polski		14.26		PLN			14.26		
+				Czarownica i stara szafa
+ e-book			Ostatnia bitwa           			Cristian Levis      	Fantastyka			polski		14.31		PLN			14.31		
+ książka		Siostrzeniec Czarodzieja 			Cristian Levis      	Fantastyka			polski		14.31		PLN			14.31		
+
+ Poradniki
+
+ RODZAJ			TYTUŁ								AUTOR					NAZWA KATEGORII		JĘZYK		CENA		WALUTA		CENA W PLN
+
+ książka		Bieganie naturalne       			Joe Friel           	Poradniki			polski		20.30		PLN			20.30		
+ książka		Dieta dla aktywnych      			Lorel Cordial       	Poradniki			polski		25.50		PLN			25.50		
+ książka		Dieta doktora Franka     			Joe Friel           	Poradniki			polski		28.80		PLN			28.80		
+ książka		Jedz i trenuj            			Nancy Clark         	Poradniki			polski		37.43		PLN			37.43		
+ czasopismo		Montecristo              			Martin Suter-Suter  	Poradniki			polski		27.92		PLN			27.92		
+ książka		Pływanie dla każdego     			Terry Laughlin      	Poradniki			polski		21.56		PLN			21.56		
+ książka		Przewodnik po bieganiu u			Hal Koerner         	Poradniki			polski		18.68		PLN			18.68		
+				ltra
+ książka		Schudnij z przyjemnością			Joe Friel           	Poradniki			polski		17.63		PLN			17.63		
+				. Podręcznik radosnego odchudzania
+ książka		Serwisowanie samochodu   			Joe Friel           	Poradniki			polski		46.60		PLN			46.60		
+ książka		Triatlon Biblia treningu 			Joe Friel           	Poradniki			polski		41.18		PLN			41.18		
+ książka		Zinn i sztuka serwisowan			Joe Friel           	Poradniki			polski		48.60		PLN			48.60		
+				ia roweru górskiegoc
+
+ STATYSTYKI OGÓLNE
+
+ NAZWA					WARTOŚĆ
+
+ Liczba pozycji:		22
+ Liczba książek:		17
+ Liczba e-booków:		3
+ Liczba czasopism:		2
+ Liczba kategorii:		4
+
+
+ STATYSTYKI FINANSOWE
+
+ NAZWA					WARTOŚĆ
+
+ Średnia cena 
+ pozycji w PLN:			36.89
+
+
+ AUTOR					NUMER INDEKSU
+
+ Bogdan Kosmala 		195627
+ Piotr Bednarek 		195560
+
+ Rok akademicki:		2016/2017

@@ -97,19 +97,10 @@
 		</xsl:for-each>
 	  </xsl:element>
       <xsl:element name="Autorzy"> 
-         <xsl:element name="Autor"> 
-            <xsl:value-of select="key('IdAutoraKey', @IdAutora)" /> 
-         </xsl:element> 
-         <xsl:element name="Autor"> 
-            <xsl:value-of select="key('IdAutoraKey', @IdAutoraDrugiego)" /> 
-         </xsl:element> 
+            <xsl:copy-of select="key('IdAutoraKey', @IdAutora)" /> 
+            <xsl:copy-of select="key('IdAutoraKey', @IdAutoraDrugiego)" /> 
       </xsl:element> 
-      <xsl:element name="Kategoria">
-		<xsl:element name = "Nazwa">
-		<xsl:value-of select="key('IdKategoriiKey', @IdKategorii)" />
-		</xsl:element>
-          
-      </xsl:element> 
+		<xsl:copy-of select="key('IdKategoriiKey', @IdKategorii)" />
                      </xsl:copy> 
                   </xsl:if> 
                </xsl:for-each> 
