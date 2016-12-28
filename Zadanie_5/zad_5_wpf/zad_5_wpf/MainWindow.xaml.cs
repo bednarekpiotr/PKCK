@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace zad_5_wpf
+namespace Ksiegarnia_zad_5
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

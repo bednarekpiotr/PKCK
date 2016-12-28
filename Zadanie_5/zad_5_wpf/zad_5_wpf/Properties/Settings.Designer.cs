@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace zad_5_wpf.Properties
+namespace Ksiegarnia_zad_5.Properties
 {
 
 
