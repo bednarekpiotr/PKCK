@@ -63,10 +63,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AutorProjektu.cs" />
-    <Compile Include="Metadane.cs" />
+    <Compile Include="Models\Opis.cs" />
+    <Compile Include="Models\Cena.cs" />
+    <Compile Include="Models\Wydanie.cs" />
+    <Compile Include="Models\Ebook.cs" />
+    <Compile Include="Models\Czasopismo.cs" />
+    <Compile Include="Models\Ksiazka.cs" />
+    <Compile Include="Models\DefinicjaKategorii.cs" />
+    <Compile Include="Models\ListaKategorii.cs" />
+    <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\AutorzyKsiazek.cs" />
+    <Compile Include="Models\AutorProjektu.cs" />
+    <Compile Include="Models\Metadane.cs" />
     <Compile Include="XML.cs" />
-    <Compile Include="Ksiegarnia.cs" />
+    <Compile Include="Models\Ksiegarnia.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -105,6 +115,7 @@
   <ItemGroup>
     <Resource Include="Source\księgarnia_v1.3.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

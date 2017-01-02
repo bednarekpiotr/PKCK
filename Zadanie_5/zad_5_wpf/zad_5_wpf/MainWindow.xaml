@@ -1,12 +1,10 @@
 ﻿<Window x:Class="Ksiegarnia_zad_5.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Ksiegarnia_zad_5"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="600" Width="800">
+    <Grid x:Name="MainDataContext">
+        <TextBlock x:Name="MetadaneTxtBlock" HorizontalAlignment="Left"  Margin="106,544,110,0" TextWrapping="Wrap" Text="{Binding MetadaneSummary}" VerticalAlignment="Top" RenderTransformOrigin="-3.18,5.375" Width="576"/>
+
+
     </Grid>
 </Window>

@@ -11,9 +11,19 @@ namespace zad_5_wpf
     public class Metadane
     {
         [XmlElement("autor_projektu", Namespace = "http://www.example.org/typyNasze")]
-        public List<AutorProjektu> autorzy;
+        public List<AutorProjektu> Autorzy { get; set; }
 
         [XmlElement("rok_akademicki", Namespace = "http://www.example.org/typyNasze")]
-        public String rok_akademicki;
+        public String Rok_akademicki { get; set; }
+
+        public String MetadaneSummary {
+            get {
+                String temp = "";
+                foreach (var s in Autorzy)
+                { temp += s.Kto + " - " + s.Indeks + "   •   "; }
+                return "Autorzy: " + temp + "Rok akademicki: " + Rok_akademicki;
+            } }
+
+
     }
 }

@@ -21,22 +21,26 @@ namespace Ksiegarnia_zad_5
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Ksiegarnia Dane { get; set; }
+        public Ksiegarnia Dane { get; set; } // tutaj znajdują się wszystkie dane do wyświetlania - trzeba jedynie dotrzeć do konkretnych property
         public XML Tools { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            
 
             Tools = new XML("..//..//Source//księgarnia_v1.3.xml", "..//..//Source//księgarnia_v1.3.xsd");
 
-            
+            Start();
             Console.WriteLine("Test");
             Console.WriteLine(Tools.XmlFile.Exists);
             Console.WriteLine(Tools.XmlFile.FullName);
-            //Console.WriteLine(Dane.metadane.rok_akademicki);
+            Console.WriteLine(Dane.Metadane.Rok_akademicki);
 
-            //Start();
-            // do poprawienia - deserializacja
+            this.MainDataContext.DataContext = Dane;
+            this.MetadaneTxtBlock.DataContext = Dane.Metadane;
+
+
+
 
         }
 
