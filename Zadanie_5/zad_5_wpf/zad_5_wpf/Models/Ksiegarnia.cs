@@ -28,7 +28,11 @@ namespace zad_5_wpf
         [XmlElement("metadane", Namespace = "http://www.example.org/typyNasze")]
         public Metadane Metadane { get; set; }
 
-      
+    
+         
+
+
+
 
     }
 }

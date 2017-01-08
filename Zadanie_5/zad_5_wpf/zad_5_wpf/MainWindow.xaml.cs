@@ -38,7 +38,31 @@ namespace Ksiegarnia_zad_5
 
             this.MainDataContext.DataContext = Dane;
             this.MetadaneTxtBlock.DataContext = Dane.Metadane;
-            KsiegarniaListBox.ItemsSource = Dane.Ksiazki;
+            List<String> ListaPozycji = new List<string>();
+
+            void fun()
+            {
+                foreach (var k in Dane.Ksiazki)
+                {
+                    ListaPozycji.Add(k.Tytul.ToString());
+                }
+                foreach (var k in Dane.Czasopisma)
+                {
+                    ListaPozycji.Add(k.Tytul.ToString());
+                }
+                foreach (var k in Dane.Ebooki)
+                {
+                    ListaPozycji.Add(k.Tytul.ToString());
+                }
+
+            }
+            fun();
+
+
+
+
+            KsiegarniaListBox.ItemsSource = ListaPozycji;
+            
 
 
         }
@@ -53,6 +77,11 @@ namespace Ksiegarnia_zad_5
             {
                Dane = Tools.Deserialize();
             }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

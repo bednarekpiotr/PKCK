@@ -8,7 +8,8 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="MetadaneTxtBlock" HorizontalAlignment="Left"  Margin="106,544,0,0" TextWrapping="Wrap" Text="{Binding MetadaneSummary}" VerticalAlignment="Top" RenderTransformOrigin="-3.18,5.375" Width="576"/>
-        <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="341" Margin="37,64,0,0" VerticalAlignment="Top" Width="221"/>
+        <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="449" Margin="37,64,0,0" VerticalAlignment="Top" Width="372"/>
+        <Label Content="Lista Pozycji " HorizontalAlignment="Left" Margin="161,10,0,0" VerticalAlignment="Top"/>
 
 
 
