@@ -38,8 +38,7 @@ namespace Ksiegarnia_zad_5
 
             this.MainDataContext.DataContext = Dane;
             this.MetadaneTxtBlock.DataContext = Dane.Metadane;
-
-
+            KsiegarniaListBox.ItemsSource = Dane.Ksiazki;
 
 
         }

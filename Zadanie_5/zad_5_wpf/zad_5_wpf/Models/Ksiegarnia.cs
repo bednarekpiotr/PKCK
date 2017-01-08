@@ -28,15 +28,7 @@ namespace zad_5_wpf
         [XmlElement("metadane", Namespace = "http://www.example.org/typyNasze")]
         public Metadane Metadane { get; set; }
 
-        public String KsiegarniaSummary {
-            get  {
-                String temp = " ";
-                foreach (var k in Ksiazki)
-                { temp += k.Tytul; }
-                return "Turyuł: " + temp;
-            }
-
-        }
+      
 
     }
 }

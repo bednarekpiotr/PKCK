@@ -3,7 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="600" Width="800">
     <Grid x:Name="MainDataContext">
-        <TextBlock x:Name="MetadaneTxtBlock" HorizontalAlignment="Left"  Margin="106,544,110,0" TextWrapping="Wrap" Text="{Binding MetadaneSummary}" VerticalAlignment="Top" RenderTransformOrigin="-3.18,5.375" Width="576"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="MetadaneTxtBlock" HorizontalAlignment="Left"  Margin="106,544,0,0" TextWrapping="Wrap" Text="{Binding MetadaneSummary}" VerticalAlignment="Top" RenderTransformOrigin="-3.18,5.375" Width="576"/>
+        <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="341" Margin="37,64,0,0" VerticalAlignment="Top" Width="221"/>
+
 
 
     </Grid>
