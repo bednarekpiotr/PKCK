@@ -27,6 +27,34 @@ namespace Ksiegarnia_zad_5
             this.MainDataContext.DataContext = Dane;
             this.MetadaneTxtBlock.DataContext = Dane.Metadane;
             List<String> ListaPozycji = new List<string>();
+            List<String> waluty = new List<string>();
+            waluty.Add("PLN");
+            waluty.Add("EUR");
+            waluty.Add("GBP");
+            waluty.Add("USD");
+            cenacombo.ItemsSource = waluty;
+
+            List<String> jezyki = new List<string>();
+            jezyki.Add("polski");
+            jezyki.Add("angielski");
+            jezyki.Add("niemiecki");
+            jezyki.Add("rosyjski");
+            jezykcombo.ItemsSource = jezyki;
+
+            List<String> pozycja = new List<string>();
+            pozycja.Add("książka");
+            pozycja.Add("e-book");
+            pozycja.Add("czasopismo");
+            pozycjacombo.ItemsSource = pozycja;
+
+            List<String> rozmiarilosc = new List<string>();
+            rozmiarilosc.Add("ilość stron:");
+            rozmiarilosc.Add("rozmiar w MB");
+            rozmiarilosc.Add("częstotliwość");
+            rozmiarilosccombo.ItemsSource = rozmiarilosc;
+
+
+
 
             void fun()
             {
@@ -79,16 +107,19 @@ namespace Ksiegarnia_zad_5
                     if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
                     {
                         isbn.Text = item.ISBN.ToString();
-                        iloscRozmiar.Content = "Ilość stron: ";
-                        jezyk.Text = item.Jezyk.ToString();
-                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + "   " + item.Wydanie.MiejsceWydania.ToString() + "   " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy"); 
+                        rozmiarilosccombo.Text = "ilość stron:";
+                        jezykcombo.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString();
+                        wydaniemiejsce.Text = item.Wydanie.MiejsceWydania.ToString();
+                        wydaniedata.Text= item.Wydanie.DataWydania.ToString("dd-MM-yyyy"); 
                         wydawnictwo.Text = item.Wydawnictwo.ToString();
-                        waluta.Content = item.Cena.Waluta.ToString();
+                        cenacombo.Text = item.Cena.Waluta.ToString();
                         cenatext.Text = item.Cena.Ile.ToString();
                         iloscRozmiartext.Text = item.IloscStron.ToString();
                         autorzytext.Text = item.Autorzy.ToString();
                         opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
                         opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        pozycjacombo.Text = "książka";
                     }
                 }
 
@@ -97,16 +128,19 @@ namespace Ksiegarnia_zad_5
                     if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
                     {
                         isbn.Text = item.ISBN.ToString();
-                        iloscRozmiar.Content = "Częstotliwość: ";
-                        waluta.Content = item.Cena.Waluta.ToString();
-                        jezyk.Text = item.Jezyk.ToString();
-                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + " " + item.Wydanie.MiejsceWydania.ToString() + " " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
+                        rozmiarilosccombo.Text = "częstotliwość";
+                        cenacombo.Text = item.Cena.Waluta.ToString();
+                        jezykcombo.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString();
+                        wydaniemiejsce.Text = item.Wydanie.MiejsceWydania.ToString();
+                        wydaniedata.Text = item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
                         wydawnictwo.Text = item.Wydawnictwo.ToString();
                         cenatext.Text = item.Cena.Ile.ToString();
                         iloscRozmiartext.Text = item.Czestotliwosc.ToString();
                         autorzytext.Text = item.Autorzy.ToString();
                         opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
                         opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        pozycjacombo.Text = "czasopismo";
                     }
                 }
                 foreach (var item in Dane.Ebooki)
@@ -114,16 +148,19 @@ namespace Ksiegarnia_zad_5
                     if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
                     {
                         isbn.Text = item.ISBN.ToString();
-                        iloscRozmiar.Content = "rozmiar w MB:  ";
-                        waluta.Content = item.Cena.Waluta.ToString();
-                        jezyk.Text = item.Jezyk.ToString();
-                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + " " + item.Wydanie.MiejsceWydania.ToString() + " " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
+                        rozmiarilosccombo.Text = "rozmiar w MB";
+                        cenacombo.Text = item.Cena.Waluta.ToString();
+                        jezykcombo.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString();
+                        wydaniemiejsce.Text = item.Wydanie.MiejsceWydania.ToString();
+                        wydaniedata.Text = item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
                         wydawnictwo.Text = item.Wydawnictwo.ToString();
                         cenatext.Text = item.Cena.Ile.ToString();
                         iloscRozmiartext.Text = item.Rozmiar.ToString();
                         autorzytext.Text = item.Autorzy.ToString();
                         opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
                         opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        pozycjacombo.Text = "e-book";
                     }
                 }
             }
@@ -137,14 +174,22 @@ namespace Ksiegarnia_zad_5
         {
             isbn.Clear();
             tytul.Clear();
-            jezyk.Clear();
             wydanie.Clear();
             wydawnictwo.Clear();
             cenatext.Clear();
-            iloscRozmiartext.Clear();
-            autorzytext.Clear();
+             autorzytext.Clear();
             opisskroconytext.Clear();
+            iloscRozmiartext.Clear();
+            wydanie.Clear();
+            wydaniemiejsce.Clear();
+            wydaniedata.Clear();
+
+
             opistext.Clear();
+       
+
         }
+
+
     }
 }

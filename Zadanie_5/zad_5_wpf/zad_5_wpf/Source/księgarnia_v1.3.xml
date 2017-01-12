@@ -438,6 +438,7 @@ xsi:schemaLocation="http://www.example.org/typyNasze księgarnia_v1.3.xsd" >
 				Zaktualizowane wydanie bestsellerowego poradnika o serwisowaniu roweru górskiego Książka zawiera
 				szczegółowe instrukcje obsługi i naprawy wszystkich części roweru górskiego.
 				</opis_skrócony>
+				nic tu nie ma
 				</opis>
 	</książka>
 	<książka pozycja_id="P51"  IdAutora="JF" autorzy="Joe Friel">
