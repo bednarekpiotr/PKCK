@@ -1,17 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using zad_5_wpf;
 
 namespace Ksiegarnia_zad_5
@@ -23,6 +12,9 @@ namespace Ksiegarnia_zad_5
     {
         public Ksiegarnia Dane { get; set; } // tutaj znajdują się wszystkie dane do wyświetlania - trzeba jedynie dotrzeć do konkretnych property
         public XML Tools { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -31,10 +23,6 @@ namespace Ksiegarnia_zad_5
             Tools = new XML("..//..//Source//księgarnia_v1.3.xml", "..//..//Source//księgarnia_v1.3.xsd");
 
             Start();
-            Console.WriteLine("Test");
-            Console.WriteLine(Tools.XmlFile.Exists);
-            Console.WriteLine(Tools.XmlFile.FullName);
-            Console.WriteLine(Dane.Metadane.Rok_akademicki);
 
             this.MainDataContext.DataContext = Dane;
             this.MetadaneTxtBlock.DataContext = Dane.Metadane;
@@ -57,12 +45,9 @@ namespace Ksiegarnia_zad_5
 
             }
             fun();
-
-
-
-
             KsiegarniaListBox.ItemsSource = ListaPozycji;
-            
+
+    
 
 
         }
@@ -77,11 +62,89 @@ namespace Ksiegarnia_zad_5
             {
                Dane = Tools.Deserialize();
             }
+
+
+
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (KsiegarniaListBox.SelectedItem != null)
+            {
+                
+                tytul.Text = KsiegarniaListBox.SelectedItem.ToString();
 
+                foreach (var item in Dane.Ksiazki )
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        isbn.Text = item.ISBN.ToString();
+                        iloscRozmiar.Content = "Ilość stron: ";
+                        jezyk.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + "   " + item.Wydanie.MiejsceWydania.ToString() + "   " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy"); 
+                        wydawnictwo.Text = item.Wydawnictwo.ToString();
+                        waluta.Content = item.Cena.Waluta.ToString();
+                        cenatext.Text = item.Cena.Ile.ToString();
+                        iloscRozmiartext.Text = item.IloscStron.ToString();
+                        autorzytext.Text = item.Autorzy.ToString();
+                        opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
+                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                    }
+                }
+
+                foreach (var item in Dane.Czasopisma)
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        isbn.Text = item.ISBN.ToString();
+                        iloscRozmiar.Content = "Częstotliwość: ";
+                        waluta.Content = item.Cena.Waluta.ToString();
+                        jezyk.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + " " + item.Wydanie.MiejsceWydania.ToString() + " " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
+                        wydawnictwo.Text = item.Wydawnictwo.ToString();
+                        cenatext.Text = item.Cena.Ile.ToString();
+                        iloscRozmiartext.Text = item.Czestotliwosc.ToString();
+                        autorzytext.Text = item.Autorzy.ToString();
+                        opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
+                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                    }
+                }
+                foreach (var item in Dane.Ebooki)
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        isbn.Text = item.ISBN.ToString();
+                        iloscRozmiar.Content = "rozmiar w MB:  ";
+                        waluta.Content = item.Cena.Waluta.ToString();
+                        jezyk.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString() + " " + item.Wydanie.MiejsceWydania.ToString() + " " + item.Wydanie.DataWydania.ToString("dd-MM-yyyy");
+                        wydawnictwo.Text = item.Wydawnictwo.ToString();
+                        cenatext.Text = item.Cena.Ile.ToString();
+                        iloscRozmiartext.Text = item.Rozmiar.ToString();
+                        autorzytext.Text = item.Autorzy.ToString();
+                        opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
+                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Wybierz pozycję z listy");
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            isbn.Clear();
+            tytul.Clear();
+            jezyk.Clear();
+            wydanie.Clear();
+            wydawnictwo.Clear();
+            cenatext.Clear();
+            iloscRozmiartext.Clear();
+            autorzytext.Clear();
+            opisskroconytext.Clear();
+            opistext.Clear();
         }
     }
 }
