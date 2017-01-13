@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Xml;
 using zad_5_wpf;
 
 namespace Ksiegarnia_zad_5
@@ -18,9 +19,10 @@ namespace Ksiegarnia_zad_5
         public MainWindow()
         {
             InitializeComponent();
-            
 
-            Tools = new XML("..//..//Source//księgarnia_v1.3.xml", "..//..//Source//księgarnia_v1.3.xsd");
+ 
+           // Tools = new XML("C:/Users/wlade_000/Documents/PKCK/Zadanie_5/zad_5_wpf/zad_5_wpf/Source/księgarnia_v1.3.xml", "C:/Users/wlade_000/Documents/PKCK/Zadanie_5/zad_5_wpf/zad_5_wpf/Source/księgarnia_v1.3.xsd");
+            Tools = new XML("księgarnia_v1.3.xml", "księgarnia_v1.3.xsd");
 
             Start();
 
@@ -190,6 +192,37 @@ namespace Ksiegarnia_zad_5
 
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+           // doc.Load("C:/Users/wlade_000/Documents/PKCK/Zadanie_5/zad_5_wpf/zad_5_wpf/Source/księgarnia_v1.3.xml");
+            doc.Load("księgarnia_v1.3.xml");
+            XmlNodeList nodes = doc.SelectNodes("/księgarnia/książka");
+            if (KsiegarniaListBox.SelectedItem != null)
+            {
+                MessageBox.Show(nodes.Count.ToString());
+                foreach (XmlNode item in nodes)
+                {
+                    if(item["tytuł"].InnerText.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        MessageBox.Show("Znaleziono");
+                        item.ParentNode.RemoveChild(item);
+                        doc.Save("C:/Users/wlade_000/Documents/PKCK/Zadanie_5/zad_5_wpf/zad_5_wpf/Source/księgarnia_v1.3.xml");
+                    }
+                }
 
+            }
+            else
+            {
+                MessageBox.Show("Wybierz pozycję");
+            }
+
+            
+            
+           
+
+
+            
+        }
     }
 }

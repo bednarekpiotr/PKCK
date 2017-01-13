@@ -11,34 +11,34 @@
         <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="639" Margin="37,64,0,0" VerticalAlignment="Top" Width="309"/>
         <Label Content="Lista Pozycji " HorizontalAlignment="Left" Margin="183,28,0,0" VerticalAlignment="Top"/>
         <Label Content="Tytuł" HorizontalAlignment="Left" Margin="375,110,0,0" VerticalAlignment="Top" Height="24" Width="74"/>
-        <Label Content="Język&#x9;" HorizontalAlignment="Left" Margin="375,167,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="isbn" HorizontalAlignment="Left" Height="23" Margin="483,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
-        <Label Content="ISBN" HorizontalAlignment="Left" Margin="375,203,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="iloscRozmiartext" HorizontalAlignment="Left" Height="23" Margin="550,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74"/>
-        <Label x:Name="iloscRozmiar" Content="" HorizontalAlignment="Left" Margin="375,237,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="wydanie" HorizontalAlignment="Left" Height="23" Margin="483,271,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
-        <Label Content="Wydanie&#x9;" HorizontalAlignment="Left" Margin="375,271,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="wydawnictwo" HorizontalAlignment="Left" Height="23" Margin="483,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
-        <Label Content="Wydawnictwo" HorizontalAlignment="Left" Margin="375,307,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="cenatext" Height="23" Margin="560,339,111,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Label Content="Cena  w" HorizontalAlignment="Left" Margin="382,339,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tytul" HorizontalAlignment="Left" Height="23" Margin="483,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243"/>
+        <Label Content="Język&#x9;" HorizontalAlignment="Left" Margin="375,187,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="isbn" HorizontalAlignment="Left" Height="23" Margin="483,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
+        <Label Content="ISBN" HorizontalAlignment="Left" Margin="375,223,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="iloscRozmiartext" HorizontalAlignment="Left" Height="23" Margin="550,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74"/>
+        <Label x:Name="iloscRozmiar" Content="" HorizontalAlignment="Left" Margin="375,257,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="wydanie" HorizontalAlignment="Left" Height="23" Margin="483,291,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40"/>
+        <Label Content="Wydanie&#x9;" HorizontalAlignment="Left" Margin="375,291,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="wydawnictwo" HorizontalAlignment="Left" Height="23" Margin="483,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
+        <Label Content="Wydawnictwo" HorizontalAlignment="Left" Margin="375,327,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cenatext" Height="23" Margin="560,359,111,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="Cena  w" HorizontalAlignment="Left" Margin="382,359,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tytul" HorizontalAlignment="Left" Height="48" Margin="483,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243"/>
         <Button Content="Wczytaj" HorizontalAlignment="Left" Margin="486,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBox x:Name="opisskroconytext" HorizontalAlignment="Left" Height="63" Margin="483,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Label x:Name="opisskroconylabel" Content="opis skrócony" HorizontalAlignment="Left" Margin="383,398,0,0" VerticalAlignment="Top"/>
         <Label x:Name="opislabel" Content="opis" HorizontalAlignment="Left" Margin="383,455,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="opistext" HorizontalAlignment="Left" Height="241" Margin="483,462,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
-        <Label x:Name="autorzylabel" Content="Autorzy" HorizontalAlignment="Left" Margin="376,134,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="autorzytext" HorizontalAlignment="Left" Height="23" Margin="484,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
+        <Label x:Name="autorzylabel" Content="Autorzy" HorizontalAlignment="Left" Margin="376,154,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="autorzytext" HorizontalAlignment="Left" Height="23" Margin="484,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
         <Button Content="Resetuj dane" HorizontalAlignment="Left" Margin="568,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <ComboBox x:Name="cenacombo" HorizontalAlignment="Left" Margin="484,339,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
-        <ComboBox x:Name="jezykcombo" HorizontalAlignment="Left" Margin="484,168,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="649,49,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="cenacombo" HorizontalAlignment="Left" Margin="484,359,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
+        <ComboBox x:Name="jezykcombo" HorizontalAlignment="Left" Margin="484,188,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="649,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
         <Label Content="Pozycja" HorizontalAlignment="Left" Margin="375,78,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="pozycjacombo" HorizontalAlignment="Left" Margin="485,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="rozmiarilosccombo" HorizontalAlignment="Left" Margin="375,237,0,0" VerticalAlignment="Top" Width="135"/>
-        <TextBox x:Name="wydaniemiejsce" HorizontalAlignment="Left" Height="23" Margin="536,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="wydaniedata" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="662,272,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="108" />
+        <ComboBox x:Name="rozmiarilosccombo" HorizontalAlignment="Left" Margin="375,257,0,0" VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="wydaniemiejsce" HorizontalAlignment="Left" Height="23" Margin="536,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="wydaniedata" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="662,292,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="108" />
 
 
 
