@@ -89,12 +89,12 @@
     <wydawnictwo>Świat Książki</wydawnictwo>
     <cena waluta="USD">27.64</cena>
     <opis>
-      <opis_skrócony>Znakomita książka, miliony sprzedanych egzemplarzy na całym świecie. </opis_skrócony> 
-				Rachel każdego ranka dojeżdża do pracy tym samym pociągiem. Wie, że pociąg zawsze zatrzymuje się przed tym samym semaforem,
-				dokładnie naprzeciwko szeregu domów. Zaczyna się jej nawet wydawać, że zna ludzi, którzy mieszkają w jednym z nich.
-				Uważa, że prowadzą doskonałe życie. Gdyby tylko mogła być tak szczęśliwa jak oni. I nagle widzi coś wstrząsającego.
-				Widzi tylko przez chwilę, bo pociąg rusza, ale to wystarcza. Wszystko się zmienia.
-				</opis>
+      <opis_skrócony>Znakomita książka, miliony sprzedanych egzemplarzy na całym świecie. </opis_skrócony>
+      Rachel każdego ranka dojeżdża do pracy tym samym pociągiem. Wie, że pociąg zawsze zatrzymuje się przed tym samym semaforem,
+      dokładnie naprzeciwko szeregu domów. Zaczyna się jej nawet wydawać, że zna ludzi, którzy mieszkają w jednym z nich.
+      Uważa, że prowadzą doskonałe życie. Gdyby tylko mogła być tak szczęśliwa jak oni. I nagle widzi coś wstrząsającego.
+      Widzi tylko przez chwilę, bo pociąg rusza, ale to wystarcza. Wszystko się zmienia.
+    </opis>
   </książka>
   <książka pozycja_id="P15" IdAutora="CL" IdKategorii="PSYCH" autorzy="Camilla Lackberg">
     <tytuł>Ofiara losu</tytuł>
@@ -108,16 +108,18 @@
     <wydawnictwo>Czarna Owca</wydawnictwo>
     <cena waluta="PLN">18.68</cena>
     <opis>
-      <opis_skrócony>Camilla Läckberg, jedna z najciekawszych szwedzkich pisarek, 
-				uznawana za mistrzynię skandynawskiego kryminału. </opis_skrócony>
-				Policja w Tanumshede bada wypadek samochodowy. 
-				To, co wygląda na tragiczne zdarzenie, po kolejnym, 
-				podobnym wypadku zaczyna budzić podejrzenia. Policja ma pełne ręce roboty, tym bardziej że 
-				w mieście kręcony jest telewizyjny reality show. Obecność kamer podsyca tylko konflikt między 
-				„gwiazdami” a miejscową społecznością. Pogoń za zabójcą oraz problemy osobiste wywołują u Patrika Hedströma stres i frustrację.
-				Tym silniejsze, że staje wobec największego dotąd wyzwania detektywistycznego w swojej karierze a przy okazji 
-				musi się zmierzyć z bolesną przeszłością.
-				</opis>
+      <opis_skrócony>
+        Camilla Läckberg, jedna z najciekawszych szwedzkich pisarek,
+        uznawana za mistrzynię skandynawskiego kryminału.
+      </opis_skrócony>
+      Policja w Tanumshede bada wypadek samochodowy.
+      To, co wygląda na tragiczne zdarzenie, po kolejnym,
+      podobnym wypadku zaczyna budzić podejrzenia. Policja ma pełne ręce roboty, tym bardziej że
+      w mieście kręcony jest telewizyjny reality show. Obecność kamer podsyca tylko konflikt między
+      „gwiazdami” a miejscową społecznością. Pogoń za zabójcą oraz problemy osobiste wywołują u Patrika Hedströma stres i frustrację.
+      Tym silniejsze, że staje wobec największego dotąd wyzwania detektywistycznego w swojej karierze a przy okazji
+      musi się zmierzyć z bolesną przeszłością.
+    </opis>
   </książka>
   <książka pozycja_id="P21" IdAutora="PGZ" IdAutoraDrugiego="RJG" IdKategorii="PSYCH" autorzy="Philip G. Zimbardo, Richard J. Gerrig">
     <tytuł>Psychologia i życie</tytuł>
@@ -132,11 +134,11 @@
     <cena waluta="PLN">107.28</cena>
     <opis>
       <opis_skrócony>Najlepszy podręcznik wprowadzający w tematykę psychologii.</opis_skrócony>
-				Książka ta: prezentuje wiedzę z całego zakresu psychologii,
-                    dostarcza naukowych narzędzi do krytycznej oceny wiarygodności wyników badań oraz potocznej wiedzy psychologicznej,
-                    napisany przystępnym językiem, zawiera ilustracje ułatwiające zrozumienie najtrudniejszych zagadnień,
-                    znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
-				</opis>
+      Książka ta: prezentuje wiedzę z całego zakresu psychologii,
+      dostarcza naukowych narzędzi do krytycznej oceny wiarygodności wyników badań oraz potocznej wiedzy psychologicznej,
+      napisany przystępnym językiem, zawiera ilustracje ułatwiające zrozumienie najtrudniejszych zagadnień,
+      znany na całym świecie, przetłumaczony na język chiński, japoński, rosyjski, hiszpański, niemiecki, włoski, portugalski.
+    </opis>
   </książka>
   <e-book pozycja_id="P12" IdAutora="AC" IdKategorii="PSYCH" autorzy="Agata Christie">
     <tytuł>Dopóki starczy światła</tytuł>
@@ -151,11 +153,11 @@
     <cena waluta="EUR">15.57</cena>
     <opis>
       <opis_skrócony>Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne. </opis_skrócony>
-				Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
-				Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
-				Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
-				
-				</opis>
+      Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
+      Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
+      Agata Christie dla zapracowanych: zbiór krótkich, kilkustronicowych opowiadań na tematy kryminalne.
+
+    </opis>
   </e-book>
   <czasopismo pozycja_id="P14" IdAutora="MS" IdKategorii="POR" autorzy="Martin Suter">
     <tytuł>Montecristo</tytuł>
@@ -169,12 +171,14 @@
     <wydawnictwo>Redis</wydawnictwo>
     <cena waluta="PLN">27.92</cena>
     <opis>
-      <opis_skrócony>Numer 1 na liście bestsellerów „Spiegla”.
-				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich.</opis_skrócony>
-				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
-				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
-				Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
-				</opis>
+      <opis_skrócony>
+        Numer 1 na liście bestsellerów „Spiegla”.
+        Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich.
+      </opis_skrócony>
+      Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
+      Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
+      Martin Suter – jeden z najlepszych współczesnych pisarzy szwajcarskich
+    </opis>
   </czasopismo>
   <e-book pozycja_id="P16" IdAutora="AC" IdKategorii="PSYCH" autorzy="Agata Christie">
     <tytuł>Tajemnica Sittaford</tytuł>
@@ -189,10 +193,10 @@
     <cena waluta="EUR">12.74</cena>
     <opis>
       <opis_skrócony>Bestseller.</opis_skrócony>
-				Kapitan Trevelyan leżał na środku, twarzą do podłogi. Ręce miał szeroko rozrzucone. W pokoju panował bałagan :
-				szuflady powyciągano z biurka, papiery poniewierały się na podłodze. Na ramie oszklonych drzwi, przez które weszli,
-				widać było przy zamku ślady włamania. Obok kapitana leżał gruby na dwa cale wałek ciasno zwiniętego zielonego sukna.
-				</opis>
+      Kapitan Trevelyan leżał na środku, twarzą do podłogi. Ręce miał szeroko rozrzucone. W pokoju panował bałagan :
+      szuflady powyciągano z biurka, papiery poniewierały się na podłodze. Na ramie oszklonych drzwi, przez które weszli,
+      widać było przy zamku ślady włamania. Obok kapitana leżał gruby na dwa cale wałek ciasno zwiniętego zielonego sukna.
+    </opis>
   </e-book>
   <książka pozycja_id="P31" IdAutora="CSL" IdKategorii="FAN" autorzy="C. S. Levis">
     <tytuł>Opowieści z Narnii Lew, Czarownica i stara szafa</tytuł>
@@ -206,12 +210,14 @@
     <wydawnictwo>Media Rodzina</wydawnictwo>
     <cena waluta="PLN">14.26</cena>
     <opis>
-      <opis_skrócony>Kultowy cykl stworzony przez profesora z Oksfordu od lat niesie nieprzemijalne wartości
-				i uczy rozwijać wyobraźnię kolejnych pokoleń młodych czytelników.</opis_skrócony>
-				Często miarą sukcesu czytelniczego książki jest filmowa ekranizacja dzieł literackiego,
-				której w przypadku Lwa, Czarownicy i starej szafy podjęła się wytwórnia Walta Disneya przenosząca już nie 
-				raz na ekran dziecięce marzenia.
-				</opis>
+      <opis_skrócony>
+        Kultowy cykl stworzony przez profesora z Oksfordu od lat niesie nieprzemijalne wartości
+        i uczy rozwijać wyobraźnię kolejnych pokoleń młodych czytelników.
+      </opis_skrócony>
+      Często miarą sukcesu czytelniczego książki jest filmowa ekranizacja dzieł literackiego,
+      której w przypadku Lwa, Czarownicy i starej szafy podjęła się wytwórnia Walta Disneya przenosząca już nie
+      raz na ekran dziecięce marzenia.
+    </opis>
   </książka>
   <e-book pozycja_id="P32" IdAutora="CSL" IdKategorii="FAN" autorzy="C. S. Levis">
     <tytuł>Ostatnia bitwa</tytuł>
@@ -226,10 +232,10 @@
     <cena waluta="PLN">14.31</cena>
     <opis>
       <opis_skrócony>Bestseller</opis_skrócony>
-				W końcowym, siódmym tomie cyklu jesteśmy świadkami śmiertelnego boju o Narnię, do jakiego staje ostatni król,
-				Tirian, wraz z garstką przyjaciół. 
-				Czy uda im się zwyciężyć i ocalić cudowną krainę przed zniszczeniem?
-				</opis>
+      W końcowym, siódmym tomie cyklu jesteśmy świadkami śmiertelnego boju o Narnię, do jakiego staje ostatni król,
+      Tirian, wraz z garstką przyjaciół.
+      Czy uda im się zwyciężyć i ocalić cudowną krainę przed zniszczeniem?
+    </opis>
   </e-book>
   <czasopismo pozycja_id="P33" IdAutora="CSL" IdKategorii="FAN" autorzy="C. S. Levis">
     <tytuł>Książę Kaspian</tytuł>
@@ -244,11 +250,11 @@
     <cena waluta="PLN">15.65</cena>
     <opis>
       <opis_skrócony>Cykl Opowieści z Narni</opis_skrócony>
-				W życiu znanych nam z tomu Lew, Czarownica i stara szafa bohaterów upłynąl rok, w świecie Narnii natomiast 1300 lat!
-				Piotr, Zuzanna, Edmund i Łucja - młodzi bohaterowie opowieści - spieszą na pomoc prawowitemu władcy Narnii,
-				księciu Kaspianowi, który toczy śmiertelny bój o prawo do tronu. Drugi tom narnijskiej sagi w szacie filmowej
-				ilustrowany fotosami z ekranizacji Księcia Kaspiana.
-				</opis>
+      W życiu znanych nam z tomu Lew, Czarownica i stara szafa bohaterów upłynąl rok, w świecie Narnii natomiast 1300 lat!
+      Piotr, Zuzanna, Edmund i Łucja - młodzi bohaterowie opowieści - spieszą na pomoc prawowitemu władcy Narnii,
+      księciu Kaspianowi, który toczy śmiertelny bój o prawo do tronu. Drugi tom narnijskiej sagi w szacie filmowej
+      ilustrowany fotosami z ekranizacji Księcia Kaspiana.
+    </opis>
   </czasopismo>
   <książka pozycja_id="P34" IdAutora="CSL" IdKategorii="FAN" autorzy="C. S. Levis">
     <tytuł>Siostrzeniec Czarodzieja</tytuł>
@@ -263,11 +269,11 @@
     <cena waluta="PLN">14.31</cena>
     <opis>
       <opis_skrócony>Cykl Opowieści z Narni</opis_skrócony>
-				W szóstym tomie cyklu poznajemy przygody dwójki przyjaciół, Digory'ego i Poli, którzy przeniesieni 
-				zostają niespodziewanie z Londynu do Innego Świata.
-				Spotykają tam złą czarownicę Jadis, ale przede wszystkim stają się świadkami narodzin Narnii wraz z 
-				jej wszystkimi zwierzętami i niezwykłościami...
-				</opis>
+      W szóstym tomie cyklu poznajemy przygody dwójki przyjaciół, Digory'ego i Poli, którzy przeniesieni
+      zostają niespodziewanie z Londynu do Innego Świata.
+      Spotykają tam złą czarownicę Jadis, ale przede wszystkim stają się świadkami narodzin Narnii wraz z
+      jej wszystkimi zwierzętami i niezwykłościami...
+    </opis>
   </książka>
   <książka pozycja_id="P35" IdAutora="SK" IdKategorii="FAN" autorzy="Stephen King">
     <tytuł>Lśnienie</tytuł>
@@ -282,12 +288,12 @@
     <cena waluta="USD">9.31</cena>
     <opis>
       <opis_skrócony>Bestseller</opis_skrócony>
-				Jack Torrance, były nauczyciel, a obecnie poszukujący weny pisarz, otrzymuje pracę dozorcy w opuszczonym
-				na okres zimowy górskim hotelu Overlook. Kiedy burze śnieżne odcinają od świata rodzinę Torrance'ów,
-				obdarzony telepatycznymi zdolnościami Danny, pięcioletni syn Jacka, odkrywa, że hotel jest nawiedzony,
-				a duchy powoli doprowadzają jego ojca do obłędu. Sytuacja staje się coraz bardziej napięta, aż pewnego
-				dnia mężczyzna przestaje nad sobą panować...
-				</opis>
+      Jack Torrance, były nauczyciel, a obecnie poszukujący weny pisarz, otrzymuje pracę dozorcy w opuszczonym
+      na okres zimowy górskim hotelu Overlook. Kiedy burze śnieżne odcinają od świata rodzinę Torrance'ów,
+      obdarzony telepatycznymi zdolnościami Danny, pięcioletni syn Jacka, odkrywa, że hotel jest nawiedzony,
+      a duchy powoli doprowadzają jego ojca do obłędu. Sytuacja staje się coraz bardziej napięta, aż pewnego
+      dnia mężczyzna przestaje nad sobą panować...
+    </opis>
   </książka>
   <książka pozycja_id="P45" IdAutora="LC" IdKategorii="POR" autorzy="Lorel Cordial">
     <tytuł>Dieta dla aktywnych</tytuł>
@@ -302,14 +308,14 @@
     <cena waluta="PLN">25.50</cena>
     <opis>
       <opis_skrócony>Paleodieta, to najefektywniejszy sposób odżywiania dla osób prowadzących aktywny tryb życia.</opis_skrócony>
-			Stosowanie paleodiety pomaga osiągać lepsze wyniki i szybciej odzyskiwać siły po intensywnym wysiłku.
-			To długoterminowa strategia obliczona na poprawę wyników i zdrowia, a nie błyskawicznie działająca dieta
-			odchudzająca. Paleodieta opiera się na czterech głównych założeniach: - wykorzystaniu rytmu trawienia węglowodanów
-			i białek, a zwłaszcza aminokwasów o rozgałęzionych łańcuchach, - doborze pokarmów do treningu pod kątem ładunku glikemicznego,
-			- wpływie naszej diety na krew i inne płyny fizjologiczne, - zmianach diety w zależności od fazy treningu (przed, w trakcie, po).
-			Paleodietę stosuje wielu największych zawodowych sportowców. Książka nie jest jednak skierowana tylko do mistrzów światowej klasy.
-			To propozycja dla zwykłych ludzi, amatorów sportu.
-				</opis>
+      Stosowanie paleodiety pomaga osiągać lepsze wyniki i szybciej odzyskiwać siły po intensywnym wysiłku.
+      To długoterminowa strategia obliczona na poprawę wyników i zdrowia, a nie błyskawicznie działająca dieta
+      odchudzająca. Paleodieta opiera się na czterech głównych założeniach: - wykorzystaniu rytmu trawienia węglowodanów
+      i białek, a zwłaszcza aminokwasów o rozgałęzionych łańcuchach, - doborze pokarmów do treningu pod kątem ładunku glikemicznego,
+      - wpływie naszej diety na krew i inne płyny fizjologiczne, - zmianach diety w zależności od fazy treningu (przed, w trakcie, po).
+      Paleodietę stosuje wielu największych zawodowych sportowców. Książka nie jest jednak skierowana tylko do mistrzów światowej klasy.
+      To propozycja dla zwykłych ludzi, amatorów sportu.
+    </opis>
   </książka>
   <książka pozycja_id="P46" IdAutora="NC" IdKategorii="POR" autorzy="Nancy Clark">
     <tytuł>Jedz i trenuj</tytuł>
@@ -323,16 +329,18 @@
     <wydawnictwo>Buk Rower</wydawnictwo>
     <cena waluta="PLN">37.43</cena>
     <opis>
-      <opis_skrócony>Nabierz energii, zredukuj stres, buduj tkankę mięśniową, schudnij i popraw formę 
-				dzięki bestsellerowemu poradnikowi o odżywianiu dla sportowców.</opis_skrócony>
-				Czołowa sportowa dietetyczka pokazuje, jak uzyskać maksymalne efekty, wykorzystując potrawy i posiłki, 
-				które lubisz jeść. Książka bazuje na najświeższych badaniach nad odżywianiem, nawadnianiem, witaminami,
-				suplementami oraz rolą węglowodanów i białka podczas wysiłku. Daje odpowiedzi na nurtujące cię pytania o to,
-				co jeść przed treningiem, w jego trakcie i po zakończeniu, a także jak osiągnąć optymalną regenerację.
-				Bez względu na to, czy przygotowujesz się do startu w zawodach, czy po prostu lubisz aktywność fizyczną.
-				Jeśli chcesz się wreszcie skutecznie odchudzić, marzysz, by już nigdy nie zabrakło ci energii do treningu,
-				szukasz sposobu na poprawę zdrowia i formy sportowej – właśnie znalazłeś sprzymierzeńca, któremu możesz w pełni zaufać.
-				</opis>
+      <opis_skrócony>
+        Nabierz energii, zredukuj stres, buduj tkankę mięśniową, schudnij i popraw formę
+        dzięki bestsellerowemu poradnikowi o odżywianiu dla sportowców.
+      </opis_skrócony>
+      Czołowa sportowa dietetyczka pokazuje, jak uzyskać maksymalne efekty, wykorzystując potrawy i posiłki,
+      które lubisz jeść. Książka bazuje na najświeższych badaniach nad odżywianiem, nawadnianiem, witaminami,
+      suplementami oraz rolą węglowodanów i białka podczas wysiłku. Daje odpowiedzi na nurtujące cię pytania o to,
+      co jeść przed treningiem, w jego trakcie i po zakończeniu, a także jak osiągnąć optymalną regenerację.
+      Bez względu na to, czy przygotowujesz się do startu w zawodach, czy po prostu lubisz aktywność fizyczną.
+      Jeśli chcesz się wreszcie skutecznie odchudzić, marzysz, by już nigdy nie zabrakło ci energii do treningu,
+      szukasz sposobu na poprawę zdrowia i formy sportowej – właśnie znalazłeś sprzymierzeńca, któremu możesz w pełni zaufać.
+    </opis>
   </książka>
   <książka pozycja_id="P47" IdAutora="TL" IdKategorii="POR" autorzy="Terry Laughlin">
     <tytuł>Pływanie dla każdego</tytuł>
@@ -347,17 +355,18 @@
     <cena waluta="PLN">21.56</cena>
     <opis>
       <opis_skrócony>
-				Pragniesz zrewolucjonizować swoje podejście do pływania? Książka "Pływanie dla każdego" wprowadzi
-				Cię w tajniki metody Total Immersion. 
-				</opis_skrócony>
-				Niezależnie od wieku, poziomu umiejętności i naturalnych
-				predyspozycji będziesz pływać szybciej, efektywniej i z mniejszym wysiłkiem. Koncentrując się 
-				na odpowiednim ułożeniu ciała i zgłębianiu świadomości swoich ruchów, staniesz się pływackim mistrzem,
-				a trening już nigdy nie wyda ci się męczący!
-				"Pływanie dla każdego" może pomóc doświadczonym i utytułowanym pływakom w odświeżeniu i
-				urozmaiceniu rutynowego treningu. Pływający dla zdrowia i dobrej kondycji nauczą się w
-				pełni wykorzystywać każdą minutę, a ci, którym zależy na prędkości, znajdą dla siebie cenne
-				informacje na każdej stronie książki.</opis>
+        Pragniesz zrewolucjonizować swoje podejście do pływania? Książka "Pływanie dla każdego" wprowadzi
+        Cię w tajniki metody Total Immersion.
+      </opis_skrócony>
+      Niezależnie od wieku, poziomu umiejętności i naturalnych
+      predyspozycji będziesz pływać szybciej, efektywniej i z mniejszym wysiłkiem. Koncentrując się
+      na odpowiednim ułożeniu ciała i zgłębianiu świadomości swoich ruchów, staniesz się pływackim mistrzem,
+      a trening już nigdy nie wyda ci się męczący!
+      "Pływanie dla każdego" może pomóc doświadczonym i utytułowanym pływakom w odświeżeniu i
+      urozmaiceniu rutynowego treningu. Pływający dla zdrowia i dobrej kondycji nauczą się w
+      pełni wykorzystywać każdą minutę, a ci, którym zależy na prędkości, znajdą dla siebie cenne
+      informacje na każdej stronie książki.
+    </opis>
   </książka>
   <książka pozycja_id="P48" IdAutora="HK" IdKategorii="POR" autorzy="Hal Koerner">
     <tytuł>Przewodnik po bieganiu ultra</tytuł>
@@ -372,15 +381,15 @@
     <cena waluta="PLN">18.68</cena>
     <opis>
       <opis_skrócony>
-				Hal Koerner przywołuje własne doświadczenia, dzięki którym przygotujesz się do swojego wyścigu.
-				</opis_skrócony>
-				Poznasz najważniejsze dla każdego ultrasa zagadnienia: wybór zawodów ultramaratońskich,
-				sprzęt do biegów ultra, nawadnianie i dostarczanie paliwa w trakcie biegu, technika biegów w terenie, 
-				pierwsza pomoc w starciu z otarciami, pęcherzami i wymiotami, taktyka rozgrywania zawodów, ekipa wsparcia i przepaki, 
-				plany treningowe, przygotowujące do startu na dystansie od 50 kilometrów do 100 mil.
-				Na dystansach ultra nie ma miejsca na błędy. Przygotuj się na największe wyzwanie biegowe w życiu,
-				ucząc się na cudzych doświadczeniach. Stań pewny siebie na starcie i dobiegnij do mety z poradnikiem Hala Koernera.
-				</opis>
+        Hal Koerner przywołuje własne doświadczenia, dzięki którym przygotujesz się do swojego wyścigu.
+      </opis_skrócony>
+      Poznasz najważniejsze dla każdego ultrasa zagadnienia: wybór zawodów ultramaratońskich,
+      sprzęt do biegów ultra, nawadnianie i dostarczanie paliwa w trakcie biegu, technika biegów w terenie,
+      pierwsza pomoc w starciu z otarciami, pęcherzami i wymiotami, taktyka rozgrywania zawodów, ekipa wsparcia i przepaki,
+      plany treningowe, przygotowujące do startu na dystansie od 50 kilometrów do 100 mil.
+      Na dystansach ultra nie ma miejsca na błędy. Przygotuj się na największe wyzwanie biegowe w życiu,
+      ucząc się na cudzych doświadczeniach. Stań pewny siebie na starcie i dobiegnij do mety z poradnikiem Hala Koernera.
+    </opis>
   </książka>
   <książka pozycja_id="P49" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
     <tytuł>Triatlon Biblia treningu</tytuł>
@@ -395,14 +404,14 @@
     <cena waluta="PLN">41.18</cena>
     <opis>
       <opis_skrócony>
-				„TRIATLON biblia treningu” to najlepsza i najbardziej wszechstronna książka poświęcona triatlonowi.
-				</opis_skrócony>
-				Zawiera wszystkie informacje potrzebne nowicjuszowi, rozwijającemu skrzydła juniorowi, 
-				mistrzowi w swojej grupie wiekowej oraz zawodnikowi występującemu na szczeblu elitarnym.
-				Uczestnictwo w zawodach triatlonowych to olbrzymie wyzwanie, a samodzielne
-				trenowanie wymaga olbrzymiej dyscypliny i siły woli. W książce zebrano aktualne 
-				poglądy trenerów, zawodników i specjalistów od sportów wielodyscyplinowych.
-				</opis>
+        „TRIATLON biblia treningu” to najlepsza i najbardziej wszechstronna książka poświęcona triatlonowi.
+      </opis_skrócony>
+      Zawiera wszystkie informacje potrzebne nowicjuszowi, rozwijającemu skrzydła juniorowi,
+      mistrzowi w swojej grupie wiekowej oraz zawodnikowi występującemu na szczeblu elitarnym.
+      Uczestnictwo w zawodach triatlonowych to olbrzymie wyzwanie, a samodzielne
+      trenowanie wymaga olbrzymiej dyscypliny i siły woli. W książce zebrano aktualne
+      poglądy trenerów, zawodników i specjalistów od sportów wielodyscyplinowych.
+    </opis>
   </książka>
   <książka pozycja_id="P50" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
     <tytuł>Zinn i sztuka serwisowania roweru górskiegoc</tytuł>
@@ -417,9 +426,9 @@
     <cena waluta="PLN">48.60</cena>
     <opis>
       <opis_skrócony>
-				Zaktualizowane wydanie bestsellerowego poradnika o serwisowaniu roweru górskiego Książka zawiera
-				szczegółowe instrukcje obsługi i naprawy wszystkich części roweru górskiego.
-				</opis_skrócony>
+        Zaktualizowane wydanie bestsellerowego poradnika o serwisowaniu roweru górskiego Książka zawiera
+        szczegółowe instrukcje obsługi i naprawy wszystkich części roweru górskiego.
+      </opis_skrócony>
     </opis>
   </książka>
   <książka pozycja_id="P51" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
@@ -435,14 +444,14 @@
     <cena waluta="PLN">20.30</cena>
     <opis>
       <opis_skrócony>
-				Jeśli szukasz wskazówek, które mogłyby poprawić twoją technikę biegową, interesujesz się ideą biegania
-				naturalnego, to w książce Danny’ego Abshire’a znajdziesz niezbędne wskazówki. 
-				</opis_skrócony>
-				Autor zaczyna od wyjaśnienia czym bieganie naturalne jest, opisuje też ewolucję biegania
-				oraz rozmaitych trendów w tworzeniu obuwia dla biegaczy. Zachęca, byśmy obserwowali siebie 
-				i innych, dostrzegali te elementy techniki, nad którymi warto popracować. Dostajesz wskazówki, które pomogą 
-				ci przeprowadzić autoanalizę swojej biegowej postawy i skorygowanie błędów.
-				</opis>
+        Jeśli szukasz wskazówek, które mogłyby poprawić twoją technikę biegową, interesujesz się ideą biegania
+        naturalnego, to w książce Danny’ego Abshire’a znajdziesz niezbędne wskazówki.
+      </opis_skrócony>
+      Autor zaczyna od wyjaśnienia czym bieganie naturalne jest, opisuje też ewolucję biegania
+      oraz rozmaitych trendów w tworzeniu obuwia dla biegaczy. Zachęca, byśmy obserwowali siebie
+      i innych, dostrzegali te elementy techniki, nad którymi warto popracować. Dostajesz wskazówki, które pomogą
+      ci przeprowadzić autoanalizę swojej biegowej postawy i skorygowanie błędów.
+    </opis>
   </książka>
   <książka pozycja_id="P52" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
     <tytuł>Serwisowanie samochodu</tytuł>
@@ -457,9 +466,9 @@
     <cena waluta="PLN">46.60</cena>
     <opis>
       <opis_skrócony>
-				Zaktualizowane wydanie bestsellerowego poradnika o serwisowaniu roweru górskiego Książka zawiera 
-				szczegółowe instrukcje obsługi i naprawy wszystkich części samochodu
-				</opis_skrócony>
+        Zaktualizowane wydanie bestsellerowego poradnika o serwisowaniu roweru górskiego Książka zawiera
+        szczegółowe instrukcje obsługi i naprawy wszystkich części samochodu
+      </opis_skrócony>
     </opis>
   </książka>
   <książka pozycja_id="P53" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
@@ -475,20 +484,20 @@
     <cena waluta="PLN">28.80</cena>
     <opis>
       <opis_skrócony>
-				Dieta dr. Franka oparta jest na badaniach przeprowadzonych przez mój zespół badawczy i
-				na ponad ćwierćwieczu mojego doświadczenia w leczeniu pacjentów obciążonych otyłością.  
-				</opis_skrócony>
-				Co wyróżnia tę dietę? Co sprawia, że jest skuteczna? Otóż dieta ta daje uczucie sytości.
-				Oznacza to, że łatwiej ją przez to stosować, gdyż rzadziej odczuwasz głód. A to co czyni
-				te dietę smaczną – to wiele łakoci, które wolno Ci jeść! Fakt, że wielu ludzi rezygnuje
-				z jakiejś diety jest spowodowany tym, że uczucie głodu nasila się z powodu zbyt małej 
-				ilości sycących składników odżywczych. Niechaj ta książka stanie się Twą kulinarną inspiracją!
-				Zawiera mnóstwo przepisów na przepyszne i smakowite dania oraz liczne porady, które pomogą Ci 				
-				skutecznie i trwale pozbyć się zbędnych kilogramów. Pamiętaj: odchudzanie powinno być przyjemnością,
-				wówczas osiągniesz sukces! lądować na pięcie. Aby zmiany wprowadzać w życie stopniowo otrzymujesz też
-				kompletny plan treningowy, ćwiczenia siłowe, sprawnościowe i rozciągające. Dzięki książce zredukujesz
-				lub wyeliminujesz ryzyko kontuzji.
-				</opis>
+        Dieta dr. Franka oparta jest na badaniach przeprowadzonych przez mój zespół badawczy i
+        na ponad ćwierćwieczu mojego doświadczenia w leczeniu pacjentów obciążonych otyłością.
+      </opis_skrócony>
+      Co wyróżnia tę dietę? Co sprawia, że jest skuteczna? Otóż dieta ta daje uczucie sytości.
+      Oznacza to, że łatwiej ją przez to stosować, gdyż rzadziej odczuwasz głód. A to co czyni
+      te dietę smaczną – to wiele łakoci, które wolno Ci jeść! Fakt, że wielu ludzi rezygnuje
+      z jakiejś diety jest spowodowany tym, że uczucie głodu nasila się z powodu zbyt małej
+      ilości sycących składników odżywczych. Niechaj ta książka stanie się Twą kulinarną inspiracją!
+      Zawiera mnóstwo przepisów na przepyszne i smakowite dania oraz liczne porady, które pomogą Ci
+      skutecznie i trwale pozbyć się zbędnych kilogramów. Pamiętaj: odchudzanie powinno być przyjemnością,
+      wówczas osiągniesz sukces! lądować na pięcie. Aby zmiany wprowadzać w życie stopniowo otrzymujesz też
+      kompletny plan treningowy, ćwiczenia siłowe, sprawnościowe i rozciągające. Dzięki książce zredukujesz
+      lub wyeliminujesz ryzyko kontuzji.
+    </opis>
   </książka>
   <książka pozycja_id="P54" IdAutora="JF" IdKategorii="POR" autorzy="Joe Friel">
     <tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
@@ -503,18 +512,18 @@
     <cena waluta="PLN">17.63</cena>
     <opis>
       <opis_skrócony>
-				Jeżeli do tej pory zrzucanie zbędnych kilogramów wywoływało u Ciebie wyłącznie
-				negatywne odczucia, powinieneś koniecznie przeczytać tę książkę.   
-				</opis_skrócony>
-				Odchudzanie może być bowiem nie tylko skuteczne, ale przy okazji bardzo przyjemne!
-				Wszystko za sprawą Autorki, która teraz dzieli się z Tobą swoim wieloletnim doświadczeniem w tej dziedzinie.
-				Łączy ona odchudzanie z elementami psychologii i poza aspektem fizycznym, skupia się również na samopoczuciu i
-				emocjach osoby, która się odchudza. W tej książce znajdziesz 10 sprawdzonych sposobów na wzmocnienie motywacji
-				i dowiesz się, jak opracować realny cel, który będzie Cię wspomagał na drodze do szczupłej sylwetki.
-				Poznasz sekrety terapii śmiechem pomagającej zrzucić wagę oraz będziesz mógł wykorzystać odchudzający
-				trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
-				smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
-				</opis>
+        Jeżeli do tej pory zrzucanie zbędnych kilogramów wywoływało u Ciebie wyłącznie
+        negatywne odczucia, powinieneś koniecznie przeczytać tę książkę.
+      </opis_skrócony>
+      Odchudzanie może być bowiem nie tylko skuteczne, ale przy okazji bardzo przyjemne!
+      Wszystko za sprawą Autorki, która teraz dzieli się z Tobą swoim wieloletnim doświadczeniem w tej dziedzinie.
+      Łączy ona odchudzanie z elementami psychologii i poza aspektem fizycznym, skupia się również na samopoczuciu i
+      emocjach osoby, która się odchudza. W tej książce znajdziesz 10 sprawdzonych sposobów na wzmocnienie motywacji
+      i dowiesz się, jak opracować realny cel, który będzie Cię wspomagał na drodze do szczupłej sylwetki.
+      Poznasz sekrety terapii śmiechem pomagającej zrzucić wagę oraz będziesz mógł wykorzystać odchudzający
+      trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
+      smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
+    </opis>
   </książka>
   <książka pozycja_id="P54" IdAutora="JF" IdKategorii="TH" autorzy="Joe Friel">
     <tytuł>Schudnij z przyjemnością. Podręcznik radosnego odchudzania</tytuł>
@@ -529,18 +538,18 @@
     <cena waluta="PLN">17.63</cena>
     <opis>
       <opis_skrócony>
-				Jeżeli do tej pory zrzucanie zbędnych kilogramów wywoływało u Ciebie wyłącznie
-				negatywne odczucia, powinieneś koniecznie przeczytać tę książkę.   
-				</opis_skrócony>
-				Odchudzanie może być bowiem nie tylko skuteczne, ale przy okazji bardzo przyjemne!
-				Wszystko za sprawą Autorki, która teraz dzieli się z Tobą swoim wieloletnim doświadczeniem w tej dziedzinie.
-				Łączy ona odchudzanie z elementami psychologii i poza aspektem fizycznym, skupia się również na samopoczuciu i
-				emocjach osoby, która się odchudza. W tej książce znajdziesz 10 sprawdzonych sposobów na wzmocnienie motywacji
-				i dowiesz się, jak opracować realny cel, który będzie Cię wspomagał na drodze do szczupłej sylwetki.
-				Poznasz sekrety terapii śmiechem pomagającej zrzucić wagę oraz będziesz mógł wykorzystać odchudzający
-				trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
-				smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
-				</opis>
+        Jeżeli do tej pory zrzucanie zbędnych kilogramów wywoływało u Ciebie wyłącznie
+        negatywne odczucia, powinieneś koniecznie przeczytać tę książkę.
+      </opis_skrócony>
+      Odchudzanie może być bowiem nie tylko skuteczne, ale przy okazji bardzo przyjemne!
+      Wszystko za sprawą Autorki, która teraz dzieli się z Tobą swoim wieloletnim doświadczeniem w tej dziedzinie.
+      Łączy ona odchudzanie z elementami psychologii i poza aspektem fizycznym, skupia się również na samopoczuciu i
+      emocjach osoby, która się odchudza. W tej książce znajdziesz 10 sprawdzonych sposobów na wzmocnienie motywacji
+      i dowiesz się, jak opracować realny cel, który będzie Cię wspomagał na drodze do szczupłej sylwetki.
+      Poznasz sekrety terapii śmiechem pomagającej zrzucić wagę oraz będziesz mógł wykorzystać odchudzający
+      trening aerobowy i ekspresowy trening dla zapracowanych. Skorzystasz też ze sprawdzonych przepisów na
+      smaczne dania wspierające utratę kilogramów. Poznaj nową jakość odchudzania.
+    </opis>
   </książka>
   <metadane>
     <autor_projektu indeks="195627"> Bogdan Kosmala </autor_projektu>
@@ -557,24 +566,12 @@
     </wydanie>
     <wydawnictwo>Świat Książki</wydawnictwo>
     <cena>27.64</cena>
-    <opis> 
-				Rachel każdego ranka dojeżdża do pracy tym samym pociągiem. Wie, że pociąg zawsze zatrzymuje się przed tym samym semaforem,
-				dokładnie naprzeciwko szeregu domów. Zaczyna się jej nawet wydawać, że zna ludzi, którzy mieszkają w jednym z nich.
-				Uważa, że prowadzą doskonałe życie. Gdyby tylko mogła być tak szczęśliwa jak oni. I nagle widzi coś wstrząsającego.
-				Widzi tylko przez chwilę, bo pociąg rusza, ale to wystarcza. Wszystko się zmienia.
-				<opis_skrócony>Znakomita książka, miliony sprzedanych egzemplarzy na całym świecie. </opis_skrócony></opis>
-  </książka>
-  <książka pozycja_id="P123" autorzy="Jan Nieznany">
-    <tytuł>Tam i z powrotem</tytuł>
-    <ISBN>9788324587958</ISBN>
-    <język>polski</język>
-    <wydanie>
-      <miejsce_wydania>Warszawa</miejsce_wydania>
-      <data_wydania>2015-02-02
-</data_wydania>
-    </wydanie>
-    <wydawnictwo>Ptak</wydawnictwo>
-    <cena>25</cena>
-    <opis>aaaa<opis_skrócony>haaaa</opis_skrócony></opis>
+    <opis>
+      Rachel każdego ranka dojeżdża do pracy tym samym pociągiem. Wie, że pociąg zawsze zatrzymuje się przed tym samym semaforem,
+      dokładnie naprzeciwko szeregu domów. Zaczyna się jej nawet wydawać, że zna ludzi, którzy mieszkają w jednym z nich.
+      Uważa, że prowadzą doskonałe życie. Gdyby tylko mogła być tak szczęśliwa jak oni. I nagle widzi coś wstrząsającego.
+      Widzi tylko przez chwilę, bo pociąg rusza, ale to wystarcza. Wszystko się zmienia.
+      <opis_skrócony>Znakomita książka, miliony sprzedanych egzemplarzy na całym świecie. </opis_skrócony>
+    </opis>
   </książka>
 </księgarnia>
