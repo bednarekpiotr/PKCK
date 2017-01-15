@@ -40,5 +40,14 @@ namespace zad_5_wpf
 
             return result;
         }
+
+        public void SaveData(Ksiegarnia ksiegarnia)
+        {
+            if (XmlFile.Exists) XmlFile.Delete();
+
+            Stream stream = new FileStream(XmlFile.FullName, FileMode.Create);
+            Serializer.Serialize(stream, ksiegarnia);
+            stream.Close();
+        }
     }
 }

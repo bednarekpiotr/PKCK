@@ -14,6 +14,9 @@ namespace Ksiegarnia_zad_5
         public Ksiegarnia Dane { get; set; } // tutaj znajdują się wszystkie dane do wyświetlania - trzeba jedynie dotrzeć do konkretnych property
         public XML Tools { get; set; }
 
+        List<String> jezyki;
+        List<String> waluty;
+
         ObservableCollection<String> ListaPozycji;
 
         public MainWindow()
@@ -57,7 +60,7 @@ namespace Ksiegarnia_zad_5
                 this.MetadaneTxtBlock.DataContext = Dane.Metadane;
 
                 ListaPozycji = new ObservableCollection<string>();
-                List<String> waluty = new List<string>
+                waluty = new List<string>
             {
                 "PLN",
                 "EUR",
@@ -66,7 +69,7 @@ namespace Ksiegarnia_zad_5
             };
                 cenacombo.ItemsSource = waluty;
 
-                List<String> jezyki = new List<string>
+                jezyki = new List<string>
             {
                 "polski",
                 "angielski",
@@ -337,6 +340,98 @@ namespace Ksiegarnia_zad_5
                 MessageBox.Show("wybierz rodzaj pozycji");
             }
    
+        }
+
+        private void Zapisz(object sender, RoutedEventArgs e)
+        {
+            if (KsiegarniaListBox.SelectedItem != null)
+            {
+                             
+
+                foreach (var item in Dane.Ksiazki)
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        item.Tytul = tytultext.Text;
+
+                        item.ISBN = UInt64.Parse(isbntext.Text);
+                        /*foreach(var j in jezyki)
+                        { if (jezykcombo.Text == j)
+                            { item.Jezyk = j; } }*/
+                        item.Wydanie.NumerWydania = UInt16.Parse(wydanie.Text);
+                        item.Wydanie.MiejsceWydania = wydaniemiejsce.Text;
+                        item.Wydanie.DataWydania = DateTime.Parse(wydaniedata.Text);
+                        item.Wydawnictwo = wydawnictwotext.Text;
+                        /*foreach (var i in waluty)
+                        {
+                            if (cenacombo.Text == i)
+                            { item.Cena.Waluta = i; }
+                        }*/
+
+                        item.Cena.Ile = float.Parse(cenatext.Text);
+
+                        item.IloscStron = UInt16.Parse(iloscRozmiartext.Text);
+                        item.Autorzy = autorzytext.Text;
+                        item.Opis.OpisWstepny = opisskroconytext.Text;
+
+                        if (item.Opis.OpisPozostaly != null)
+                            item.Opis.OpisPozostaly = opistext.Text;
+                        else
+                            item.Opis.OpisPozostaly = "";
+
+                        item.Id = idtextbox.Text;
+                    }
+                }
+
+                foreach (var item in Dane.Czasopisma)
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        isbntext.Text = item.ISBN.ToString();
+                        rozmiarilosccombo.Text = "częstotliwość";
+                        cenacombo.Text = item.Cena.Waluta.ToString();
+                        jezykcombo.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString();
+                        wydaniemiejsce.Text = item.Wydanie.MiejsceWydania.ToString();
+                        wydaniedata.Text = item.Wydanie.DataWydania.ToString("yyyy-MM-dd");
+                        wydawnictwotext.Text = item.Wydawnictwo.ToString();
+
+                        cenatext.Text = item.Cena.Ile.ToString();
+
+                        iloscRozmiartext.Text = item.Czestotliwosc.ToString();
+                        autorzytext.Text = item.Autorzy.ToString();
+                        opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
+                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        pozycjacombo.Text = "czasopismo";
+                        idtextbox.Text = item.Id.ToString();
+                    }
+                }
+                foreach (var item in Dane.Ebooki)
+                {
+                    if (item.Tytul.Equals(KsiegarniaListBox.SelectedItem.ToString()))
+                    {
+                        isbntext.Text = item.ISBN.ToString();
+                        rozmiarilosccombo.Text = "rozmiar w MB";
+
+                        cenacombo.Text = item.Cena.Waluta.ToString();
+                        jezykcombo.Text = item.Jezyk.ToString();
+                        wydanie.Text = item.Wydanie.NumerWydania.ToString();
+                        wydaniemiejsce.Text = item.Wydanie.MiejsceWydania.ToString();
+                        wydaniedata.Text = item.Wydanie.DataWydania.ToString("yyyy-MM-dd");
+                        wydawnictwotext.Text = item.Wydawnictwo.ToString();
+                        cenatext.Text = item.Cena.Ile.ToString();
+
+                        iloscRozmiartext.Text = item.Rozmiar.ToString();
+                        autorzytext.Text = item.Autorzy.ToString();
+                        opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
+                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        pozycjacombo.Text = "e-book";
+                        idtextbox.Text = item.Id.ToString();
+                    }
+                }
+            }
+            Tools.SaveData(Dane);
+            Start();
         }
 
 
