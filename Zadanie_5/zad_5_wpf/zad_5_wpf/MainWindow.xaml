@@ -8,7 +8,7 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="MetadaneTxtBlock" HorizontalAlignment="Left"  Margin="106,744,0,0" TextWrapping="Wrap" Text="{Binding MetadaneSummary}" VerticalAlignment="Top" RenderTransformOrigin="-3.18,5.375" Width="576"/>
-        <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="639" Margin="37,64,0,0" VerticalAlignment="Top" Width="309"/>
+        <ListBox x:Name="KsiegarniaListBox" HorizontalAlignment="Left" Height="639" Margin="10,64,0,0" VerticalAlignment="Top" Width="336" SelectionChanged="Wczytaj"/>
         <Label Content="Lista Pozycji " HorizontalAlignment="Left" Margin="183,28,0,0" VerticalAlignment="Top"/>
         <Label Content="Tytuł" HorizontalAlignment="Left" Margin="375,110,0,0" VerticalAlignment="Top" Height="24" Width="74"/>
         <Label Content="Język&#x9;" HorizontalAlignment="Left" Margin="375,187,0,0" VerticalAlignment="Top"/>
@@ -23,17 +23,19 @@
         <TextBox x:Name="cenatext" Height="23" Margin="560,359,111,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <Label Content="Cena  w" HorizontalAlignment="Left" Margin="382,359,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tytultext" HorizontalAlignment="Left" Height="48" Margin="483,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243"/>
-        <Button Content="Wczytaj" HorizontalAlignment="Left" Margin="486,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <!--<Button Content="Wczytaj" HorizontalAlignment="Left" Margin="486,49,0,0" VerticalAlignment="Top" Width="75" Click="Wczytaj"/>-->
+        <Button Content="Odśwież" HorizontalAlignment="Left" Margin="486,49,0,0" VerticalAlignment="Top" Width="75" Click="Odswiez"/>
+
         <TextBox x:Name="opisskroconytext" HorizontalAlignment="Left" Height="63" Margin="483,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Label x:Name="opisskroconylabel" Content="opis skrócony" HorizontalAlignment="Left" Margin="383,398,0,0" VerticalAlignment="Top"/>
         <Label x:Name="opislabel" Content="opis" HorizontalAlignment="Left" Margin="383,455,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="opistext" HorizontalAlignment="Left" Height="241" Margin="483,462,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243"/>
         <Label x:Name="autorzylabel" Content="Autorzy" HorizontalAlignment="Left" Margin="376,154,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="autorzytext" HorizontalAlignment="Left" Height="23" Margin="484,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241"/>
-        <Button Content="Resetuj dane" HorizontalAlignment="Left" Margin="568,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Wyczyść dane" HorizontalAlignment="Left" Margin="568,49,0,0" VerticalAlignment="Top" Width="94" Click="Wyczysc"/>
         <ComboBox x:Name="cenacombo" HorizontalAlignment="Left" Margin="484,359,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
         <ComboBox x:Name="jezykcombo" HorizontalAlignment="Left" Margin="484,188,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5"/>
-        <Button Content="Usuń" HorizontalAlignment="Left" Margin="649,49,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="667,49,0,0" VerticalAlignment="Top" Width="75" Click="Usun"/>
         <Label Content="Pozycja" HorizontalAlignment="Left" Margin="375,78,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="pozycjacombo" HorizontalAlignment="Left" Margin="485,80,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="rozmiarilosccombo" HorizontalAlignment="Left" Margin="375,257,0,0" VerticalAlignment="Top" Width="135"/>
@@ -41,7 +43,7 @@
         <TextBox x:Name="wydaniedata" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="662,292,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="108" />
         <Label Content="Id" HorizontalAlignment="Left" Margin="624,78,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="idtextbox" HorizontalAlignment="Left" Height="23" Margin="677,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="662,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="667,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
 
 
 

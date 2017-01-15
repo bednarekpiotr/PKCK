@@ -14,6 +14,8 @@ namespace Ksiegarnia_zad_5
         public Ksiegarnia Dane { get; set; } // tutaj znajdują się wszystkie dane do wyświetlania - trzeba jedynie dotrzeć do konkretnych property
         public XML Tools { get; set; }
 
+        ObservableCollection<String> ListaPozycji;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -22,66 +24,24 @@ namespace Ksiegarnia_zad_5
             Tools = new XML("..//..//Source//księgarnia_v1.3.xml", "..//..//Source//księgarnia_v1.3.xsd");
 
             Start();
-
-            this.MainDataContext.DataContext = Dane;
-            this.MetadaneTxtBlock.DataContext = Dane.Metadane;
-            ObservableCollection<String> ListaPozycji = new ObservableCollection<string>();
-            List<String> waluty = new List<string>
-            {
-                "PLN",
-                "EUR",
-                "GBP",
-                "USD"
-            };
-            cenacombo.ItemsSource = waluty;
-
-            List<String> jezyki = new List<string>
-            {
-                "polski",
-                "angielski",
-                "niemiecki",
-                "rosyjski"
-            };
-            jezykcombo.ItemsSource = jezyki;
-
-            List<String> pozycja = new List<string>
-            {
-                "książka",
-                "e-book",
-                "czasopismo"
-            };
-            pozycjacombo.ItemsSource = pozycja;
-
-            List<String> rozmiarilosc = new List<string>
-            {
-                "ilość stron:",
-                "rozmiar w MB",
-                "częstotliwość"
-            };
-            rozmiarilosccombo.ItemsSource = rozmiarilosc;
-
-
-
-
-            void fun()
-            {
-                foreach (var k in Dane.Ksiazki)
-                {   
-                    ListaPozycji.Add(k.Tytul.ToString());
-                }
-                foreach (var k in Dane.Czasopisma)
-                {
-                    ListaPozycji.Add(k.Tytul.ToString());
-                }
-                foreach (var k in Dane.Ebooki)
-                {
-                    ListaPozycji.Add(k.Tytul.ToString());
-                }
-
-            }
-            fun();
-            KsiegarniaListBox.ItemsSource = ListaPozycji;
             
+        }
+
+        private void fun()
+        {
+            foreach (var k in Dane.Ksiazki)
+            {
+                ListaPozycji.Add(k.Tytul.ToString());
+            }
+            foreach (var k in Dane.Czasopisma)
+            {
+                ListaPozycji.Add(k.Tytul.ToString());
+            }
+            foreach (var k in Dane.Ebooki)
+            {
+                ListaPozycji.Add(k.Tytul.ToString());
+            }
+
         }
 
         private void Start()
@@ -93,11 +53,51 @@ namespace Ksiegarnia_zad_5
             else
             {
                 Dane = Tools.Deserialize();
+                this.MainDataContext.DataContext = Dane;
+                this.MetadaneTxtBlock.DataContext = Dane.Metadane;
+
+                ListaPozycji = new ObservableCollection<string>();
+                List<String> waluty = new List<string>
+            {
+                "PLN",
+                "EUR",
+                "GBP",
+                "USD"
+            };
+                cenacombo.ItemsSource = waluty;
+
+                List<String> jezyki = new List<string>
+            {
+                "polski",
+                "angielski",
+                "niemiecki",
+                "rosyjski"
+            };
+                jezykcombo.ItemsSource = jezyki;
+
+                List<String> pozycja = new List<string>
+            {
+                "książka",
+                "e-book",
+                "czasopismo"
+            };
+                pozycjacombo.ItemsSource = pozycja;
+
+                List<String> rozmiarilosc = new List<string>
+            {
+                "ilość stron:",
+                "rozmiar w MB",
+                "częstotliwość"
+            };
+                rozmiarilosccombo.ItemsSource = rozmiarilosc;
+
+                fun();
+                KsiegarniaListBox.ItemsSource = ListaPozycji;
             }
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Wczytaj(object sender, RoutedEventArgs e)
         {
             if (KsiegarniaListBox.SelectedItem != null)
             {
@@ -121,7 +121,10 @@ namespace Ksiegarnia_zad_5
                         iloscRozmiartext.Text = item.IloscStron.ToString();
                         autorzytext.Text = item.Autorzy.ToString();
                         opisskroconytext.Text = item.Opis.OpisWstepny.ToString();
-                        opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        if (item.Opis.OpisPozostaly != null)
+                            opistext.Text = item.Opis.OpisPozostaly.ToString();
+                        else
+                            opistext.Text = "";
                         pozycjacombo.Text = "książka";
                         idtextbox.Text = item.Id.ToString();
                     }
@@ -176,11 +179,15 @@ namespace Ksiegarnia_zad_5
             }
             else
             {
-                MessageBox.Show("Wybierz pozycję z listy");
+                //MessageBox.Show("Wybierz pozycję z listy");
             }
         }
+        private void Odswiez(object sender, RoutedEventArgs e)
+        {
+            Start();
+        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Wyczysc(object sender, RoutedEventArgs e)
         {
             isbntext.Clear();
             tytultext.Clear();
@@ -200,7 +207,7 @@ namespace Ksiegarnia_zad_5
             
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Usun(object sender, RoutedEventArgs e)
         {
             XmlDocument xmldoc = new XmlDocument();
             FileStream fs = new FileStream("..//..//Source//księgarnia_v1.3.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite);
@@ -245,6 +252,8 @@ namespace Ksiegarnia_zad_5
                 fs.SetLength(0);
                 xmldoc.Save(fs);
                 fs.Close();
+
+                Start();
             }
             else
             {

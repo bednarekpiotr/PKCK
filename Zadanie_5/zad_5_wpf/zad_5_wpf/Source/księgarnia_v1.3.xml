@@ -564,4 +564,17 @@
 				Widzi tylko przez chwilę, bo pociąg rusza, ale to wystarcza. Wszystko się zmienia.
 				<opis_skrócony>Znakomita książka, miliony sprzedanych egzemplarzy na całym świecie. </opis_skrócony></opis>
   </książka>
+  <książka pozycja_id="P123" autorzy="Jan Nieznany">
+    <tytuł>Tam i z powrotem</tytuł>
+    <ISBN>9788324587958</ISBN>
+    <język>polski</język>
+    <wydanie>
+      <miejsce_wydania>Warszawa</miejsce_wydania>
+      <data_wydania>2015-02-02
+</data_wydania>
+    </wydanie>
+    <wydawnictwo>Ptak</wydawnictwo>
+    <cena>25</cena>
+    <opis>aaaa<opis_skrócony>haaaa</opis_skrócony></opis>
+  </książka>
 </księgarnia>
